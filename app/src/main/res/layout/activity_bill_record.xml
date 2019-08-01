@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.wallet.view.activity.BillRecordActivity">
+
+    <include layout="@layout/layout_common_actionbar"/>
+
+    <com.iconiz.tokenunion.widget.PagerSlidingTabStrip
+        android:id="@+id/activity_bill_record_tabs"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:background="#EDEDED"
+        app:pstsIndicatorColor="#DE524F"
+        app:pstsIndicatorHeight="3dp"
+        app:pstsIndicatorFixedWith="28dp"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/activity_bill_record_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

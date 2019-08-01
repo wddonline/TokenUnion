@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="yesterday_income_any">昨日收益 %1$s ANY</string>
+    <string name="capital_total">资产总览 (USD)</string>
+    <string name="capital_complex">综合收益率 (月)</string>
+    <string name="total_income">累计收益 (USD)</string>
+    <string name="yesterday_income">昨日收益 (USD)</string>
+    <string name="total_income_any">累计收益 (ANY)</string>
+    <string name="wealth_detail">财富详情</string>
+    <string name="search_currency">搜索币种</string>
+    <string name="super_node">超级节点</string>
+    <string name="detail">详情</string>
+    <string name="product_detail">产品详情</string>
+    <string name="quota_hold_format">持有额度 (%1$s）</string>
+    <string name="view_all_bills">查看全部账单 ></string>
+    <string name="deposit">存入</string>
+    <string name="redeem">赎回</string>
+    <string name="interest_rule">利率规则</string>
+    <string name="interest_detail">利息明细</string>
+    <string name="update_time_format">（更新时间：%1$s）</string>
+    <string name="wealth_total">个人财富总额 ($)</string>
+    <string name="month_rate">月化利率</string>
+    <string name="leader_reward">领导奖励</string>
+    <string name="star_user_less_layer_10">团队10层内的星级用户</string>
+    <string name="month_reward_balance">每月奖励金额</string>
+    <string name="currency">币种</string>
+    <string name="amount">数量</string>
+    <string name="deposit_action">确认存入</string>
+    <string name="input_balance">输入金额</string>
+    <string name="all">全部</string>
+    <string name="deposit_input_hint">%1$s %2$s 起</string>
+    <string name="deposit_hold_wealth">当前已持有 %1$s %2$s（%3$s）</string>
+    <string name="deposit_usable_wealth">钱包可用余额 %1$s %2$s（%3$s）</string>
+    <string name="deposit_month_interest">预计每月可获得收益 %1$s ANY</string>
+    <string name="safety_verified">安全验证</string>
+    <string name="capital_pwd_hint">请输入资金密码</string>
+    <string name="price_temporary_changed">由于价格浮动，请重新输入</string>
+    <string name="deposit_save_success">存入成功</string>
+    <string name="deposit_forget_pwd">密码错误，忘记密码</string>
+    <string name="err_beyond_quota">超出可赎回额度</string>
+    <string name="redeem_action">确认赎回</string>
+    <string name="redeem_quota_format">可赎回额度 %1$s %2$s（%3$s）</string>
+    <string name="no_interest_when_redeeming">赎回当日不产生收益！</string>
+    <string name="redeem_back_success">赎回成功</string>
+    <string name="interest_added">已获收益（ANY）</string>
+    <string name="select_term">选择期限</string>
+    <string name="become_super_node">成为超级节点</string>
+    <string name="locking_period">锁仓期限</string>
+    <string name="enjoy_interest">预期收益</string>
+    <string name="any_usable_balance_format">钱包可用余额 %1$s ANY（%2$s）</string>
+    <string name="lock_capital">立即锁仓</string>
+    <string name="hold_any_record">持有记录(ANY)</string>
+    <string name="hold_any_income">收益账单(ANY)</string>
+    <string name="view_all_bill_record">查看全部账单 ></string>
+    <string name="go_lock_capital">去锁仓</string>
+    <string name="time">时间</string>
+    <string name="period">期限</string>
+
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="22dp"
+    android:paddingRight="22dp">
+
+    <View
+        android:id="@+id/item_tuc_record_hold_data_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EDEDED"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="9dp"
+        android:paddingBottom="9dp">
+
+        <TextView
+            android:id="@+id/item_tuc_record_hold_data_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="111111"
+            android:textSize="12sp"
+            android:textColor="#BBBBBB"/>
+
+        <TextView
+            android:id="@+id/item_tuc_record_hold_data_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="111111"
+            android:textSize="12sp"
+            android:textColor="#BBBBBB"/>
+
+        <TextView
+            android:id="@+id/item_tuc_record_hold_data_period"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="111111"
+            android:textSize="12sp"
+            android:textColor="#BBBBBB"/>
+
+        <TextView
+            android:id="@+id/item_tuc_record_hold_data_income"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="11111"
+            android:textSize="12sp"
+            android:textColor="#DE524F"/>
+    </LinearLayout>
+</LinearLayout>

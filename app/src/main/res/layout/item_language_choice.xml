@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_language_choice_click"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="7dp"
+    android:paddingBottom="7dp">
+
+    <TextView
+        android:id="@+id/item_language_choice_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="11111"
+        android:textColor="#DE524F"
+        android:textSize="12sp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:paddingLeft="34dp" />
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.wallet.view.activity.WalletChargeActivity">
+
+    <include layout="@layout/layout_common_actionbar"/>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/activity_wallet_charge_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/activity_wallet_charge_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textSize="14sp"
+                android:textColor="#848484"
+                android:textColorHint="#848484"
+                android:hint="@string/select_currency"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:layout_marginTop="44dp"
+                android:onClick="onCardClicked"
+                android:clickable="true"
+                android:background="@drawable/common_item_bg"
+                android:drawableRight="@mipmap/ic_arrow_down_red"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BBBBBB"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"/>
+
+            <com.yidaichu.android.common.view.flow.TagFlowLayout
+                android:id="@+id/activity_wallet_charge_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"/>
+
+            <com.iconiz.tokenunion.widget.NetworkImageView
+                android:id="@+id/activity_wallet_charge_qr"
+                android:layout_width="151dp"
+                android:layout_height="151dp"
+                android:layout_marginTop="53dp"/>
+
+            <TextView
+                android:id="@+id/activity_wallet_charge_qr_str"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#2E3039"
+                android:textSize="14sp"
+                android:layout_marginTop="23dp"
+                android:text="111111111111111111111111111111111"
+                android:layout_marginLeft="38dp"
+                android:layout_marginRight="38dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#3688F4"
+                android:textSize="14sp"
+                android:text="@string/copy_uri"
+                android:layout_marginTop="5dp"
+                android:autoLink="all"
+                android:onClick="onCopyCodeClicked"/>
+
+        </LinearLayout>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:text="@string/back_wallet"
+        android:background="@drawable/selector_rect_btn"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:onClick="onBackWalletClicked"/>
+
+</LinearLayout>

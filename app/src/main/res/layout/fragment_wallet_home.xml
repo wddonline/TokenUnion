@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bg_wallet_home_top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom">
+
+                    <com.iconiz.tokenunion.widget.RoundNetworkImageView
+                        android:id="@+id/fragment_wallet_home_headimg"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        app:cornerRadius="17dp"
+                        android:padding="1dp"
+                        android:src="@mipmap/default_headimg"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:id="@+id/fragment_wallet_home_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:textColor="#DE524F"
+                        android:text="Reverse"
+                        android:textStyle="italic"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="5dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical">
+
+                    <TextView
+                        android:id="@+id/fragment_wallet_home_yesterday_income_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="158dp"
+                        android:textColor="#888888"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:gravity="center_vertical"
+                        android:textSize="10sp"
+                        android:text="@string/yesterday_income_any"
+                        android:background="@drawable/bg_capital_top_input"/>
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/fragment_wallet_home_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/ic_msg_tip"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"/>
+
+                    <TextView
+                        android:id="@+id/fragment_wallet_home_hint_sign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="9dp"
+                        android:background="@drawable/red_dot"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_gravity="right|top"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:clipChildren="false"
+                android:layout_centerInParent="true">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/fragment_wallet_home_gallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="152dp"
+                    android:layout_gravity="center"
+                    android:clipChildren="false" />
+
+                <LinearLayout
+                    android:id="@+id/fragment_wallet_home_indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="7dp">
+
+                    <View
+                        android:layout_width="7dp"
+                        android:layout_height="7dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/find_home_tab_indicator" />
+
+                    <View
+                        android:layout_width="7dp"
+                        android:layout_height="7dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/find_home_tab_indicator" />
+
+                    <View
+                        android:layout_width="7dp"
+                        android:layout_height="7dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/find_home_tab_indicator" />
+
+                    <View
+                        android:layout_width="7dp"
+                        android:layout_height="7dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/find_home_tab_indicator" />
+
+                    <View
+                        android:layout_width="7dp"
+                        android:layout_height="7dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/find_home_tab_indicator" />
+
+                    <View
+                        android:layout_width="7dp"
+                        android:layout_height="7dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/find_home_tab_indicator" />
+
+                    <View
+                        android:layout_width="7dp"
+                        android:layout_height="7dp"
+                        android:background="@drawable/find_home_tab_indicator" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/fragment_wallet_home_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

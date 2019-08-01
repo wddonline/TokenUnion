@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.mine.view.activity.MembershipCenterActivity">
+
+    <include layout="@layout/layout_common_actionbar" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:srlEnablePureScrollMode="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@mipmap/bg_invite_top" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="22dp"
+                            android:paddingRight="22dp"
+                            android:paddingTop="11dp">
+
+                            <ImageView
+                                android:id="@+id/activity_membership_center_card"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:adjustViewBounds="true"
+                                android:src="@mipmap/black_card_small"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical|right"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/activity_membership_center_username"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="end"
+                                    android:gravity="right"
+                                    android:lines="1"
+                                    android:text="1111111111111"
+                                    android:textColor="#888888"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/activity_membership_center_user_level"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:textColor="#A4A4A4"
+                                    android:textSize="12sp"
+                                    android:text="111111111"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginBottom="4dp"/>
+
+                                <TextView
+                                    android:id="@+id/activity_membership_center_invite_code"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:textColor="#A4A4A4"
+                                    android:textSize="12sp"
+                                    android:text="111111111"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="#80FFFFFF"
+                            android:paddingLeft="28dp"
+                            android:paddingRight="28dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:layout_centerVertical="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/team_size"
+                                    android:textColor="#DE524F"
+                                    android:textSize="12sp" />
+
+                                <FrameLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="6dp">
+
+                                    <ImageView
+                                        android:id="@+id/activity_membership_center_level_ring_0"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/level_ring" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="8dp">
+
+                                        <TextView
+                                            android:id="@+id/activity_membership_center_team_size"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:ellipsize="end"
+                                            android:lines="1"
+                                            android:textColor="#DE524F"
+                                            android:textSize="14sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/wan"
+                                            android:textColor="#DE524F"
+                                            android:textSize="14sp" />
+
+                                    </LinearLayout>
+
+                                </FrameLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/star_friend"
+                                    android:textColor="#DE524F"
+                                    android:textSize="12sp" />
+
+                                <FrameLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="6dp">
+
+                                    <ImageView
+                                        android:id="@+id/activity_membership_center_level_ring_1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/level_ring" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="8dp">
+
+                                        <TextView
+                                            android:id="@+id/activity_membership_center_level_progress"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:ellipsize="end"
+                                            android:lines="1"
+                                            android:textColor="#DE524F"
+                                            android:textSize="14sp" />
+
+                                        <TextView
+                                            android:id="@+id/activity_membership_center_next_level_name"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="#DE524F"
+                                            android:textSize="14sp" />
+
+                                    </LinearLayout>
+
+                                </FrameLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:gravity="center_horizontal"
+                                android:layout_centerVertical="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/star_distribution"
+                                    android:textColor="#DE524F"
+                                    android:textSize="12sp" />
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="6dp">
+
+                                    <ImageView
+                                        android:id="@+id/activity_membership_center_level_ring_2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:src="@drawable/level_ring" />
+
+                                    <TextView
+                                        android:id="@+id/activity_membership_center_star_distribution"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:gravity="center"
+                                        android:padding="8dp"
+                                        android:textColor="#DE524F"
+                                        android:textSize="18sp" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#E8E8E8"/>
+
+                        <TextView
+                            android:id="@+id/activity_membership_center_next_level_hint"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:textColor="#888888"
+                            android:text="111111111111"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="22dp"
+                    android:gravity="center_vertical">
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="15dp"
+                        android:background="#CAAC89" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:text="@string/membership_rights"
+                        android:textColor="#2E3039"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="onMembershipDescClicked"
+                        android:text="@string/view_membership_desc"
+                        android:textColor="#BBBBBB"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17dp"
+                    android:gravity="center"
+                    android:text="@string/membership_stable_level_title"
+                    android:textColor="#BBBBBB"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/activity_membership_center_bank_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/membership_wealth_limit"
+                        android:textColor="#2E3039"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <LinearLayout
+                        android:id="@+id/activity_membership_center_right0"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="invisible">
+
+                        <ImageView
+                            android:id="@+id/activity_membership_center_right_icon0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/activity_membership_center_right_name0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="111"
+                            android:textColor="#555555"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/activity_membership_center_right_desc0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="111"
+                            android:textColor="#BBBBBB"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/activity_membership_center_right1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="invisible">
+
+                        <ImageView
+                            android:id="@+id/activity_membership_center_right_icon1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/activity_membership_center_right_name1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="111"
+                            android:textColor="#555555"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/activity_membership_center_right_desc1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="111"
+                            android:textColor="#BBBBBB"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/activity_membership_center_right2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="invisible">
+
+                        <ImageView
+                            android:id="@+id/activity_membership_center_right_icon2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/activity_membership_center_right_name2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="111"
+                            android:textColor="#555555"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/activity_membership_center_right_desc2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="111"
+                            android:textColor="#BBBBBB"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <LinearLayout
+                        android:id="@+id/activity_membership_center_right3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="invisible">
+
+                        <ImageView
+                            android:id="@+id/activity_membership_center_right_icon3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/activity_membership_center_right_name3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="111"
+                            android:textColor="#555555"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/activity_membership_center_right_desc3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="111"
+                            android:textColor="#BBBBBB"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/activity_membership_center_right4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="invisible">
+
+                        <ImageView
+                            android:id="@+id/activity_membership_center_right_icon4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/activity_membership_center_right_name4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="111"
+                            android:textColor="#555555"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/activity_membership_center_right_desc4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="111"
+                            android:textColor="#BBBBBB"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/activity_membership_center_right5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="invisible">
+
+                        <ImageView
+                            android:id="@+id/activity_membership_center_right_icon5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/activity_membership_center_right_name5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="111"
+                            android:textColor="#555555"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/activity_membership_center_right_desc5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="111"
+                            android:textColor="#BBBBBB"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/activity_membership_center_utc_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:textColor="#BFBFBF"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_membership_center_visa_panel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/bg_diamond_visa_apply"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/activity_membership_center_platinum_visa_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VISA"
+            android:layout_marginLeft="10dp"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="6dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:text="@string/visa_ad"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginRight="14dp"
+            android:gravity="center"
+            android:onClick="onApplyVisaClicked"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:background="@drawable/bg_visa_apply"
+            android:text="@string/apply"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

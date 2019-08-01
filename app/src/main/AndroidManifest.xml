@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.iconiz.tokenunion">
+
+    <dist:module dist:instant="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".app.APApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.capital.view.activity.TUCRecordActivity"></activity>
+        <activity
+            android:name=".ui.welcome.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.login.view.LanguageChoiceActivity" />
+        <activity
+            android:name=".ui.login.view.RegisterActivity"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".ui.login.view.LoginActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".ui.main.MainActivity" />
+        <activity android:name=".ui.web.activity.WebActivity" />
+        <activity
+            android:name=".ui.capital.view.activity.WealthRedeemActivity"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".ui.capital.view.activity.DepositInActivity"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity android:name=".ui.capital.view.activity.WealthDetailActivity" />
+        <activity android:name=".ui.capital.view.activity.InterestRuleActivity" />
+        <activity android:name=".ui.capital.view.activity.ProductDetailActivity" />
+        <activity android:name=".ui.mine.view.activity.MembershipDescActivity" />
+        <activity android:name=".ui.mine.view.activity.CustomerServiceActivity" />
+        <activity android:name=".ui.mine.view.activity.SecurityCenterActivity" />
+        <activity android:name=".ui.mine.view.activity.AboutUsActivity" />
+        <activity android:name=".ui.mine.view.activity.SystemSettingsActivity" />
+        <activity android:name=".ui.wallet.view.activity.BillRecordActivity" />
+        <activity android:name=".ui.mine.view.activity.MembershipCenterActivity" />
+        <activity android:name=".ui.mine.view.activity.MessageActivity" />
+        <activity android:name=".ui.invite.view.activity.InviteFriendActivity" />
+        <activity android:name=".ui.invite.view.activity.InviteRecordActivity" />
+        <activity
+            android:name=".ui.mine.view.activity.ChangeCapitalPwdActivity"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".ui.mine.view.activity.ChangePwdActivity"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".ui.login.view.ForgetPwdActivity"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity android:name=".ui.mine.view.activity.GoogleValidatorActivity" />
+        <activity android:name=".ui.login.view.SafetySettingsActivity" />
+        <activity android:name=".ui.mine.view.activity.CountryChoiceActivity" />
+        <activity
+            android:name=".ui.capital.view.activity.TUCLockCapitalActivity"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".ui.wallet.view.activity.WalletExchangeActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".ui.wallet.view.activity.WalletTransferActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".ui.wallet.view.activity.WalletWithdrawActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".ui.wallet.view.activity.WalletChargeActivity" />
+    </application>
+
+</manifest>

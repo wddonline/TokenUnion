@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="find">发现</string>
+    <string name="hot_dapp">精选Dapp</string>
+    <string name="label_dice">Dice</string>
+    <string name="label_jacks">Jacks or Better</string>
+    <string name="label_magic_circle">Magic Circle</string>
+
+</resources>

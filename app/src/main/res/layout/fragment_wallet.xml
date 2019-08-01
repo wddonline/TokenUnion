@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:layout_marginTop="11dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <LinearLayout
+            android:id="@+id/fragment_wallet_charge"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_rush_charge"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#DE524F"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:text="@string/rush_charge"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_wallet_withdraw"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_withdraw"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#DE524F"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:text="@string/withdraw"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_wallet_transfer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_free_transfer"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#DE524F"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:text="@string/free_transfer"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_wallet_exchange"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_flash_exchange"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#DE524F"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:text="@string/flash_exchange"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_wallet_bill"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_bill_record"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#DE524F"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:text="@string/bill_record"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E8E8E8"
+        android:layout_marginTop="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="11dp">
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:background="#DE524F"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/wealth_detail"
+            android:textColor="#2E3039"
+            android:layout_marginLeft="8dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="165dp"
+            android:layout_height="25dp"
+            android:textSize="10sp"
+            android:textColor="#888888"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/search_currency"
+            android:drawableRight="@mipmap/ic_search_gray"
+            android:background="@drawable/bg_capital_top_input"/>
+
+    </LinearLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/fragment_wallet_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fragment_wallet_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="none"
+            android:overScrollMode="never"/>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    
+</LinearLayout>

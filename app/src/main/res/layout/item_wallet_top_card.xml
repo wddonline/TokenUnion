@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:id="@+id/item_wallet_top_card_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"/>
+
+    <LinearLayout
+        android:id="@+id/item_wallet_top_card_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/item_wallet_top_card_hide_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/capital_total"
+                android:textSize="14sp"
+                android:drawableRight="@drawable/selector_password_hide"
+                android:drawablePadding="6dp"
+                android:clickable="true"
+                android:textColor="#888888"/>
+
+            <TextView
+                android:id="@+id/item_wallet_top_card_capital_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#DE524F"
+                android:text="111111111"
+                android:textSize="36sp"
+                android:gravity="center"
+                android:enabled="false"
+                android:layout_marginTop="3dp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layerType="software"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:background="@drawable/dotted_line"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/my_wealth_not_contained"
+            android:textColor="#888888"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="25dp"/>
+
+    </LinearLayout>
+
+</FrameLayout>

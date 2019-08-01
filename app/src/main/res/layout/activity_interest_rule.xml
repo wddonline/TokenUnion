@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.capital.view.activity.InterestRuleActivity">
+
+    <include layout="@layout/layout_common_actionbar"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="@mipmap/bg_member_desc_top"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/capital_total"
+                    android:textSize="14sp"
+                    android:textColor="#888888"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/activity_interest_rule_capital_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#CAAC89"
+                    android:textSize="24sp"
+                    android:text="111111"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/capital_complex"
+                    android:textSize="14sp"
+                    android:textColor="#888888"
+                    android:layout_marginBottom="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom|center_horizontal">
+
+                    <TextView
+                        android:id="@+id/activity_interest_rule_complex_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#CAAC89"
+                        android:text="1111111"
+                        android:textSize="24sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#CAAC89"
+                        android:textSize="14sp"
+                        android:text=" %"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/activity_interest_rule_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:fadingEdge="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="21dp"
+                    android:layout_marginBottom="17dp">
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="15dp"
+                        android:background="#DE524F"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/interest_detail"
+                        android:textColor="#888888"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/activity_interest_rule_update"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11111111"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#888888"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EDEDED"/>
+
+                <TableLayout
+                    android:id="@+id/activity_interest_rule_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="0,1">
+
+                    <TableRow>
+
+                        <TextView
+                            android:text="@string/wealth_total"
+                            android:textColor="#DE524F"
+                            android:gravity="center"
+                            android:textSize="12sp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="6dp"/>
+
+                        <TextView
+                            android:text="@string/month_rate"
+                            android:textColor="#DE524F"
+                            android:gravity="center"
+                            android:textSize="12sp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="6dp"/>
+
+                    </TableRow>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#EDEDED"/>
+
+                </TableLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginBottom="17dp">
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="15dp"
+                        android:background="#DE524F"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/leader_reward"
+                        android:textColor="#888888"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EDEDED"/>
+
+                <TableLayout
+                    android:id="@+id/activity_interest_rule_reward"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="0,1">
+
+                    <TableRow>
+
+                        <TextView
+                            android:text="@string/star_user_less_layer_10"
+                            android:textColor="#DE524F"
+                            android:gravity="center"
+                            android:textSize="12sp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="6dp"/>
+
+                        <TextView
+                            android:text="@string/month_reward_balance"
+                            android:textColor="#DE524F"
+                            android:gravity="center"
+                            android:textSize="12sp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="6dp"/>
+
+                    </TableRow>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#EDEDED"/>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

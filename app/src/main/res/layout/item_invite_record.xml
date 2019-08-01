@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/item_invite_record_value0"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:drawablePadding="3dp"
+            android:textColor="#848484"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_invite_record_value1"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:textColor="#848484"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/item_invite_record_value2"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:textColor="#848484"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/item_invite_record_value3"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:textColor="#848484"
+        android:visibility="gone"/>
+
+</LinearLayout>

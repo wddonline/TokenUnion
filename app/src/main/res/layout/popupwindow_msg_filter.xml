@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4D000000"
+    android:gravity="right"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/popupwindow_msg_filter_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:src="@mipmap/close" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/filter"
+                android:textColor="#2E3039"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/popupwindow_msg_filter_item0"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_msg_filter"
+            android:gravity="center_horizontal"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:text="1111111"
+            android:textColor="@color/msg_filter_text_color"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="200dp"
+            android:layout_height="1dp"
+            android:background="#EDEDED" />
+
+        <TextView
+            android:id="@+id/popupwindow_msg_filter_item1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_msg_filter"
+            android:gravity="center_horizontal"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:text="1111111"
+            android:textColor="@color/msg_filter_text_color"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="200dp"
+            android:layout_height="1dp"
+            android:background="#EDEDED" />
+
+        <TextView
+            android:id="@+id/popupwindow_msg_filter_item2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_msg_filter"
+            android:gravity="center_horizontal"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:text="1111111"
+            android:textColor="@color/msg_filter_text_color"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="200dp"
+            android:layout_height="1dp"
+            android:background="#EDEDED" />
+
+        <TextView
+            android:id="@+id/popupwindow_msg_filter_item3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_msg_filter"
+            android:gravity="center_horizontal"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:text="1111111"
+            android:textColor="@color/msg_filter_text_color"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="200dp"
+            android:layout_height="1dp"
+            android:background="#EDEDED" />
+
+        <TextView
+            android:id="@+id/popupwindow_msg_filter_item4"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:background="@drawable/selector_msg_filter"
+            android:gravity="center_horizontal"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:text="1111111"
+            android:textColor="@color/msg_filter_text_color"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="200dp"
+            android:layout_height="1dp"
+            android:background="#EDEDED" />
+
+        <TextView
+            android:id="@+id/popupwindow_msg_filter_item5"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_msg_filter"
+            android:gravity="center_horizontal"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:text="1111111"
+            android:textColor="@color/msg_filter_text_color"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="200dp"
+            android:layout_height="1dp"
+            android:background="#EDEDED" />
+    </LinearLayout>
+</LinearLayout>

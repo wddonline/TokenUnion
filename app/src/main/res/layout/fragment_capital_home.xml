@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/bg_wallet_home_top"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom">
+
+                        <com.iconiz.tokenunion.widget.RoundNetworkImageView
+                            android:id="@+id/fragment_capital_home_headimg"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            app:cornerRadius="17dp"
+                            android:padding="1dp"
+                            android:src="@mipmap/default_headimg"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:id="@+id/fragment_capital_home_level"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:textColor="#DE524F"
+                            android:text="Reverse"
+                            android:textStyle="italic"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="5dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical">
+
+                        <TextView
+                            android:id="@+id/fragment_capital_home_yesterday_income_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="158dp"
+                            android:textColor="#888888"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:gravity="center_vertical"
+                            android:textSize="10sp"
+                            android:text="@string/yesterday_income_any"
+                            android:background="@drawable/bg_capital_top_input"/>
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/fragment_capital_home_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@mipmap/ic_msg_tip"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"/>
+
+                        <TextView
+                            android:id="@+id/fragment_capital_home_hint_sign"
+                            android:layout_width="wrap_content"
+                            android:layout_height="9dp"
+                            android:background="@drawable/red_dot"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_gravity="right|top"/>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="17dp"
+                    android:paddingBottom="17dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/fragment_capital_home_hide_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/capital_total"
+                            android:textSize="14sp"
+                            android:drawableRight="@drawable/selector_password_hide"
+                            android:drawablePadding="6dp"
+                            android:clickable="true"
+                            android:textColor="#888888"/>
+
+                        <TextView
+                            android:id="@+id/fragment_capital_home_capital_total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#B59962"
+                            android:textSize="24sp"
+                            android:text="111111"
+                            android:drawablePadding="9dp"
+                            android:clickable="true"
+                            android:drawableRight="@mipmap/ic_pie_chart"
+                            android:layout_marginTop="10dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/fragment_capital_home_complex_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/capital_complex"
+                            android:textSize="14sp"
+                            android:drawableRight="@mipmap/ic_question"
+                            android:drawablePadding="6dp"
+                            android:textColor="#888888"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="bottom|center_horizontal"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:id="@+id/fragment_capital_home_complex_rate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="11111111"
+                                android:textColor="#B59962"
+                                android:textSize="24sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#B59962"
+                                android:textSize="14sp"
+                                android:text=" %"
+                                android:layout_marginRight="10dp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E8E8E8"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#80FFFFFF"
+                android:gravity="center_vertical"
+                android:paddingTop="18dp"
+                android:paddingBottom="14dp"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:textColor="#B59962"
+                        android:text="@string/total_income"
+                        android:layout_marginBottom="1.5dp"/>
+
+                    <TextView
+                        android:id="@+id/fragment_capital_home_total_income"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:layout_marginTop="1.5dp"
+                        android:text="111111111"
+                        android:textColor="#B59962"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:background="#B59962"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:textColor="#B59962"
+                        android:layout_marginBottom="1.5dp"
+                        android:text="@string/yesterday_income"/>
+
+                    <TextView
+                        android:id="@+id/fragment_capital_home_yesterday_income"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:text="111111"
+                        android:layout_marginTop="1.5dp"
+                        android:textColor="#B59962"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E8E8E8"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp">
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:background="#DE524F"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/wealth_detail"
+            android:textColor="#888888"
+            android:layout_marginLeft="8dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="165dp"
+            android:layout_height="25dp"
+            android:textSize="10sp"
+            android:textColor="#888888"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/search_currency"
+            android:drawableRight="@mipmap/ic_search_gray"
+            android:background="@drawable/bg_capital_top_input"/>
+
+    </LinearLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/fragment_capital_home_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fragment_capital_home_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:fadingEdge="none"/>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

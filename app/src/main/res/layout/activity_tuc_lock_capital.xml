@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.capital.view.activity.TUCLockCapitalActivity">
+
+    <include layout="@layout/layout_common_actionbar"/>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/activity_tuc_lock_capital_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@mipmap/bg_member_desc_top"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/activity_tuc_lock_capital_quota_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/quota_hold_format"
+                                android:textSize="14sp"
+                                android:textColor="#888888"
+                                android:layout_marginBottom="10dp"/>
+
+                            <TextView
+                                android:id="@+id/activity_tuc_lock_capital_quota_hold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#DE524F"
+                                android:textSize="24sp"
+                                android:text="111111"/>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="59dp"
+                            android:background="#BBBBBB"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/interest_added"
+                                android:textSize="14sp"
+                                android:textColor="#888888"
+                                android:layout_marginBottom="10dp"/>
+
+                            <TextView
+                                android:id="@+id/activity_tuc_lock_capital_interest_added"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#DE524F"
+                                android:text="1111111"
+                                android:textSize="24sp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginTop="20dp">
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="15dp"
+                        android:background="#DE524F"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/select_term"
+                        android:textColor="#2E3039"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginTop="14dp">
+
+                    <TableLayout
+                        android:id="@+id/activity_tuc_lock_capital_period_0"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:stretchColumns="0,1"
+                        android:layout_marginRight="17dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:clickable="true"
+                        android:onClick="onPeriod0Clicked"
+                        android:background="@drawable/selector_term_item">
+
+                        <TableRow>
+
+                            <TextView
+                                android:text="@string/locking_period"
+                                android:textSize="12sp"
+                                android:gravity="center"
+                                android:textColor="#848484"/>
+
+                            <TextView
+                                android:text="@string/enjoy_interest"
+                                android:textSize="12sp"
+                                android:gravity="center"
+                                android:textColor="#848484"/>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:paddingTop="10dp">
+
+                            <TextView
+                                android:id="@+id/activity_tuc_lock_capital_period_0_value"
+                                android:text="#CAAC89"
+                                android:textSize="13sp"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:textColor="#DE524F"/>
+
+                            <TextView
+                                android:id="@+id/activity_tuc_lock_capital_period_0_interest"
+                                android:text="#CAAC89"
+                                android:textSize="13sp"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:textColor="#DE524F"/>
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                    <TableLayout
+                        android:id="@+id/activity_tuc_lock_capital_period_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:stretchColumns="0,1"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:clickable="true"
+                        android:onClick="onPeriod1Clicked"
+                        android:background="@drawable/selector_term_item">
+
+                        <TableRow>
+
+                            <TextView
+                                android:text="@string/locking_period"
+                                android:textSize="12sp"
+                                android:gravity="center"
+                                android:textColor="#848484"/>
+
+                            <TextView
+                                android:text="@string/enjoy_interest"
+                                android:textSize="12sp"
+                                android:gravity="center"
+                                android:textColor="#848484"/>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:paddingTop="10dp">
+
+                            <TextView
+                                android:id="@+id/activity_tuc_lock_capital_period_1_value"
+                                android:text="#CAAC89"
+                                android:textSize="13sp"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:textColor="#DE524F"/>
+
+                            <TextView
+                                android:id="@+id/activity_tuc_lock_capital_period_1_interest"
+                                android:text="#CAAC89"
+                                android:textSize="13sp"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:textColor="#DE524F"/>
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginTop="9dp">
+
+                    <TableLayout
+                        android:id="@+id/activity_tuc_lock_capital_period_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:stretchColumns="0,1"
+                        android:layout_marginRight="17dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:clickable="true"
+                        android:onClick="onPeriod2Clicked"
+                        android:background="@drawable/selector_term_item">
+
+                        <TableRow>
+
+                            <TextView
+                                android:text="@string/locking_period"
+                                android:textSize="12sp"
+                                android:gravity="center"
+                                android:textColor="#848484"/>
+
+                            <TextView
+                                android:text="@string/enjoy_interest"
+                                android:textSize="12sp"
+                                android:gravity="center"
+                                android:textColor="#848484"/>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:paddingTop="10dp">
+
+                            <TextView
+                                android:id="@+id/activity_tuc_lock_capital_period_2_value"
+                                android:text="#CAAC89"
+                                android:textSize="13sp"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:textColor="#DE524F"/>
+
+                            <TextView
+                                android:id="@+id/activity_tuc_lock_capital_period_2_interest"
+                                android:text="#CAAC89"
+                                android:textSize="13sp"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:textColor="#DE524F"/>
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginTop="12dp">
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="15dp"
+                        android:background="#DE524F"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/input_balance"
+                        android:textColor="#2E3039"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EDEDED"
+                    android:layout_marginTop="14dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:paddingLeft="22dp"
+                    android:paddingRight="22dp"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical">
+
+                    <EditText
+                        android:id="@+id/activity_tuc_lock_capital_balance"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:lines="1"
+                        android:textSize="20sp"
+                        android:textColor="#BBBBBB"
+                        android:layout_marginLeft="15dp"
+                        android:background="@android:color/transparent"
+                        android:layout_weight="1"
+                        android:inputType="number"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="@string/all"
+                        android:textSize="14sp"
+                        android:textColor="#CAAC89"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EDEDED"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingRight="22dp"
+                    android:layout_marginTop="7dp">
+
+                    <TextView
+                        android:id="@+id/activity_tuc_lock_capital_balance_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/ic_alert"
+                        android:textColor="#DE524F"
+                        android:textSize="12sp"
+                        android:drawablePadding="7dp"
+                        android:visibility="visible"
+                        android:text="@string/err_beyond_quota"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EDEDED"
+                    android:layout_marginTop="11dp"/>
+
+                <TextView
+                    android:id="@+id/activity_tuc_lock_capital_usable_balance_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:text="@string/any_usable_balance_format"
+                    android:textColor="#2E3039"
+                    android:textSize="12sp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingRight="22dp"
+                    android:paddingLeft="22dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EDEDED"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginTop="15dp">
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="15dp"
+                        android:background="#DE524F"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/safety_verified"
+                        android:textColor="#888888"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EDEDED"
+                    android:layout_marginTop="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="29dp"
+                    android:paddingRight="22dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="13dp"
+                    android:background="@android:color/white">
+
+                    <EditText
+                        android:id="@+id/activity_tuc_lock_capital_wealth_pwd"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:textSize="14sp"
+                        android:textColor="#2E3039"
+                        android:maxLines="1"
+                        android:lines="1"
+                        android:textColorHint="#BBBBBB"
+                        android:inputType="textPassword"
+                        android:hint="@string/capital_pwd_hint"
+                        android:paddingTop="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:src="@drawable/selector_password_hide"
+                        android:onClick="onHidePwdClicked"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#EDEDED"
+                        android:layout_marginLeft="22dp"
+                        android:layout_marginRight="22dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingRight="22dp"
+                    android:background="@android:color/white"
+                    android:paddingTop="7dp"
+                    android:paddingBottom="9dp">
+
+                    <TextView
+                        android:id="@+id/activity_tuc_lock_capital_pwd_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/ic_alert"
+                        android:textSize="12sp"
+                        android:textColor="#DE524F"
+                        android:drawablePadding="7dp"
+                        android:visibility="visible"
+                        android:text="@string/deposit_forget_pwd"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EDEDED"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="40dp"/>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:text="@string/lock_capital"
+        android:background="@drawable/selector_rect_btn"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:onClick="onLockCapitalClicked"/>
+
+</LinearLayout>

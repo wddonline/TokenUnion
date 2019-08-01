@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="tab_capital">财富</string>
+    <string name="tab_wallet">钱包</string>
+    <string name="tab_find">发现</string>
+    <string name="tab_invite">分享</string>
+    <string name="tab_mine">我的</string>
+</resources>

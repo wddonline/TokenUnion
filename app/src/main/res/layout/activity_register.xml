@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.login.view.RegisterActivity">
+
+    <include layout="@layout/layout_common_actionbar"/>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:srlEnablePureScrollMode="true"
+        android:background="@color/colorPrimary">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:fadingEdge="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="right"
+                android:paddingLeft="@dimen/activityLeftMargin"
+                android:paddingRight="@dimen/activityRightMargin"
+                android:paddingTop="56dp"
+                android:paddingBottom="56dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/country"
+                        android:textColor="#FFBBBBBB"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/activity_register_country"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:textSize="14sp"
+                        android:lines="1"
+                        android:gravity="center_vertical"
+                        android:textColor="#FFF"
+                        android:drawableRight="@mipmap/more_arrow_right"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:clickable="true"
+                        android:onClick="onCountryClicked"
+                        android:background="@android:color/transparent"/>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EDEDED"/>
+
+                <TextView
+                    android:id="@+id/activity_register_country_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/ic_alert"
+                    android:text="@string/err_country_not_supported"
+                    android:drawablePadding="5dp"
+                    android:textSize="12sp"
+                    android:textColor="#DE524F"
+                    android:layout_marginTop="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/username"
+                        android:textColor="#FFBBBBBB"
+                        android:textSize="14sp"/>
+
+                    <EditText
+                        android:id="@+id/activity_register_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:textSize="14sp"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:textColor="#FFF"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:background="@android:color/transparent"/>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EDEDED"/>
+
+                <TextView
+                    android:id="@+id/activity_register_username_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/ic_alert"
+                    android:text="@string/err_username_format"
+                    android:drawablePadding="5dp"
+                    android:textSize="12sp"
+                    android:textColor="#DE524F"
+                    android:layout_marginTop="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/phone"
+                        android:textColor="#FFBBBBBB"
+                        android:inputType="phone"
+                        android:textSize="14sp"/>
+
+                    <EditText
+                        android:id="@+id/activity_register_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:textSize="14sp"
+                        android:textColor="#FFF"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:background="@android:color/transparent"/>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EDEDED"/>
+
+                <TextView
+                    android:id="@+id/activity_register_phone_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/ic_alert"
+                    android:text="@string/err_phone_format"
+                    android:drawablePadding="5dp"
+                    android:textSize="12sp"
+                    android:textColor="#DE524F"
+                    android:layout_marginTop="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/smscode"
+                        android:textColor="#FFBBBBBB"
+                        android:textSize="14sp"/>
+
+                    <EditText
+                        android:id="@+id/activity_register_smscode"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:textSize="14sp"
+                        android:textColor="#FFF"
+                        android:paddingLeft="6dp"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:paddingRight="6dp"
+                        android:background="@android:color/transparent"/>
+
+                    <TextView
+                        android:id="@+id/activity_register_smscode_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:background="@drawable/selector_round_rect_btn"
+                        android:clickable="true"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textColor="@android:color/white"
+                        android:text="获取验证码"
+                        android:onClick="onSmscodeClicked"/>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EDEDED"/>
+
+                <TextView
+                    android:id="@+id/activity_register_smscode_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/ic_alert"
+                    android:text="@string/err_smscode"
+                    android:drawablePadding="5dp"
+                    android:textSize="12sp"
+                    android:textColor="#DE524F"
+                    android:layout_marginTop="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/password"
+                        android:textColor="#FFBBBBBB"
+                        android:textSize="14sp"/>
+
+                    <EditText
+                        android:id="@+id/activity_register_pwd"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:textSize="14sp"
+                        android:textColor="#FFF"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:background="@android:color/transparent"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/selector_password_hide"
+                        android:onClick="onHidePwdClicked"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EDEDED"/>
+
+                <TextView
+                    android:id="@+id/activity_register_pwd_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/ic_alert"
+                    android:text="@string/err_pwd_format"
+                    android:drawablePadding="5dp"
+                    android:textSize="12sp"
+                    android:textColor="#DE524F"
+                    android:layout_marginTop="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/pwd_again"
+                        android:textColor="#FFBBBBBB"
+                        android:textSize="14sp"/>
+
+                    <EditText
+                        android:id="@+id/activity_register_pwd_again"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:textSize="14sp"
+                        android:textColor="#FFF"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:background="@android:color/transparent"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/selector_password_hide"
+                        android:onClick="onHidePwdAgainClicked"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EDEDED"/>
+
+                <TextView
+                    android:id="@+id/activity_register_pwd_again_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/ic_alert"
+                    android:text="@string/err_pwd_not_consistency"
+                    android:drawablePadding="5dp"
+                    android:textSize="12sp"
+                    android:textColor="#DE524F"
+                    android:layout_marginTop="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/invite_code"
+                        android:textColor="#FFBBBBBB"
+                        android:textSize="14sp"/>
+
+                    <EditText
+                        android:id="@+id/activity_register_invite_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:textSize="14sp"
+                        android:textColor="#FFF"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:background="@android:color/transparent"/>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EDEDED"/>
+
+                <TextView
+                    android:id="@+id/activity_register_invite_code_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/ic_alert"
+                    android:drawablePadding="5dp"
+                    android:textSize="12sp"
+                    android:textColor="#DE524F"
+                    android:layout_marginTop="5dp"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/activity_register_user_licence"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#BBBBBB"
+                    android:textSize="12sp"
+                    android:layout_marginTop="25dp"
+                    android:drawablePadding="10dp"
+                    android:layout_marginBottom="25dp"
+                    android:text="@string/user_licence"
+                    android:drawableLeft="@drawable/selector_checkbox_bg"
+                    android:clickable="true"
+                    android:onClick="onUserLicenceClicked"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:text="@string/register_next"
+        android:background="@drawable/selector_rect_btn"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:onClick="onRegisterClicked"/>
+
+</LinearLayout>

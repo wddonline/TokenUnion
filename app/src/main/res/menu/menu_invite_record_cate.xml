@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_invite_record_cate_time"
+        android:title="@string/time_distribution"/>
+    <item
+        android:id="@+id/menu_invite_record_cate_size"
+        android:title="@string/size_distribution"/>
+    <item
+        android:id="@+id/menu_invite_record_cate_star"
+        android:title="@string/star_distribution"/>
+
+</menu>

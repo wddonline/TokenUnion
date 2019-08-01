@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="mine">个人中心</string>
+    <string name="team_size">团队规模</string>
+    <string name="star_friend">星级好友</string>
+    <string name="star_distribution">星级分布</string>
+    <string name="star_upgrade_format">达标可升至：</string>
+    <string name="invite_friend_tip">最高100%返现</string>
+    <string name="customer_center">会员中心</string>
+    <string name="msg_center">消息中心</string>
+    <string name="new_tip">New</string>
+    <string name="customer_service">我的客服</string>
+    <string name="security_center">安全中心</string>
+    <string name="about_us">关于我们</string>
+    <string name="system_setting">系统设置</string>
+    <string name="system_settings_tip">Language</string>
+    <string name="exit">安全退出</string>
+    <string name="wan">万</string>
+    <string name="next_level_hint_format">达标可升至：%1$s</string>
+    <string name="diamond_level_arrived">您已成为钻石级用户</string>
+    <string name="invite_code_format">邀请码: %1$s</string>
+
+    <string name="view_money_record">查看资金记录</string>
+    <string name="filter">筛选</string>
+
+    <string name="msg_push">消息推送</string>
+    <string name="privacy_policy">隐私政策</string>
+    <string name="version_name">版本号</string>
+
+    <string name="login_pwd">登录密码</string>
+    <string name="capital_pwd_label">资金密码</string>
+    <string name="google_validator">谷歌验证器</string>
+    <string name="modify">修改</string>
+    <string name="binded">已绑定</string>
+    <string name="unbinded">未绑定</string>
+    <string name="bind">绑定</string>
+    <string name="unbind">解绑</string>
+
+    <string name="membership_desc">会员介绍</string>
+    <string name="membership_rights">会员特权</string>
+    <string name="view_membership_desc">查看会员介绍 ></string>
+    <string name="membership_stable_level_title">—— 会员保级 ——</string>
+    <string name="membership_wealth_limit">个人财富资产达 %1$s / %2$s</string>
+    <string name="system_time_format">（系统快照时间：UTC%1$s）</string>
+    <string name="visa_ad">尊享全球高端礼遇</string>
+    <string name="apply">立即申请</string>
+
+    <string name="membership_condition_title">—— 达成条件 ——</string>
+    <string name="membership_right_title">—— 会员特权 ——</string>
+    <string name="membership_wealth_limit_solo">个人财富资产达 %1$s</string>
+
+</resources>

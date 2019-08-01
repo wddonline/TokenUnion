@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/bg_member_desc_top"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/item_membership_desc_level_en"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textStyle="italic"
+            android:textSize="48sp"
+            android:text="Platinum"
+            android:layout_gravity="center"
+            android:textColor="#F0CDA5"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E8E8E8"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#80FFFFFF"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp">
+
+            <TextView
+                android:id="@+id/item_membership_desc_prev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="11111"
+                android:layout_marginLeft="12dp"
+                android:layout_centerVertical="true"
+                android:textColor="#888888"/>
+
+            <TextView
+                android:id="@+id/item_membership_desc_current"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="11111"
+                android:layout_centerInParent="true"
+                android:textColor="#888888"/>
+
+            <TextView
+                android:id="@+id/item_membership_desc_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="11111"
+                android:layout_marginRight="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="#888888"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E8E8E8"/>
+        
+    </LinearLayout>
+    
+
+</FrameLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:layout_marginTop="11dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <LinearLayout
+            android:id="@+id/fragment_payment_card_charge"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_rush_charge"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#DE524F"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:text="@string/rush_charge"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_payment_card_withdraw"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_withdraw"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#DE524F"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:text="@string/withdraw"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_payment_card_transfer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_free_transfer"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#DE524F"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:text="@string/free_transfer"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_payment_card_exchange"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_flash_exchange"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#DE524F"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:text="@string/flash_exchange"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_payment_card_bill"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_bill_record"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#DE524F"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:text="@string/bill_record"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E8E8E8"
+        android:layout_marginTop="8dp"/>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnablePureScrollMode="true">
+
+        <com.iconiz.tokenunion.widget.LoadView
+            android:id="@+id/fragment_payment_card_load"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>
