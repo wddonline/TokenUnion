@@ -42,8 +42,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"
-                        android:orientation="vertical"
-                        android:background="#80FFFFFF">
+                        android:orientation="vertical">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -278,6 +277,11 @@
                             android:textColor="#888888"
                             android:text="111111111111"
                             android:textSize="12sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#E8E8E8"/>
 
                     </LinearLayout>
 

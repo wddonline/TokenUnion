@@ -101,6 +101,11 @@
 
                         </LinearLayout>
 
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#E8E8E8"/>
+
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
@@ -285,9 +290,10 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="22dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginRight="22dp"
+                    android:paddingLeft="22dp"
+                    android:layout_marginTop="13dp"
+                    android:paddingTop="17dp"
+                    android:paddingRight="22dp"
                     android:gravity="center_vertical">
 
                     <View
@@ -317,7 +323,8 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="17dp"
+                    android:paddingTop="17dp"
+                    android:background="@android:color/white"
                     android:gravity="center"
                     android:text="@string/membership_stable_level_title"
                     android:textColor="#BBBBBB"
@@ -326,7 +333,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="7dp"
+                    android:paddingTop="7dp"
+                    android:background="@android:color/white"
                     android:gravity="center_horizontal"
                     android:orientation="horizontal">
 
@@ -343,7 +351,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp">
+                    android:paddingTop="20dp"
+                    android:background="@android:color/white">
 
                     <LinearLayout
                         android:id="@+id/activity_membership_center_right0"
@@ -452,7 +461,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp">
+                    android:paddingTop="15dp"
+                    android:background="@android:color/white">
 
                     <LinearLayout
                         android:id="@+id/activity_membership_center_right3"
@@ -562,8 +572,9 @@
                     android:id="@+id/activity_membership_center_utc_time"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="17dp"
-                    android:layout_marginBottom="10dp"
+                    android:paddingTop="17dp"
+                    android:paddingBottom="10dp"
+                    android:background="@android:color/white"
                     android:gravity="center"
                     android:textColor="#BFBFBF"
                     android:textSize="12sp" />

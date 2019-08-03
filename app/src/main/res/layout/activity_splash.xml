@@ -7,5 +7,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@mipmap/splash_logo"
-        android:layout_gravity="bottom|center_horizontal"/>
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="49dp"/>
+
 </FrameLayout>

@@ -4,12 +4,17 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E8E8E8"
+        android:layout_marginTop="11dp"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:background="@android:color/white"
-        android:layout_marginTop="11dp"
         android:paddingTop="8dp"
         android:paddingBottom="8dp">
 
@@ -143,6 +148,11 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
+        android:background="#E8E8E8"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
         android:background="#E8E8E8"
         android:layout_marginTop="8dp"/>
 
@@ -150,11 +160,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:background="@android:color/white"
         android:gravity="center_vertical"
-        android:layout_marginLeft="22dp"
-        android:layout_marginRight="22dp"
-        android:layout_marginTop="11dp"
-        android:layout_marginBottom="11dp">
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+        android:paddingTop="11dp"
+        android:paddingBottom="11dp">
 
         <View
             android:layout_width="1dp"
@@ -180,14 +191,15 @@
             android:gravity="center_vertical"
             android:text="@string/search_currency"
             android:drawableRight="@mipmap/ic_search_gray"
-            android:background="@drawable/bg_capital_top_input"/>
+            android:background="@drawable/bg_white_rounded_input"/>
 
     </LinearLayout>
 
     <com.scwang.smartrefresh.layout.SmartRefreshLayout
         android:id="@+id/fragment_wallet_refresh"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/fragment_wallet_list"
