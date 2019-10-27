@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".ui.capital.view.activity.NewUserPurchaseActivity">
+
+    <include layout="@layout/layout_common_actionbar"/>
+
+    <com.tokenunion.pro.widget.LoadView
+        android:id="@+id/data_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/activity_new_user_purchase_refresh"
+        app:srlEnableRefresh="false"
+        app:srlEnableLoadMore="false"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:background="@mipmap/bg_interest_rule_top_gift">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/activity_new_user_holding_quota_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activityLeftMargin"
+                            android:text="@string/capital_complex"
+                            android:textSize="18sp"
+                            android:textColor="#FFFFFF"
+                            android:layout_marginBottom="10dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="bottom"
+                            android:layout_marginLeft="@dimen/activityLeftMargin"
+                            >
+                        <TextView
+                            android:id="@+id/activity_new_user_purchase_bounds"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#CAAC89"
+                            android:textSize="24sp"
+                            android:text="0"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#CAAC89"
+                            android:layout_gravity="bottom"
+                            android:textSize="16sp"
+                            android:text="%  Bonus+"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="65dp"
+                        android:layout_weight="1"
+                        android:gravity="bottom|right"
+                        android:layout_marginRight="22dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/activity_new_user_purchase_tag_welcome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="@string/profit_new_user_tags1"
+                            android:textSize="12sp"
+                            android:textColor="#CAAC89"
+                            android:background="@drawable/bg_welcom_package_rect_golden"
+                            />
+
+                        <TextView
+                            android:id="@+id/activity_new_user_purchase_tag_fee"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:padding="5dp"
+                            android:text="@string/profit_new_user_tags2"
+                            android:textColor="#CAAC89"
+                            android:textSize="12sp"
+                            android:background="@drawable/bg_welcom_package_rect_golden"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginTop="28dp">
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="15dp"
+                        android:background="#CAAC89"/>
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/select_term"
+                        android:textColor="#2E3039"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/activity_new_user_purchase_product_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="22dp"
+                    >
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginTop="17dp">
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="15dp"
+                        android:background="#CAAC89"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/input_balance"
+                        android:textColor="#2E3039"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginTop="14dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/bg_deposit_input">
+
+                    <EditText
+                        android:id="@+id/activity_new_user_purchase_balance"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:lines="1"
+                        android:digits="@string/config_number_text_verify"
+                        android:layout_marginLeft="15dp"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/deposit_input_hint"
+                        android:layout_weight="1"
+                        android:inputType="number"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="@string/all"
+                        android:textSize="14sp"
+                        android:visibility="gone"
+                        android:textColor="#0080FF"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingRight="22dp"
+                    android:layout_marginTop="7dp">
+
+                    <TextView
+                        android:id="@+id/activity_new_user_purchase_balance_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/ic_alert"
+                        android:drawablePadding="7dp"
+                        android:visibility="gone"
+                        android:text="@string/err_beyond_quota"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/activity_new_user_purchase_availiable_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_user_availiable_balance_format"
+                    android:textColor="#717171"
+                    android:textSize="12sp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="22dp"/>
+                <TextView
+                    android:id="@+id/activity_new_user_purchase_monthly_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_user_monthly_format"
+                    android:textColor="#717171"
+                    android:textSize="12sp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="22dp"/>
+
+                <TextView
+                    android:id="@+id/activity_new_user_purchase_expected_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginRight="22dp"
+                    android:text="@string/new_user_expected_format"
+                    android:textColor="#717171"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginTop="35dp">
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="15dp"
+                        android:background="#CAAC89"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/safety_verified"
+                        android:textColor="#2E3039"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginRight="22dp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginTop="18dp">
+
+                    <EditText
+                        android:id="@+id/activity_new_user_purchase_wealth_pwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:textSize="14sp"
+                        android:textColor="#2E3039"
+                        android:maxLines="1"
+                        android:lines="1"
+                        android:textColorHint="#BBBBBB"
+                        android:inputType="textPassword"
+                        android:hint="@string/capital_pwd_hint"
+                        android:paddingTop="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:src="@drawable/selector_password_hide"
+                        android:onClick="onHidePwdClicked"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EDEDED"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="22dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingRight="22dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="40dp">
+
+                    <TextView
+                        android:id="@+id/activity_new_user_purchase_pwd_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/ic_alert"
+                        android:drawablePadding="7dp"
+                        android:visibility="gone"
+                        android:text="@string/deposit_forget_pwd"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:text="@string/lock_capital"
+        android:background="@drawable/selector_rect_btn"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:onClick="onPurchaseClicked"/>
+</LinearLayout>

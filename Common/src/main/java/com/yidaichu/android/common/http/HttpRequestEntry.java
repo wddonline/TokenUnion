@@ -25,6 +25,7 @@ public class HttpRequestEntry {
 
     private Map<String, String> headers;
     private Map<String, Object> params;
+    // 默认post
     private Method method = Method.POST;
     private String url;
     private String tag;

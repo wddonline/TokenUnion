@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:background="@color/colorPrimaryDark">
+    android:background="@android:color/white">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -43,6 +43,21 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:visibility="gone"/>
+        <TextView
+            android:id="@+id/layout_common_actionbar_right_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/skip"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorActionBarTitle"
+            android:textSize="@dimen/actionBarTitleSize"
+            android:onClick="onSkipClicked"
+            android:visibility="gone"
+            />
 
     </RelativeLayout>
 

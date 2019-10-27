@@ -6,14 +6,23 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:fitsSystemWindows="true"
+    android:background="@android:color/white"
     tools:context=".ui.capital.view.activity.DepositInActivity">
 
     <include layout="@layout/layout_common_actionbar"/>
+
+    <com.tokenunion.pro.widget.LoadView
+        android:id="@+id/data_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
 
     <com.scwang.smartrefresh.layout.SmartRefreshLayout
         android:id="@+id/activity_deposit_in_refresh"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        app:srlEnableRefresh="false"
+        app:srlEnableLoadMore="false"
         android:layout_weight="1">
 
         <ScrollView
@@ -27,7 +36,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <FrameLayout
+		<FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
@@ -36,92 +45,93 @@
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
                         android:src="@mipmap/bg_member_desc_top"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:gravity="center_vertical"
+                    android:background="@mipmap/bg_member_desc_top"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/capital_complex"
+                        android:textSize="14sp"
+                        android:textColor="#888888"
+                        android:layout_marginBottom="10dp"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:paddingLeft="30dp"
-                        android:gravity="center_vertical"
-                        android:orientation="vertical">
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom">
+
+                        <TextView
+                            android:id="@+id/activity_deposit_in_complex_rate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#DE524F"
+                            android:text=""
+                            android:textSize="24sp"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/capital_complex"
+                            android:textColor="#DE524F"
                             android:textSize="14sp"
-                            android:textColor="#888888"
-                            android:layout_marginBottom="10dp"/>
+                            android:text=" %"
+                            android:layout_marginRight="10dp"/>
+
+                        <TextView
+                            android:id="@+id/activity_deposit_in_complex_increase_rate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#CAAC89"
+                            android:drawablePadding="6dp"
+                            android:visibility="gone"
+                            android:drawableLeft="@mipmap/ic_hot"
+                            android:textSize="14sp"/>
 
                         <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="bottom">
+                            android:id="@+id/activity_deposit_in_spots"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/activityRightMargin"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:gravity="center">
 
                             <TextView
-                                android:id="@+id/activity_deposit_in_complex_rate"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:gravity="center"
                                 android:textColor="#DE524F"
-                                android:text="1111111"
-                                android:textSize="24sp"/>
+                                android:textSize="12sp"
+                                android:paddingTop="3dp"
+                                android:paddingBottom="3dp"
+                                android:paddingLeft="6dp"
+                                android:paddingRight="6dp"
+                                android:background="@drawable/bg_red_stroke_rect"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:gravity="center"
                                 android:textColor="#DE524F"
-                                android:textSize="14sp"
-                                android:text=" %"
-                                android:layout_marginRight="10dp"/>
-
-                            <TextView
-                                android:id="@+id/activity_deposit_in_complex_increase_rate"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textColor="#CAAC89"
-                                android:drawablePadding="6dp"
-                                android:drawableLeft="@mipmap/ic_hot"
-                                android:textSize="14sp"/>
-
-                            <LinearLayout
-                                android:id="@+id/activity_deposit_in_spots"
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:orientation="horizontal"
-                                android:gravity="center">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:gravity="center"
-                                    android:textColor="#DE524F"
-                                    android:textSize="12sp"
-                                    android:paddingTop="3dp"
-                                    android:paddingBottom="3dp"
-                                    android:paddingLeft="6dp"
-                                    android:paddingRight="6dp"
-                                    android:background="@drawable/bg_red_stroke_rect"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:gravity="center"
-                                    android:textColor="#DE524F"
-                                    android:textSize="12sp"
-                                    android:paddingTop="3dp"
-                                    android:paddingBottom="3dp"
-                                    android:paddingLeft="6dp"
-                                    android:paddingRight="6dp"
-                                    android:layout_marginLeft="8dp"
-                                    android:background="@drawable/bg_red_stroke_rect"/>
-
-                            </LinearLayout>
+                                android:textSize="12sp"
+                                android:paddingTop="3dp"
+                                android:paddingBottom="3dp"
+                                android:paddingLeft="6dp"
+                                android:paddingRight="6dp"
+                                android:layout_marginLeft="8dp"
+                                android:background="@drawable/bg_red_stroke_rect"/>
 
                         </LinearLayout>
 
                     </LinearLayout>
 
-                </FrameLayout>
+                </LinearLayout>
+		</FrameLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -148,19 +158,19 @@
 
                 </LinearLayout>
 
-                <View
+		<View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="#EDEDED"
                     android:layout_marginTop="14dp"/>
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
-                    android:paddingLeft="22dp"
-                    android:paddingRight="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginTop="14dp"
                     android:gravity="center_vertical"
-                    android:background="@android:color/white">
+                    android:background="@drawable/bg_deposit_input">
 
                     <EditText
                         android:id="@+id/activity_deposit_in_balance"
@@ -168,15 +178,19 @@
                         android:layout_height="60dp"
                         android:gravity="center_vertical"
                         android:lines="1"
-                        android:textSize="28sp"
+			android:textSize="28sp"
                         android:textColor="#BBBBBB"
                         android:maxLines="1"
+                        android:maxLength="20"
+                        android:singleLine="true"
                         android:layout_marginLeft="15dp"
+                        android:digits="1234567890."
                         android:background="@android:color/transparent"
                         android:layout_weight="1"
                         android:inputType="number"/>
 
                     <TextView
+                        android:id="@+id/activity_deposit_in_all"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:gravity="center"
@@ -184,14 +198,10 @@
                         android:paddingRight="15dp"
                         android:text="@string/all"
                         android:textSize="14sp"
+                        android:onClick="onDepositAllClicked"
                         android:textColor="#B59962"/>
 
                 </LinearLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="#EDEDED"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -208,26 +218,20 @@
                         android:drawablePadding="7dp"
                         android:textColor="#DE524F"
                         android:textSize="12sp"
-                        android:visibility="visible"
+                        android:visibility="gone"
                         android:text="@string/price_temporary_changed"/>
 
                 </LinearLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="#EDEDED"
-                    android:layout_marginTop="25dp"/>
 
                 <TextView
                     android:id="@+id/activity_deposit_in_balance_hold"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="22dp"
-                    android:paddingRight="22dp"
-                    android:background="@android:color/white"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginTop="25dp"
+		            android:background="@android:color/white"
                     android:textColor="#2E3039"
-                    android:paddingTop="15dp"
                     android:text="@string/deposit_hold_wealth"
                     android:textSize="12sp"/>
 
@@ -235,9 +239,9 @@
                     android:id="@+id/activity_deposit_in_balance_usable"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="22dp"
-                    android:paddingRight="22dp"
-                    android:paddingTop="15dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginTop="15dp"
                     android:textColor="#2E3039"
                     android:background="@android:color/white"
                     android:text="@string/deposit_usable_wealth"
@@ -247,19 +251,13 @@
                     android:id="@+id/activity_deposit_in_month_interest"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="22dp"
-                    android:paddingRight="22dp"
-                    android:paddingTop="15dp"
-                    android:paddingBottom="15dp"
-                    android:background="@android:color/white"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginTop="15dp"
+		    android:background="@android:color/white"
                     android:textColor="#2E3039"
                     android:text="@string/deposit_month_interest"
                     android:textSize="12sp"/>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="#EDEDED"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -286,31 +284,23 @@
 
                 </LinearLayout>
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="#EDEDED"
-                    android:layout_marginTop="18dp"/>
-
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@android:color/white"
-                    android:gravity="center_vertical"
-                    android:paddingLeft="29dp"
-                    android:paddingRight="22dp"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginRight="22dp"
                     android:paddingBottom="5dp"
-                    android:paddingTop="15dp">
+                    android:layout_marginTop="18dp">
 
                     <EditText
                         android:id="@+id/activity_deposit_in_wealth_pwd"
-                        android:layout_width="0dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:background="@android:color/transparent"
                         android:textSize="14sp"
                         android:lines="1"
                         android:maxLines="1"
+                        android:maxLength="20"
                         android:textColor="#2E3039"
                         android:textColorHint="#BBBBBB"
                         android:inputType="textPassword"
@@ -327,7 +317,7 @@
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"/>
 
-                </LinearLayout>
+                </RelativeLayout>
 
                 <View
                     android:layout_width="match_parent"
@@ -342,8 +332,8 @@
                     android:gravity="right"
                     android:background="@android:color/white"
                     android:paddingRight="22dp"
-                    android:paddingTop="7dp"
-                    android:paddingBottom="15dp">
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="40dp">
 
                     <TextView
                         android:id="@+id/activity_deposit_in_pwd_hint"
@@ -351,16 +341,10 @@
                         android:layout_height="wrap_content"
                         android:drawableLeft="@mipmap/ic_alert"
                         android:drawablePadding="7dp"
-                        android:visibility="visible"
+                        android:visibility="gone"
                         android:text="@string/deposit_forget_pwd"/>
 
                 </LinearLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="#EDEDED"
-                    android:layout_marginBottom="40dp"/>
 
             </LinearLayout>
         </ScrollView>

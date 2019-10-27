@@ -6,95 +6,100 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:fitsSystemWindows="true"
+    android:background="@android:color/white"
     tools:context=".ui.capital.view.activity.InterestRuleActivity">
 
     <include layout="@layout/layout_common_actionbar"/>
 
-    <FrameLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:adjustViewBounds="true"
-            android:background="@mipmap/bg_member_desc_top"/>
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@mipmap/bg_member_desc_top">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center_vertical">
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/activityLeftMargin"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/capital_total"
+                android:textSize="14sp"
+                android:textColor="#888888"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/activity_interest_rule_capital_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#CAAC89"
+                android:textSize="24sp"
+                android:text=""/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/activityRightMargin"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/capital_complex"
+                android:textSize="14sp"
+                android:textColor="#888888"
+                android:layout_marginBottom="10dp"/>
 
             <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center_horizontal"
-                android:orientation="vertical">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|center_horizontal">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/capital_total"
-                    android:textSize="14sp"
-                    android:textColor="#888888"
-                    android:layout_marginBottom="10dp"/>
-
-                <TextView
-                    android:id="@+id/activity_interest_rule_capital_total"
+                    android:id="@+id/activity_interest_rule_complex_rate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="#CAAC89"
-                    android:textSize="24sp"
-                    android:text="111111"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center_horizontal"
-                android:orientation="vertical">
+                    android:text=""
+                    android:textSize="24sp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/capital_complex"
+                    android:textColor="#CAAC89"
                     android:textSize="14sp"
-                    android:textColor="#888888"
-                    android:layout_marginBottom="10dp"/>
+                    android:text=" %"
+                    android:layout_marginRight="10dp"/>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:id="@+id/activity_interest_rule_complex_increase_rate"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="bottom|center_horizontal">
-
-                    <TextView
-                        android:id="@+id/activity_interest_rule_complex_rate"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#CAAC89"
-                        android:text="1111111"
-                        android:textSize="24sp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#CAAC89"
-                        android:textSize="14sp"
-                        android:text=" %"/>
-
-                </LinearLayout>
+                    android:textColor="#CAAC89"
+                    android:drawablePadding="6dp"
+                    android:drawableLeft="@mipmap/ic_hot"
+                    android:visibility="gone"
+                    android:textSize="14sp"/>
 
             </LinearLayout>
 
         </LinearLayout>
 
-    </FrameLayout>
+    </LinearLayout>
 
     <com.scwang.smartrefresh.layout.SmartRefreshLayout
         android:id="@+id/activity_interest_rule_refresh"
+        app:srlEnableRefresh="false"
+        app:srlEnableLoadMore="false"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -136,7 +141,7 @@
                         android:id="@+id/activity_interest_rule_update"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="11111111"
+                        android:text=""
                         android:textSize="12sp"
                         android:layout_marginLeft="5dp"
                         android:textColor="#888888"/>
@@ -222,16 +227,25 @@
                             android:textColor="#DE524F"
                             android:gravity="center"
                             android:textSize="12sp"
+                            android:layout_weight="1"
                             android:layout_marginTop="6dp"
-                            android:layout_marginBottom="6dp"/>
+                            android:layout_marginBottom="6dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            />
 
                         <TextView
                             android:text="@string/month_reward_balance"
                             android:textColor="#DE524F"
                             android:gravity="center"
                             android:textSize="12sp"
+                            android:layout_weight="1"
+                            android:layout_gravity="center_vertical"
                             android:layout_marginTop="6dp"
-                            android:layout_marginBottom="6dp"/>
+                            android:layout_marginBottom="6dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            />
 
                     </TableRow>
 

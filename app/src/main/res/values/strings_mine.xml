@@ -1,53 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="mine">个人中心</string>
-    <string name="team_size">团队规模</string>
-    <string name="star_friend">星级好友</string>
-    <string name="star_distribution">星级分布</string>
-    <string name="star_upgrade_format">达标可升至：</string>
-    <string name="invite_friend_tip">最高100%返现</string>
-    <string name="customer_center">会员中心</string>
-    <string name="msg_center">消息中心</string>
+    <string name="mine">Me</string>
+    <string name="team_size">Family AUM</string>
+    <string name="star_friend">Friends</string>
+    <string name="star_distribution">Lineages</string>
+    <string name="star_upgrade_format">Up to</string>
+    <string name="invite_friend_tip">100% Yeild Bonus</string>
+    <string name="customer_center">Royalty Program</string>
+    <string name="msg_center">Message Box</string>
     <string name="new_tip">New</string>
-    <string name="customer_service">我的客服</string>
-    <string name="security_center">安全中心</string>
-    <string name="about_us">关于我们</string>
-    <string name="system_setting">系统设置</string>
+    <string name="customer_service">Customer Support</string>
+    <string name="customer_service_email_title">Customer Support Email:</string>
+    <string name="customer_service_email">contact@anypocket.io</string>
+    <string name="customer_service_email_copy">Copy</string>
+    <string name="customer_service_tips">Tips:\n\n
+        1. Username and invite code must be contained in your email;\n\n
+        2. You\'d better provide some screenshots for us to solve your problem;\n\n
+        3. We will reply within 1 working day after receiving the mail. Thank you for your patience!</string>
+    <string name="security_center">Security Center</string>
+    <string name="about_us">About Us</string>
+    <string name="system_setting">Settings</string>
     <string name="system_settings_tip">Language</string>
-    <string name="exit">安全退出</string>
-    <string name="wan">万</string>
-    <string name="next_level_hint_format">达标可升至：%1$s</string>
-    <string name="diamond_level_arrived">您已成为钻石级用户</string>
-    <string name="invite_code_format">邀请码: %1$s</string>
+    <string name="exit">Log Out</string>
+    <string name="wan">10K</string>
+    <string name="next_level_hint_format">Up to %1$s</string>
+    <string name="diamond_level_arrived">Diamond</string>
+    <string name="invite_code_format">Invite Code: %1$s</string>
 
-    <string name="view_money_record">查看资金记录</string>
-    <string name="filter">筛选</string>
+    <string name="view_money_record">Records</string>
+    <string name="filter">Selection</string>
 
-    <string name="msg_push">消息推送</string>
-    <string name="privacy_policy">隐私政策</string>
-    <string name="version_name">版本号</string>
+    <string name="msg_push">Message Push</string>
+    <string name="privacy_policy"><![CDATA[Terms of Service & Privacy Policy]]></string>
+    <string name="version_name">Version</string>
 
-    <string name="login_pwd">登录密码</string>
-    <string name="capital_pwd_label">资金密码</string>
-    <string name="google_validator">谷歌验证器</string>
-    <string name="modify">修改</string>
-    <string name="binded">已绑定</string>
-    <string name="unbinded">未绑定</string>
-    <string name="bind">绑定</string>
-    <string name="unbind">解绑</string>
+    <string name="login_pwd">Account Password</string>
+    <string name="capital_pwd_label">Payment Password</string>
+    <string name="google_validator">GA Code</string>
+    <string name="modify">Change</string>
+    <string name="set">Set</string>
+    <string name="binded">Binded</string>
+    <string name="unbinded">Untie</string>
+    <string name="bind">Bind</string>
+    <string name="unbind">Untie</string>
 
-    <string name="membership_desc">会员介绍</string>
-    <string name="membership_rights">会员特权</string>
-    <string name="view_membership_desc">查看会员介绍 ></string>
-    <string name="membership_stable_level_title">—— 会员保级 ——</string>
-    <string name="membership_wealth_limit">个人财富资产达 %1$s / %2$s</string>
-    <string name="system_time_format">（系统快照时间：UTC%1$s）</string>
+    <string name="membership_desc">Details</string>
+    <string name="membership_rights">Extra Privileges</string>
+    <string name="view_membership_desc">Details></string>
+    <string name="membership_stable_level_title">—— Maintenance ——</string>
+    <string name="membership_wealth_limit">Personal AUM %1$s / %2$s</string>
+    <!--<string name="system_time_format">（Snapshot Time：UTC%1$s）</string>-->
+    <string name="system_time_format">（Snapshot Time：UTC-7 00:00 a.m.）</string>
+    <string name="platinum_visa_ad">Platinum</string>
+    <string name="diamond_visa_ad">World</string>
+    <string name="apply">Apply</string>
+
+    <string name="membership_condition_title">—— Qualification ——</string>
+    <string name="membership_right_title">—— Extra Privileges ——</string>
+    <string name="membership_wealth_limit_solo">Personal AUM %1$s</string>
+
+    <string name="mine_message_half_years_ago">半年前</string>
+    <string name="mine_message_one_years_ago">一年前</string>
+    <string name="mine_message_months_ago">月前</string>
+    <string name="mine_message_weeks_ago">周前</string>
+    <string name="mine_message_days_ago">天前</string>
+    <string name="mine_message_hours_ago">小时前</string>
+    <string name="mine_message_minintes_ago">分钟前</string>
+    <string name="mine_message_just_now">Just Now</string>
+
+    <string name="mine_safe_exit_title">Exit this Account</string>
+    <string name="mine_safe_exit_cancel">Back</string>
+    <string name="mine_safe_exit_ok">Log Out</string>
+
+    <!--APP升级检测-->
+    <string name="mine_app_version_tips_title">Upgrade to:</string>
+    <string name="mine_app_version_cancel">Skip</string>
+    <string name="mine_app_version_upgrade_now">Download</string>
+    <string name="mine_app_download_title">Downloading...</string>
+    <string name="mine_app_download_failed">Failed to download.Please try again.</string>
+    <string name="mine_app_no_version">It\'s the latest version.</string>
+
     <string name="visa_ad">尊享全球高端礼遇</string>
-    <string name="apply">立即申请</string>
-
-    <string name="membership_condition_title">—— 达成条件 ——</string>
-    <string name="membership_right_title">—— 会员特权 ——</string>
-    <string name="membership_wealth_limit_solo">个人财富资产达 %1$s</string>
-
 </resources>

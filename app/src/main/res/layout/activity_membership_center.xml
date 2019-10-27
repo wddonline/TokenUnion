@@ -11,6 +11,7 @@
     <include layout="@layout/layout_common_actionbar" />
 
     <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/activity_membership_center_rootview"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -28,10 +29,12 @@
                 android:orientation="vertical">
 
                 <FrameLayout
+                    android:id="@+id/activity_membership_center_top_panel"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <ImageView
+                        android:id="@+id/activity_membership_center_top_img"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
@@ -84,7 +87,6 @@
                                     android:gravity="right"
                                     android:textColor="#A4A4A4"
                                     android:textSize="12sp"
-                                    android:text="111111111"
                                     android:layout_marginTop="4dp"
                                     android:layout_marginBottom="4dp"/>
 
@@ -605,6 +607,7 @@
             android:textStyle="italic" />
 
         <TextView
+            android:id="@+id/activity_membership_center_visa_hint"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="12dp"

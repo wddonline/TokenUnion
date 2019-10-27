@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="invite_friend">Invitation</string>
+    <string name="view_invite_friend_record">Invitation Records ></string>
+    <string name="my_invite_format">Invite Code: %1$s </string>
+    <string name="copy_invite_code">Copy Code</string>
+    <string name="copy_invite_link">Copy Link</string>
+    <string name="copy_success">Success</string>
+    <string name="team_size_usd">Family AUM(USD)</string>
+    <string name="team_num">Family Size</string>
+    <string name="invite_detail">Invitation Details</string>
+    <string name="time_distribution">Time Based</string>
+    <string name="size_distribution">AUM Based</string>
+    <string name="header_register_time">Time</string>
+    <string name="header_size">AUM</string>
+    <string name="header_ratio">Proportion</string>
+    <string name="header_star_level">Royalty</string>
+    <string name="header_people">Quantity</string>
+    <string name="header_team">Lineages</string>
+    <string name="invite_qr_code">Invite More Friends</string>
+    <string name="level_star">Young</string>
+    <string name="level_jade">Preferred</string>
+    <string name="level_gold">Elite</string>
+    <string name="level_titanium">Reserve</string>
+    <string name="level_platinum">World</string>
+    <string name="level_diamond">Infinite</string>
+
+</resources>

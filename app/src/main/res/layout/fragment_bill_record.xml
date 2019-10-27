@@ -13,7 +13,10 @@
         android:layout_marginLeft="22dp"
         android:layout_marginRight="22dp"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="17dp">
+        android:layout_marginBottom="17dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
 
         <View
             android:layout_width="1dp"
@@ -29,7 +32,8 @@
             android:layout_marginLeft="8dp"
             android:textSize="14sp" />
 
-        <TextView
+        <EditText
+            android:id="@+id/fragment_bill_record_search"
             android:layout_width="wrap_content"
             android:layout_height="25dp"
             android:minWidth="99dp"
@@ -37,14 +41,18 @@
             android:textColor="#888888"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
+            android:singleLine="true"
+            android:lines="1"
+            android:maxLines="1"
+            android:imeOptions="actionSearch"
             android:gravity="center_vertical"
-            android:text="@string/filter_currency"
+            android:hint="@string/filter_currency"
             android:drawableRight="@mipmap/ic_search_gray"
             android:background="@drawable/bg_white_rounded_input"/>
 
     </LinearLayout>
 
-    <com.iconiz.tokenunion.widget.LoadView
+    <com.tokenunion.pro.widget.LoadView
         android:id="@+id/fragment_bill_record_load"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -59,8 +67,8 @@
             android:id="@+id/fragment_bill_record_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:overScrollMode="never"
-            android:fadingEdge="none"/>
+            android:fadingEdge="none"
+            android:overScrollMode="never" />
 
     </com.scwang.smartrefresh.layout.SmartRefreshLayout>
 

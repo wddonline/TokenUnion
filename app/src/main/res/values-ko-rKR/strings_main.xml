@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="tab_capital">자산</string>
+    <string name="tab_wallet">지갑</string>
+    <string name="tab_find">부가기능</string>
+    <string name="tab_invite">초대</string>
+    <string name="tab_mine">내정보</string>
+</resources>

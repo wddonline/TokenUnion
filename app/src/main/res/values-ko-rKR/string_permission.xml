@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permission_cancel">취소</string>
+    <string name="permission_setting">설치</string>
+    <string name="permission_title_permission_failed">신청 권한 실패</string>
+    <string name="permission_message_permission_failed">신청 권한 실패，사용 권한을 수동으로 설정하십시오，그렇지 않으면 정상적으로 사용할 수 없을 것이다！</string>
+    <string name="permission_resume">계속하다</string>
+    <string name="permission_title_permission_rationale">신청 권한 실패</string>
+    <string name="permission_message_permission_rationale">신청 권한 실패，사용 권한을 수동으로 설정하십시오，그렇지 않으면 정상적으로 사용할 수 없을 것이다！</string>
+</resources>

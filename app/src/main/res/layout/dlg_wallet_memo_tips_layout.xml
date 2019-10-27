@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="260dp"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:background="@color/text_white"
+        android:layout_centerInParent="true"
+        >
+
+
+        <TextView
+            android:id="@+id/dlg_wallet_memo_tips_layout_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="16sp"
+            android:text="@string/deposit_memo_dlg_title"
+            android:textColor="#D14B64"
+            android:visibility="visible"
+            android:textAllCaps="false"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"
+
+            android:text="@string/deposit_memo_dlg_content"
+            android:textColor="@color/text_dark"
+            android:visibility="visible"
+            android:textAllCaps="false"
+            />
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="right"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/dlg_wallet_memo_tips_layout_confirm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:singleLine="true"
+                android:text="@string/deposit_memo_dlg_btn_text"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+</RelativeLayout>

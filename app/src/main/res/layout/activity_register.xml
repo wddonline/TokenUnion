@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,6 +10,12 @@
 
     <include layout="@layout/layout_common_actionbar"/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/actionBarSize"
+        android:orientation="vertical"
+        >
     <com.scwang.smartrefresh.layout.SmartRefreshLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -54,8 +60,9 @@
                         android:layout_height="30dp"
                         android:textSize="14sp"
                         android:lines="1"
-                        android:gravity="center_vertical"
-                        android:textColor="#FFF"
+                        android:gravity="center_vertical|right"
+                        android:textColor="#A5A5A5"
+                        android:drawablePadding="6dp"
                         android:drawableRight="@mipmap/more_arrow_right"
                         android:paddingLeft="6dp"
                         android:paddingRight="6dp"
@@ -76,10 +83,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:drawableLeft="@mipmap/ic_alert"
-                    android:text="@string/err_country_not_supported"
+                    android:text="@string/err_country_empty"
                     android:drawablePadding="5dp"
                     android:textSize="12sp"
                     android:textColor="#DE524F"
+                    android:visibility="gone"
                     android:layout_marginTop="5dp"/>
 
                 <LinearLayout
@@ -103,8 +111,11 @@
                         android:layout_height="30dp"
                         android:textSize="14sp"
                         android:lines="1"
+                        android:gravity="right|center_vertical"
+                        android:singleLine="true"
                         android:maxLines="1"
-                        android:textColor="#FFF"
+                        android:maxLength="20"
+                        android:textColor="#A5A5A5"
                         android:paddingLeft="6dp"
                         android:paddingRight="6dp"
                         android:background="@android:color/transparent"/>
@@ -126,6 +137,7 @@
                     android:drawablePadding="5dp"
                     android:textSize="12sp"
                     android:textColor="#DE524F"
+                    android:visibility="gone"
                     android:layout_marginTop="5dp"/>
 
                 <LinearLayout
@@ -141,21 +153,41 @@
                         android:gravity="center_vertical"
                         android:text="@string/phone"
                         android:textColor="#FFBBBBBB"
-                        android:inputType="phone"
                         android:textSize="14sp"/>
 
-                    <EditText
-                        android:id="@+id/activity_register_phone"
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:textSize="14sp"
-                        android:textColor="#FFF"
-                        android:lines="1"
-                        android:maxLines="1"
-                        android:paddingLeft="6dp"
-                        android:paddingRight="6dp"
-                        android:background="@android:color/transparent"/>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
 
+                        <TextView
+                            android:id="@+id/activity_register_phone_code"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textSize="14sp"
+                            android:textColor="#A5A5A5"
+                            android:gravity="center_vertical|right"
+                            android:layout_marginRight="2dp"/>
+
+                        <EditText
+                            android:id="@+id/activity_register_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:textSize="14sp"
+                            android:textColor="#A5A5A5"
+                            android:singleLine="true"
+                            android:lines="1"
+                            android:minEms="4"
+                            android:maxLength="@string/config_phone_max_len"
+                            android:gravity="right|center_vertical"
+                            android:inputType="phone"
+                            android:maxLines="1"
+                            android:paddingLeft="6dp"
+                            android:paddingRight="6dp"
+                            android:background="@android:color/transparent"/>
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -173,6 +205,7 @@
                     android:drawablePadding="5dp"
                     android:textSize="12sp"
                     android:textColor="#DE524F"
+                    android:visibility="gone"
                     android:layout_marginTop="5dp"/>
 
                 <LinearLayout
@@ -197,10 +230,13 @@
                         android:layout_height="30dp"
                         android:layout_weight="1"
                         android:textSize="14sp"
-                        android:textColor="#FFF"
+                        android:textColor="#A5A5A5"
                         android:paddingLeft="6dp"
+                        android:gravity="right|center_vertical"
+                        android:singleLine="true"
                         android:lines="1"
                         android:maxLines="1"
+                        android:maxLength="20"
                         android:paddingRight="6dp"
                         android:background="@android:color/transparent"/>
 
@@ -215,7 +251,7 @@
                         android:gravity="center"
                         android:textSize="12sp"
                         android:textColor="@android:color/white"
-                        android:text="获取验证码"
+                        android:text="@string/get_smscode"
                         android:onClick="onSmscodeClicked"/>
 
 
@@ -235,7 +271,48 @@
                     android:drawablePadding="5dp"
                     android:textSize="12sp"
                     android:textColor="#DE524F"
+                    android:visibility="gone"
                     android:layout_marginTop="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/email"
+                        android:textColor="#FFBBBBBB"
+                        android:textSize="14sp"/>
+
+                    <EditText
+                        android:id="@+id/activity_register_email"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:textSize="14sp"
+                        android:textColor="#A5A5A5"
+                        android:inputType="textEmailAddress"
+                        android:gravity="right|center_vertical"
+                        android:singleLine="true"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:maxLength="20"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:background="@android:color/transparent"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EDEDED"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -259,11 +336,15 @@
                         android:layout_height="30dp"
                         android:layout_weight="1"
                         android:textSize="14sp"
-                        android:textColor="#FFF"
+                        android:textColor="#A5A5A5"
+                        android:gravity="right|center_vertical"
+                        android:singleLine="true"
                         android:lines="1"
                         android:maxLines="1"
+                        android:maxLength="20"
                         android:paddingLeft="6dp"
                         android:paddingRight="6dp"
+                        android:password="true"
                         android:background="@android:color/transparent"/>
 
                     <ImageView
@@ -288,6 +369,7 @@
                     android:drawablePadding="5dp"
                     android:textSize="12sp"
                     android:textColor="#DE524F"
+                    android:visibility="gone"
                     android:layout_marginTop="5dp"/>
 
                 <LinearLayout
@@ -312,9 +394,13 @@
                         android:layout_height="30dp"
                         android:layout_weight="1"
                         android:textSize="14sp"
-                        android:textColor="#FFF"
+                        android:textColor="#A5A5A5"
+                        android:singleLine="true"
                         android:lines="1"
+                        android:gravity="right|center_vertical"
                         android:maxLines="1"
+                        android:maxLength="20"
+                        android:password="true"
                         android:paddingLeft="6dp"
                         android:paddingRight="6dp"
                         android:background="@android:color/transparent"/>
@@ -341,6 +427,7 @@
                     android:drawablePadding="5dp"
                     android:textSize="12sp"
                     android:textColor="#DE524F"
+                    android:visibility="gone"
                     android:layout_marginTop="5dp"/>
 
                 <LinearLayout
@@ -363,13 +450,30 @@
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:textSize="14sp"
-                        android:textColor="#FFF"
+                        android:textColor="#A5A5A5"
+                        android:gravity="right|center_vertical"
+                        android:layout_weight="1"
                         android:lines="1"
+                        android:singleLine="true"
                         android:maxLines="1"
+                        android:maxLength="6"
                         android:paddingLeft="6dp"
                         android:paddingRight="6dp"
                         android:background="@android:color/transparent"/>
 
+                    <TextView
+                        android:id="@+id/activity_register_capture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:background="@mipmap/ic_regist_camera"
+                        android:clickable="true"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textColor="#2E3039"
+                        android:text=""
+                        android:onClick="onCameraClicked"/>
 
                 </LinearLayout>
 
@@ -385,6 +489,7 @@
                     android:drawableLeft="@mipmap/ic_alert"
                     android:drawablePadding="5dp"
                     android:textSize="12sp"
+                    android:text="@string/field_required"
                     android:textColor="#DE524F"
                     android:layout_marginTop="5dp"
                     android:visibility="invisible"/>
@@ -397,27 +502,63 @@
                     android:textSize="12sp"
                     android:layout_marginTop="25dp"
                     android:drawablePadding="10dp"
-                    android:layout_marginBottom="25dp"
                     android:text="@string/user_licence"
                     android:drawableLeft="@drawable/selector_checkbox_bg"
                     android:clickable="true"
                     android:onClick="onUserLicenceClicked"/>
+                <TextView
+                    android:id="@+id/activity_register_licence_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/ic_alert"
+                    android:drawablePadding="5dp"
+                    android:textSize="12sp"
+                    android:text="@string/err_accept_agreements"
+                    android:textColor="#FFCAAC89"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="25dp"
+                    android:visibility="invisible"/>
 
             </LinearLayout>
 
         </ScrollView>
 
     </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </LinearLayout>
 
     <TextView
+        android:id="@+id/activity_register_user_next"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_gravity="bottom"
         android:gravity="center"
         android:text="@string/register_next"
-        android:background="@drawable/selector_rect_btn"
+        android:enabled="false"
+        android:background="@drawable/selector_rect_btn_enabled"
         android:textSize="14sp"
         android:textColor="@android:color/white"
         android:onClick="onRegisterClicked"/>
 
-</LinearLayout>
+    <LinearLayout
+        android:id="@+id/activity_register_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="bottom|center_horizontal"
+        android:background="#bb333333"
+        android:visibility="gone"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_gravity="bottom">
+
+        <androidx.core.widget.ContentLoadingProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginBottom="150dp"
+            style="?android:attr/progressBarStyleLarge" />
+
+    </LinearLayout>
+
+</FrameLayout>

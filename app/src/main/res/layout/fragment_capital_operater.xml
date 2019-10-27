@@ -1,0 +1,28 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.capital.view.fragment.CapitalOperaterFragment">
+
+
+    <com.tokenunion.pro.widget.LoadView
+        android:id="@+id/fragment_bill_record_load"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/fragment_capital_operater_record_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fragment_capital_operater_record_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="none"
+            android:overScrollMode="never" />
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</FrameLayout>

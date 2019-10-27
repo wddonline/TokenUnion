@@ -56,4 +56,14 @@ public class HttpError extends Throwable {
     public void setStatusCode(int statusCode) {
         this.statusCode = statusCode;
     }
+
+    @Override
+    public String toString() {
+        return "HttpError{" +
+                "errorCode=" + errorCode +
+                ", errorMsg='" + errorMsg + '\'' +
+                ", extra='" + extra + '\'' +
+                ", statusCode=" + statusCode +
+                '}';
+    }
 }

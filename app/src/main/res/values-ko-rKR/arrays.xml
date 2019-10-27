@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="support_lans" translatable="false">
+        <!--<item>简体中文</item>-->
+        <item>English</item>
+        <item>한국어</item>
+        <!--<item>Tiếng Việt</item>-->
+        <!--<item>日本语</item>-->
+    </string-array>
+
+    <string-array name="country_codes" translatable="false">
+        <item>+01-미국</item>
+        <item>+86-중국</item>
+        <item>+82-한국</item>
+        <item>+84-베트남</item>
+        <item>+81-일본</item>
+        <item>+852-중국 홍콩</item>
+        <item>+853-중국 마카오</item>
+        <item>+886-중국 대만</item>
+    </string-array>
+
+    <string-array name="user_level">
+        <item>회원</item>
+        <item>Star2</item>
+        <item>Star3</item>
+        <item>Star4</item>
+        <item>Star5</item>
+    </string-array>
+
+    <string-array name="filter_menu">
+        <item>몽땅</item>
+        <item>자금 기록</item>
+        <item>친구 요청</item>
+        <item>회원 센터</item>
+        <item>안전 센터</item>
+        <item>공고 </item>
+    </string-array>
+
+    <string-array name="membership_rights">
+        <item>수익 공유</item>
+        <item>단체 이자</item>
+        <item>초저비 율</item>
+        <item>등급 특유</item>
+        <item>업그레이드 보너스</item>
+        <item>카드</item>
+    </string-array>
+
+    <string-array name="membership_right_descs">
+        <item>%1$s친구 수익</item>
+        <item>최고 %1$s등급 %2$s이자</item>
+        <item>수수료 감면</item>
+        <item>단체 %1$s 이자</item>
+        <item>최고 %1$s 달러 가치</item>
+        <item>VISA</item>
+    </string-array>
+
+    <string-array name="membership_conditions">
+        <item>가입 사용자</item>
+        <item>단체 총규모 15만 달러 달함\n2명 (포함) 이상 친구 요청 서열 규모 5만달러 달함\n5명 (포함) 이상 친구 요청</item>
+        <item>단체 내 3명 (포함) 이상 제이드급 사용자가 있고\n2명(포함)이상의 친구 요청 서열에 포함</item>
+        <item>단체 내 3명 (포함) 이상 골드급 사용자가 있고\n2명(포함)이상의 친구 요청 서열에 포함</item>
+        <item>단체 내 3명 (포함) 이상 타이타늄급 사용자가 있고\n3명(포함)이상의 친구 요청 서열에 포함</item>
+        <item>단체 내 3명 (포함) 이상 플래티넘급 사용자가 있고\n3명(포함)이상의 친구 요청 서열에 포함</item>
+    </string-array>
+
+    <string-array name="bill_tabs">
+        <item>몽땅</item>
+        <item>수입</item>
+        <item>지출</item>
+    </string-array>
+
+    <string-array name="product_list_tables">
+        <item>수익내역</item>
+        <item>자산내역</item>
+    </string-array>
+
+</resources>

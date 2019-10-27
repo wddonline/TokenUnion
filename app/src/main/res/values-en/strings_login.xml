@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="lan_cn">English</string>
+    <string name="login">Log In</string>
+    <string name="username">User Name</string>
+    <string name="password">Password</string>
+    <string name="forget_pwd">I Forgot</string>
+
+    <string name="username_or_password_error">Incorrect User or Password</string>
+    <string name="user_register">Sign Up Now</string>
+    <string name="lan_choose">Language</string>
+    <string name="register_info">Sign Up</string>
+    <string name="register_next">Sign Up Now</string>
+    <string name="country">Countries And Regions</string>
+    <string name="phone">Phone Number</string>
+    <string name="smscode">Verification Code</string>
+    <string name="pwd_again">Confirm Password</string>
+    <!--<string name="invite_code">Invite Code(Optional)</string>-->
+    <string name="invite_code">Invite Code</string>
+    <string name="user_licence">Read and Accept: Terms/Privacy/Security Agreements</string>
+    <!--<string name="err_country_not_supported">This country is not allowed to sign in</string>-->
+    <string name="err_country_empty">Choose your Countries And Regions</string>
+    <string name="err_username_format">Must Contain 6-20 numbers and letters</string>
+    <string name="err_phone_format">Incorrect phone number format</string>
+    <string name="get_smscode">Send</string>
+    <string name="err_smscode">Incorrect Code</string>
+    <string name="err_pwd_format">8 more numbers and letters</string>
+    <string name="err_pwd_format_len">8 more numbers and letters</string>
+    <string name="err_pwd_not_consistency">Inconsistent Password</string>
+    <string name="err_accept_agreements">Accept the Agreements</string>
+    <string name="smscode_waitting">(%1$d)Again</string>
+    <string name="user_licence_title">Terms of Service</string>
+    <string name="privacy_licence_title">Privacy Policy and Statement</string>
+    <string name="send_smscode_hint">Verification Code has been sent to your phone, please check</string>
+
+    <string name="country_region">Countries And Regions</string>
+
+    <string name="safety_settings">Security</string>
+    <string name="capital_pwd">Payment Password</string>
+    <string name="err_capital_pwd">Must Contain 6-20 numbers and letters</string>
+    <string name="capital_pwd_again">Confirm Password</string>
+    <string name="register_now">Sign Up Now</string>
+    <string name="entry_now">Confirm</string>
+    <string name="bind_google_identify">GA Code Binding</string>
+    <string name="unbind_google_identify">Untie GA Code</string>
+
+    <string name="google_identify">GA Code Binding</string>
+    <string name="input_google_code_tips_step_first">- First Step -</string>
+    <string name="input_google_code_tips">Please fill in the following secret key in Google Authenticator APP</string>
+    <string name="input_google_code_copy"><b>Copy</b></string>
+    <string name="input_google_code_tips_step_second">- Second Step -</string>
+    <string name="input_google_code_please_input">Enter GA Code</string>
+    <string name="input_google_code_copy_success">Success</string>
+
+    <string name="input_google_code_cannot_find">If you cannot retrieve the GA Code, \nplease contact us at customer support</string>
+    <string name="google_code_unbind_now">Confirm</string>
+    <string name="google_code_unbind_success">Untie Successfully</string>
+
+    <string name="login_now">Log In</string>
+    <string name="google_code_bind_now">Bind Now</string>
+    <string name="google_code_miss">Loss the GA Code？Click Here</string>
+    <string name="google_code_lost">Loss the GA Code</string>
+    <string name="google_code_not_bind">Not yet bind GA Code, Bind Now</string>
+
+    <string name="retrieve_pwd">Forgot Password</string>
+    <string name="new_pwd">New Password</string>
+    <string name="reset_pwd">Reset Password</string>
+    <string name="reset_pwd_success">Success</string>
+
+    <string name="change_pwd">Account Password</string>
+    <string name="do_chang_pwd">Confirm to Change</string>
+    <string name="change_pwd_success">Success</string>
+    <string name="old_pwd">Old Account Password</string>
+    <string name="err_old_pwd">Incorrect Password</string>
+    <string name="new_login_pwd">New Account Password</string>
+
+    <string name="change_capital_pwd">Payment Password</string>
+    <string name="old_capital_pwd">Old Payment Password</string>
+    <string name="new_capital_pwd">New Payment Password</string>
+
+
+</resources>

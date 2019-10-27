@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@android:color/white">
 
     <TextView
         android:layout_width="match_parent"
@@ -13,92 +14,98 @@
         android:textSize="16sp"
         android:text="@string/invite_friend"/>
 
-    <FrameLayout
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
-
-        <ImageView
+        android:layout_weight="1"
+        
+        app:srlEnablePureScrollMode="true">
+	<ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
             android:src="@mipmap/bg_invite_top"
             android:layout_gravity="bottom"/>
 
-        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:srlEnablePureScrollMode="true">
+            android:overScrollMode="never"
+            android:fadingEdge="none">
 
-            <ScrollView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:overScrollMode="never"
-                android:fadingEdge="none">
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+
+                    <TextView
+                        android:id="@+id/fragment_invite_home_records"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:textColor="#BBBBBB"
+                        android:textSize="12sp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="13dp"
+                        android:paddingBottom="13dp"
+                        android:text="@string/view_invite_friend_record"/>
+
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:layout_marginTop="34dp">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@mipmap/invite_anypocke"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="right"
-                        android:layout_marginTop="14dp">
+                        android:textSize="16sp"
+                        android:textColor="#101010"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:text="@string/app_name"/>
 
-                        <TextView
-                            android:id="@+id/fragment_invite_home_records"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="right"
-                            android:textColor="#BBBBBB"
-                            android:textSize="12sp"
-                            android:paddingLeft="12dp"
-                            android:paddingRight="12dp"
-                            android:paddingTop="13dp"
-                            android:paddingBottom="13dp"
-                            android:text="@string/view_invite_friend_record"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
+                    <TextView
+                        android:id="@+id/fragment_invite_home_version"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:gravity="center"
-                        android:layout_marginTop="34dp">
+                        android:textColor="#A4A4A4"
+                        android:textSize="12sp"
+                        android:text="V1.0"/>
 
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:src="@mipmap/invite_anypocke"/>
+                </LinearLayout>
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textSize="16sp"
-                            android:textColor="#101010"
-                            android:layout_marginTop="4dp"
-                            android:layout_marginBottom="4dp"
-                            android:text="@string/app_name"/>
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="40dp"
+                    android:paddingTop="18dp"
+                    android:paddingBottom="16dp"
+                    android:background="@drawable/bg_qr_code_rect">
 
-                        <TextView
-                            android:id="@+id/fragment_invite_home_version"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="#A4A4A4"
-                            android:textSize="12sp"
-                            android:text="V1.0"/>
-
-                    </LinearLayout>
-
-                    <com.iconiz.tokenunion.widget.NetworkImageView
+                    <com.tokenunion.pro.widget.NetworkImageView
                         android:id="@+id/fragment_invite_home_qr"
                         android:layout_width="126dp"
                         android:layout_height="126dp"
-                        android:layout_marginTop="38dp"/>
+                        android:layout_centerInParent="true"/>
 
                     <TextView
                         android:id="@+id/fragment_invite_home_invite_code"
@@ -115,11 +122,10 @@
 
                 </LinearLayout>
 
-            </ScrollView>
+            </LinearLayout>
 
-        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
-
-    </FrameLayout>
+        </ScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
 
     <LinearLayout
         android:layout_width="match_parent"

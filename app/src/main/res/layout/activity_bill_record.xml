@@ -10,7 +10,7 @@
 
     <include layout="@layout/layout_common_actionbar"/>
 
-    <com.iconiz.tokenunion.widget.PagerSlidingTabStrip
+    <com.tokenunion.pro.widget.PagerSlidingTabStrip
         android:id="@+id/activity_bill_record_tabs"
         android:layout_width="wrap_content"
         android:layout_height="35dp"

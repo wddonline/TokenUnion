@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+
+    tools:context=".ui.mine.view.activity.UnbindGoogleValidatorActivity">
+
+    <include layout="@layout/layout_common_actionbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/activityLeftMargin"
+        android:layout_marginRight="@dimen/activityRightMargin"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="@string/input_google_code_please_input"
+            android:textColor="#BBBBBB"
+            android:textSize="14sp"/>
+
+        <com.tokenunion.pro.widget.SecurityCodeView
+            android:id="@+id/activity_google_validator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginRight="20dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/activity_google_validator_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#BBBBBB"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="100dp"
+        android:gravity="center"
+        android:visibility="visible"
+        android:text="@string/input_google_code_cannot_find"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:text="@string/google_code_unbind_now"
+        android:background="@drawable/selector_rect_btn"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:onClick="onUnBindClicked"/>
+
+</LinearLayout>

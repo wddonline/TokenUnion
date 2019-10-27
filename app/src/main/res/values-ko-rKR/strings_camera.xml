@@ -1,0 +1,7 @@
+<resources>
+    <string name="viewfinderview_status_text1">바코드 를 상자 에 넣다</string>
+    <string name="viewfinderview_status_text2">자동 주사</string>
+    <string name="msg_camera_framework_bug">카메라 선두를 열 수 없으니 다시 시도해 보세요</string>
+    <string name="button_ok">OK</string>
+    <string name="capture_title">스캔</string>
+</resources>

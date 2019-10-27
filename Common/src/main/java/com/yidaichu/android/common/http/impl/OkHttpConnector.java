@@ -38,17 +38,29 @@ import okhttp3.Response;
  */
 
 public class OkHttpConnector implements HttpConnector {
+    // 接口返回的成功值
+    private static final int SUCCESS_CODE = 200;
+    // 接口返回的内容key
+    private static final String RESPONSE_MSG = "msg";
+    private static final String RESPONSE_CODE = "code";
+    private static final String RESPONSE_DATA = "cont";
 
     private OkHttpClient mHttpClient;
 
     public OkHttpConnector() {
         mHttpClient = new OkHttpClient();
+
+        OkHttpClient.Builder builder = mHttpClient.newBuilder();
+        mHttpClient = builder
+                .addInterceptor(new LogInterceptor())
+                .addInterceptor(new DecodeInterceptor()).build();
     }
 
     @Override
     public HttpSession sendHttpRequest(final ActivityFragmentActive host, final HttpRequestEntry requestEntry, final Class clazz, final HttpConnectCallback callback) {
         Request request = buildHttpRequest(requestEntry);
         Call call = mHttpClient.newCall(request);
+
         call.enqueue(new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
@@ -94,13 +106,13 @@ public class OkHttpConnector implements HttpConnector {
             if (response.isSuccessful()) {
                 String text = response.body().string();
                 JSONObject json = JSONObject.parseObject(text);
-                int status = json.getInteger("code");
-                if (status == 0) {//请求成功
+                int status = json.getInteger(RESPONSE_CODE);
+                if (status == SUCCESS_CODE) {//请求成功
                     HttpResponseEntry responseEntry = new HttpResponseEntry();
                     responseEntry.addResponseHeaders(headers);
                     responseEntry.setStatusCode(StatusCode.HTTP_OK);
 
-                    Object segment = json.get("data");
+                    Object segment = json.get(RESPONSE_DATA);
                     Object data;
                     if (segment instanceof JSONArray) {//是json数组
                         JSONArray array = (JSONArray) segment;
@@ -115,7 +127,7 @@ public class OkHttpConnector implements HttpConnector {
                     responseEntry.setData(data);
                     return responseEntry;
                 } else {//请求失败
-                    HttpError error = new HttpError(status, json.getString("msg"));
+                    HttpError error = new HttpError(status, json.getString(RESPONSE_MSG));
                     throw error;
                 }
             } else {
@@ -178,16 +190,16 @@ public class OkHttpConnector implements HttpConnector {
             if (response.isSuccessful()) {
                 String text = response.body().string();
                 JSONObject json = JSONObject.parseObject(text);
-                int status = json.getInteger("code");
-                if (status == 0) {//请求成功
-                    String data = json.getString("data");
+                int status = json.getInteger(RESPONSE_CODE);
+                if (status == SUCCESS_CODE) {//请求成功
+                    String data = json.getString(RESPONSE_DATA);
                     HttpResponseEntry responseEntry = new HttpResponseEntry();
                     responseEntry.addResponseHeaders(headers);
                     responseEntry.setStatusCode(StatusCode.HTTP_OK);
                     responseEntry.setData(data);
                     return responseEntry;
                 } else {//请求失败
-                    HttpError error = new HttpError(status, json.getString("msg"));
+                    HttpError error = new HttpError(status, json.getString(RESPONSE_MSG));
                     throw error;
                 }
             } else {
@@ -201,20 +213,33 @@ public class OkHttpConnector implements HttpConnector {
         }
     }
 
+//    private void addHeadFromRequestEntry()
+
     private Request buildHttpRequest(HttpRequestEntry requestEntry) {
         Request.Builder builder = new Request.Builder();
         Request request = null;
         if (requestEntry.getMethod() == HttpRequestEntry.Method.GET) {
             String realUrl = generateGetUrl(requestEntry.getUrl(), requestEntry.getRequestParams());
+            if(null != requestEntry.getRequestHeaders() && !requestEntry.getRequestHeaders().isEmpty()){
+                for (Map.Entry entry : requestEntry.getRequestHeaders().entrySet()) {
+                    builder.addHeader(entry.getKey()+ "", entry.getValue()+ "");
+                }
+            }
             request = builder.url(realUrl).build();
         } else {
             builder.url(requestEntry.getUrl());
+            if(null != requestEntry.getRequestHeaders() && !requestEntry.getRequestHeaders().isEmpty()){
+                for (Map.Entry entry : requestEntry.getRequestHeaders().entrySet()) {
+                    builder.addHeader(entry.getKey()+ "", entry.getValue()+ "");
+                }
+            }
             MediaType mediaType;
             Map<String , Object> params;
             File file;
             switch (requestEntry.getFormat()) {
                 case JSON:
-                    mediaType = MediaType.parse("text/json; charset=utf-8");
+                    // mediaType = MediaType.parse("text/json; charset=utf-8");
+                    mediaType = MediaType.parse("application/json");
                     String jsonStr = generatePostJson(requestEntry.getRequestParams());
                     request = builder.post(RequestBody.create(mediaType, jsonStr))
                             .build();
@@ -270,6 +295,9 @@ public class OkHttpConnector implements HttpConnector {
                     RequestBody multiBody = multiBuilder.build();
                     request = builder.post(multiBody).build();
                     break;
+
+                default:
+                    break;
             }
         }
         return request;
@@ -282,13 +310,13 @@ public class OkHttpConnector implements HttpConnector {
 //            e.printStackTrace();
 //        }
         JSONObject json = JSONObject.parseObject(txt);
-        int status = json.getInteger("code");
-        if (status == 0) {//请求成功
+        int status = json.getInteger(RESPONSE_CODE);
+        if (status == SUCCESS_CODE) {//请求成功
             HttpResponseEntry responseEntry = new HttpResponseEntry();
             responseEntry.addResponseHeaders(headers);
             responseEntry.setStatusCode(StatusCode.HTTP_OK);
 
-            Object segment = json.get("data");
+            Object segment = json.get(RESPONSE_DATA);
             Object data;
             if (segment instanceof JSONArray) {//是json数组
                 JSONArray array = (JSONArray) segment;
@@ -303,7 +331,7 @@ public class OkHttpConnector implements HttpConnector {
             responseEntry.setData(data);
             callback.onRequestOk(responseEntry);
         } else {//请求失败
-            HttpError error = new HttpError(status, json.getString("msg"));
+            HttpError error = new HttpError(status, json.getString(RESPONSE_MSG));
             callback.onRequestFailure(error);
         }
     }
@@ -315,17 +343,17 @@ public class OkHttpConnector implements HttpConnector {
 //            e.printStackTrace();
 //        }
         JSONObject json = JSONObject.parseObject(txt);
-        int status = json.getInteger("code");
+        int status = json.getInteger(RESPONSE_CODE);
 
-        if (status == 0) {//请求成功
-            String data = json.getString("data");
+        if (status == SUCCESS_CODE) {//请求成功
+            String data = json.getString(RESPONSE_DATA);
             HttpResponseEntry responseEntry = new HttpResponseEntry();
             responseEntry.addResponseHeaders(headers);
             responseEntry.setStatusCode(StatusCode.HTTP_OK);
             responseEntry.setData(data);
             callback.onRequestOk(responseEntry);
         } else {//请求失败
-            HttpError error = new HttpError(status, json.getString("msg"));
+            HttpError error = new HttpError(status, json.getString(RESPONSE_MSG));
             callback.onRequestFailure(error);
         }
     }

@@ -79,6 +79,7 @@
                     android:layout_height="wrap_content"
                     android:button="@drawable/selector_push_toggle"
                     android:layout_centerVertical="true"
+                    android:enabled="false"
                     android:layout_alignParentRight="true"/>
 
             </RelativeLayout>

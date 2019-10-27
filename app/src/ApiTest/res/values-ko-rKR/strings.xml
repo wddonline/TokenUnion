@@ -1,0 +1,26 @@
+<resources>
+
+    <string name="app_name">TokenUnion_test</string>
+    <string name="back">이전</string>
+    <string name="skip">건너뛰다</string>
+    <string name="press_again_to_exit">곧 물러날 것이다</string>
+    <string name="data_loading">노력 중...</string>
+    <string name="no_data_error">여기 아무것도 없어요</string>
+    <string name="no_connection_error">연결이 끊겼으니 네트워크를 확인하십시오</string>
+    <string name="unknown_error">알 수 없는 오류</string>
+    <!--服务器的响应的一个错误，最有可能的4xx或5xx HTTP状态代码-->
+    <string name="server_error">알 수 없는 오류</string>
+
+    <string name="config_password_max_len">20</string>
+    <string name="config_phone_max_len">20</string>
+    <string name="config_sms_max_len">10</string>
+    <string name="config_password_text_verify">0123456789qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM</string>
+    <string name="config_phone_text_verify">0123456789+</string>
+    <string name="config_number_text_verify">0123456789.</string>
+
+    <string name="field_required">이 필드 필드</string>
+    <string name="app_old_version_exist_title">업그레이드V</string>
+    <string name="app_old_version_message">오래된 버전 해제?</string>
+    <string name="app_old_version_cancel">건너뛰다</string>
+    <string name="app_old_version_uninstall">해제하다</string>
+</resources>

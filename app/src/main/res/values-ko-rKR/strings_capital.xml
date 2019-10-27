@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="yesterday_income_any">Welcome to TokenUnion!</string>
+    <string name="capital_total">총 운용 자산 (USD)</string>
+    <string name="capital_complex">총 수익률 (월)</string>
+    <string name="total_income">누적 수익 (USD)</string>
+    <string name="yesterday_income">당일 수익 (USD)</string>
+    <string name="total_income_any">누적 수익 (ANY)</string>
+    <string name="wealth_detail">운용 자산</string>
+
+    <string name="search_currency">화폐종류 검색</string>
+    <string name="super_node">超级节点</string>
+    <string name="detail">더보기</string>
+    <string name="product_detail">자세한 상황</string>
+    <string name="quota_hold_format">나의 자산 (%1$s）</string>
+    <string name="view_all_bills">모든내역보기 ></string>
+    <string name="deposit">입금</string>
+    <string name="redeem">출금</string>
+
+    <string name="interest_rule">이율규칙</string>
+    <string name="interest_detail">이육 내역</string>
+    <string name="update_time_format">（업데이트 시간：%1$s）</string>
+    <string name="wealth_total">개인 재부 총액 ($)</string>
+    <string name="month_rate">총 수익률 (월)</string>
+    <string name="leader_reward">지도자 상금</string>
+    <string name="star_user_less_layer_10">단체 10층 이내의 등급 사용자</string>
+    <string name="month_reward_balance">매달 상금 금액</string>
+    <string name="currency">자산명</string>
+    <string name="amount">수량</string>
+    <string name="deposit_action">입금</string>
+    <string name="input_balance">금액 입력</string>
+    <string name="all">몽땅</string>
+    <string name="deposit_input_hint">%1$s %2$s 부터</string>
+    <string name="deposit_hold_wealth">현재 %1$s %2$s（%3$s）보유</string>
+    <string name="deposit_can_redeem">되찾기 금액 %1$s %2$s（%3$s）</string>
+    <string name="deposit_usable_wealth">사용가능한 잔액 %1$s %2$s（%3$s）</string>
+    <string name="deposit_month_interest">매달 %1$s ANY 수익 획득 예상</string>
+    <string name="safety_verified">안전 인증</string>
+    <string name="capital_pwd_hint">결제 비밀번호를 입력하세요</string>
+    <string name="price_temporary_changed">가격변동으로 인해 재입력바랍니다</string>
+    <string name="deposit_save_success">예금 성공</string>
+    <string name="deposit_forget_pwd">비밀번호 틀림, 비밀번호 찾기</string>
+    <string name="err_beyond_quota">되찾기 금액한도를 초과</string>
+    <string name="err_empty_quota">금액 입력</string>
+    <string name="redeem_action">되찾기 확인</string>
+    <string name="redeem_quota_format">되찾기 금액 %1$s %2$s（%3$s）</string>
+    <string name="no_interest_when_redeeming">되찾기 당일 수익이 발생하지 않습니다！수속비：</string>
+    <string name="redeem_back_success">되찾기 성공</string>
+    <string name="interest_added">누적 수익（ANY）</string>
+    <string name="select_term">선택 기한</string>
+    <string name="become_super_node">成为超级节点</string>
+    <string name="locking_period">시기</string>
+    <string name="enjoy_interest">예상 수익</string>
+    <string name="any_usable_balance_format">사용가능한 잔액 %1$s ANY（%2$s）</string>
+    <string name="lock_capital">노드 토큰 보너스</string>
+    <string name="hold_any_record">입금내역(ANY)</string>
+    <string name="hold_any_income">수익내역(ANY)</string>
+    <string name="view_all_bill_record">모든내역보기 ></string>
+    <string name="go_lock_capital">노드 토큰 보너스</string>
+    <string name="time">시간</string>
+    <string name="period">시기</string>
+    <string name="start">출발지</string>
+    <string name="available">유효한</string>
+
+
+    <!--xiaohansong added-->
+    <string name="err_beyond_usbamount">사용 가능 잔액 이 부족하다</string>
+    <string name="err_lower_min_deposit_amount">최저 금액보다 낮다</string>
+    <string name="err_empty_depositin">금액 입력</string>
+    <string name="err_lower_min_redeem_amount">최저 금액보다 낮다</string>
+    <string name="err_empty_redeem">금액 입력</string>
+    <string name="interest_rule_include_format">"%1$s ~ %2$s (포함)</string>
+    <string name="interest_rule_up_format">"%1$s 이상</string>
+
+    <!--天：일-->
+    <!--月：월-->
+    <string name="period_day">일</string>
+    <string name="profit_per_month">월</string>
+
+    <!--新用户专享-->
+    <string name="profit_new_user_holdings_title">Welcome Package</string>
+    <string name="profit_new_user_holdings">나의 자산</string>
+    <string name="profit_new_user_tags1">Welcome</string>
+    <string name="profit_new_user_tags2">0 Fee</string>
+
+    <!--More than 0.01 BTC-->
+    <!--<string name="profit_new_user_products_hint">More than %1$s %2$s </string>-->
+
+    <!--Available Balance 0.3654 BTC（$3002.3654）-->
+    <string name="new_user_availiable_balance_format">사용가능한 잔액 %1$s %2$s（$%3$s）</string>
+    <!--Monthly Yield 8% + 5% Bonus-->
+    <string name="new_user_monthly_format">매달 %1$s + %2$s 수익</string>
+    <!--Expected Profit 4562.3654 ANY（$10023.3654）-->
+    <string name="new_user_expected_format">예상 수익 %1$s %2$s（$%3$s）</string>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="29dp"
+    android:paddingRight="29dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/item_profit_record_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#CAAC89"
+            android:textSize="12sp"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/item_profit_record_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bill_record_text_color"
+            android:layout_alignParentRight="true"
+            android:textSize="12sp"
+            android:text=""/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp">
+
+        <TextView
+            android:id="@+id/item_profit_record_datetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#A4A4A4"
+            android:textSize="12sp"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/item_profit_record_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#A4A4A4"
+            android:layout_alignParentRight="true"
+            android:textSize="12sp"
+            android:text=""/>
+
+    </RelativeLayout>
+
+</LinearLayout>

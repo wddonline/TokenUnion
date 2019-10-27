@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="rush_charge">Deposit</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="free_transfer">Transfer</string>
+    <string name="flash_exchange">Exchange</string>
+    <string name="bill_record">Records</string>
+    <string name="my_wealth_not_contained">Excluding AUM</string>
+    <string name="not_support_in_zone">Not Available in your Region</string>
+    <string name="back_wallet">Back to Wallet</string>
+    <string name="copy_uri">Copy</string>
+    <string name="submit_apply">Submit</string>
+    <string name="less_than_min_balance">Less than the minimun</string>
+    <string name="withdraw_address">Token Address</string>
+    <string name="submit_success">Success</string>
+    <string name="select_currency">Select Token</string>
+    <string name="receive_name">Reciver Username</string>
+    <string name="transfer_success">Success</string>
+    <string name="transfer">Transfer</string>
+    <string name="available_balance_format_1">Avaliable %1$s %2$s</string>
+    <string name="available_balance_format_2">Avaliable %1$s %2$s, In Minimun %3$s %4$s</string>
+    <string name="withdraw_hint_format">Commission：%1$s, In minimun %2$s, Less than the minimun will be irretrievable。</string>
+    <string name="error_amount_empty">Enter the Amount</string>
+    <string name="exchange_dst">Exchange To</string>
+    <string name="predicted_convertible_amount">Expected Quantity</string>
+    <string name="exchange_fee_format">Commision：%1$s。</string>
+    <string name="exchange_success">Success</string>
+    <string name="exchange_btn">Exchange</string>
+    <string name="bill_detail">Records</string>
+    <string name="filter_currency">Select</string>
+    <string name="interest">Profit</string>
+    <string name="subsidy">Yield Bonus</string>
+    <string name="wallet_detail">My Assets</string>
+
+    <string name="asset_total">Total Assets(USD)</string>
+    <string name="wallet_empty_symbol_hint">Select the token</string>
+
+    <!--EOS charge for memo-->
+    <string name="deposit_address_title">Deposit Address</string>
+    <string name="deposit_address_copy">Copy</string>
+    <string name="deposit_memo_title">MEMO</string>
+    <string name="deposit_memo_copy">Copy</string>
+    <string name="deposit_memo_warning">WARNING：Deposit EOS requires BOTH a deposit address and a EOS deposit memo. Failure to follow correct EOS deposit procedure will result in lost deposit. Please fill in destination tag and check carefully, otherwise you may lose it permanently.
+\nDeposit requires 1 confirmation. Any other assets deposited to EOS address will be irretrievable.</string>
+
+    <!--memo提示dlg-->
+    <string name="deposit_memo_dlg_title">WARNING！</string>
+    <string name="deposit_memo_dlg_content">Deposit EOS requires BOTH a deposit address and a EOS deposit memo. Failure to follow correct EOS deposit procedure will result in lost deposit. </string>
+    <string name="deposit_memo_dlg_btn_text">I understand, Confirm</string>
+</resources>

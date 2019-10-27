@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:background="@color/dlg_background_black"
+        android:gravity="bottom|center"
+        android:orientation="vertical"
+        android:paddingBottom="250dp">
+
+        <TextView
+            android:id="@+id/dlg_google_close"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@mipmap/ic_googledlg_close"
+            android:textColor="#BBBBBB"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/input_google_code_please_input"
+            android:textColor="#BBBBBB"
+            android:textSize="14sp" />
+
+        <com.tokenunion.pro.widget.SecurityCodeView
+            android:id="@+id/dlg_google_validator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginRight="20dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activityLeftMargin"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="@dimen/activityRightMargin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/google_code_lost"
+                android:textColor="@color/text_blue_link"
+                android:visibility="gone"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/dlg_google_validator_go_bind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/google_code_not_bind"
+                android:textColor="#BBBBBB"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/dlg_google_validator_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/google_code_miss"
+            android:textColor="#BBBBBB"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

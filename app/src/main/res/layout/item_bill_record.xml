@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:textColor="#DE524F"
             android:textSize="12sp"
-            android:text="111111"/>
+            android:text=""/>
 
         <TextView
             android:id="@+id/item_bill_record_balance"
@@ -27,7 +27,7 @@
             android:textColor="@color/bill_record_text_color"
             android:layout_alignParentRight="true"
             android:textSize="12sp"
-            android:text="111111"/>
+            android:text=""/>
 
     </RelativeLayout>
 
@@ -42,7 +42,7 @@
             android:layout_height="wrap_content"
             android:textColor="#A4A4A4"
             android:textSize="12sp"
-            android:text="111111"/>
+            android:text=""/>
 
         <TextView
             android:id="@+id/item_bill_record_type"
@@ -51,7 +51,7 @@
             android:textColor="#A4A4A4"
             android:layout_alignParentRight="true"
             android:textSize="12sp"
-            android:text="111111"/>
+            android:text=""/>
 
     </RelativeLayout>
 

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="16dp">
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:background="#CAAC89"/>
+
+        <TextView
+            android:id="@+id/item_any_record_header_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/hold_any_income"
+            android:textColor="#2E3039"
+            android:layout_marginLeft="8dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/item_any_record_header_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#BBBBBB"
+            android:text="@string/view_all_bill_record"
+            android:clickable="true"
+            android:onClick="onBillRecordClicked"/>
+
+    </LinearLayout>
+
+</LinearLayout>

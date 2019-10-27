@@ -244,22 +244,6 @@ public class StatusBarCompat {
         return result;
     }
 
-    public static int setStatusBarDarkMode(Activity activity) {
-        int result = 0;
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-            if (MIUISetStatusBarLightMode(activity, true)) {
-                result = MIUI;
-            } else if (FLYMESetStatusBarLightMode(activity.getWindow(), true)) {
-                result = FLYME;
-            } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                activity.getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN | View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
-                result = ANDROID_M;
-            }
-        }
-        setStatusBarDarkMode(activity, result);
-        return result;
-    }
-
     /**
      * 状态栏暗色模式，清除MIUI、flyme或6.0以上版本状态栏黑色文字、图标
      */

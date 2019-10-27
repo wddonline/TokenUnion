@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="mine">내정보</string>
+    <string name="team_size">산하 규모</string>
+    <string name="star_friend">산하 직급 현황</string>
+    <string name="star_distribution">레그</string>
+    <string name="star_upgrade_format">도달할 경우:</string>
+
+    <string name="invite_friend_tip">최고 100% 인출</string>
+    <string name="customer_center">회원센터</string>
+    <string name="msg_center">공지사항</string>
+    <string name="new_tip">New</string>
+    <string name="customer_service">고객지원</string>
+    <string name="customer_service_email_title">Customer Support Email：</string>
+    <string name="customer_service_email">contact@anypocket.io</string>
+    <string name="customer_service_email_copy">Copy</string>
+    <string name="customer_service_tips">Tips:\n\n
+        1. Username and invite code must be contained in your email;\n\n
+        2. You\'d better provide some screenshots for us to solve your problem;\n\n
+        3. We will reply within 1 working day after receiving the mail. Thank you for your patience!</string>
+    <string name="security_center">보안센터</string>
+    <string name="about_us">회사정보</string>
+    <string name="system_setting">시스템설정</string>
+    <string name="system_settings_tip">Language</string>
+    <string name="exit">로그아웃</string>
+    <string name="wan">10K</string>
+    <string name="next_level_hint_format">도달할 경우 :%1$s</string>
+    <string name="diamond_level_arrived">Star5</string>
+    <string name="invite_code_format">도달할 경우: %1$s</string>
+
+    <string name="view_money_record">거래내역</string>
+    <string name="filter">선별하다</string>
+
+    <string name="msg_push">소식 보내기</string>
+    <string name="privacy_policy">개인정보 보호 정책</string>
+    <string name="version_name">버전번호</string>
+
+    <string name="login_pwd">비밀번호</string>
+    <string name="capital_pwd_label">결제 비밀번호</string>
+    <string name="google_validator">Google Authenticator</string>
+    <string name="modify">수정</string>
+    <string name="set">설정</string>
+    <string name="binded">이미 연동</string>
+    <string name="unbinded">없어요 연동</string>
+    <string name="bind">연동</string>
+    <string name="unbind">풀다</string>
+
+    <string name="membership_desc">회원 소개</string>
+    <string name="membership_rights">회원 특권</string>
+    <string name="view_membership_desc">회원소개 보기></string>
+    <string name="membership_stable_level_title">—— 회원 등급유지 ——</string>
+    <string name="membership_wealth_limit">개인 재부 재산이 %1$s / %2$s</string>
+    <!--<string name="system_time_format">（시스템 스냅숏 시간：UTC%1$s）</string>-->
+    <string name="system_time_format">（시스템 스냅숏 시간：UTC-7 00:00 a.m.）</string>
+    <string name="platinum_visa_ad">Platinum 体验全球惊喜礼遇</string>
+    <string name="diamond_visa_ad">world 글로벌 고급 보너스</string>
+    <string name="apply">바로 신청</string>
+
+    <string name="membership_condition_title">—— 조건 달성 ——</string>
+    <string name="membership_right_title">—— 회원 특권 ——</string>
+    <string name="membership_wealth_limit_solo">개인 재부 재산이 %1$s</string>
+
+    <string name="mine_message_half_years_ago">半年前</string>
+    <string name="mine_message_one_years_ago">一年前</string>
+    <string name="mine_message_months_ago">月前</string>
+    <string name="mine_message_weeks_ago">周前</string>
+    <string name="mine_message_days_ago">天前</string>
+    <string name="mine_message_hours_ago">小时前</string>
+    <string name="mine_message_minintes_ago">分钟前</string>
+    <string name="mine_message_just_now">Just Now</string>
+
+    <string name="mine_safe_exit_title">Exit this Account</string>
+    <string name="mine_safe_exit_cancel">이전</string>
+    <string name="mine_safe_exit_ok">로그아웃</string>
+
+    <!--APP升级检测-->
+    <string name="mine_app_version_tips_title">Upgrade to:</string>
+    <string name="mine_app_version_cancel">Skip</string>
+    <string name="mine_app_version_upgrade_now">Download</string>
+    <string name="mine_app_download_title">Downloading...</string>
+    <string name="mine_app_download_failed">Failed to download.Please try again.</string>
+    <string name="mine_app_no_version">현재 최신 버전</string>
+</resources>

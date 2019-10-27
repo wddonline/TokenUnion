@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    >
+
+    <ImageView
+        android:id="@+id/imageview_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/img_no_data"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerInside"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

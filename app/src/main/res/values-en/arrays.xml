@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="support_lans" translatable="false">
+        <!--<item>简体中文</item>-->
+        <item>English</item>
+        <item>한국어</item>
+        <!--<item>Tiếng Việt</item>-->
+        <!--<item>日本语</item>-->
+    </string-array>
+
+    <string-array name="country_codes" translatable="false">
+        <item>+01-USA</item>
+        <item>+86-China</item>
+        <item>+82-Korea</item>
+        <item>+84-Vietnam</item>
+        <item>+81-Japan</item>
+        <item>+852-Hongkong,China</item>
+        <item>+853-Macao,China</item>
+        <item>+886-Taiwan,China</item>
+    </string-array>
+
+    <string-array name="user_level">
+        <item>Preferred</item>
+        <item>Gold</item>
+        <item>Titanium</item>
+        <item>Platinum</item>
+        <item>Diamond</item>
+    </string-array>
+
+    <string-array name="filter_menu">
+        <item>ALL</item>
+        <item>Records</item>
+        <item>Invitation</item>
+        <item>Royalty Program</item>
+        <item>Security</item>
+        <item>Notice</item>
+    </string-array>
+
+    <string-array name="membership_rights">
+        <item>Share Profit</item>
+        <item>Family Yield Bonus</item>
+        <item>Low Fee</item>
+        <item>Exclusive Bonus</item>
+        <item>Upgrade Bonus</item>
+        <item>Payment Card</item>
+    </string-array>
+
+    <string-array name="membership_right_descs">
+        <item>%1$sYield Bonus</item>
+        <item>%1$sGenerations%2$s</item>
+        <item>Fee discount</item>
+        <item>%1$sFamily Yield</item>
+        <item>%1$s</item>
+        <item>VISA</item>
+    </string-array>
+
+    <string-array name="membership_conditions">
+        <item>Registration</item>
+        <item>$ 150000 or more family AUM\n$ 50000 or more AUM in minimum 2 Lineages\n5 or more friends</item>
+        <item>3 or more Jade Users in Family\ndistributed in minimum 2 Lineages</item>
+        <item>3 or more Gold Users in Family\ndistributed in minimum 2 Lineages</item>
+        <item>3 or more Titanium Users in Family\ndistributed in minimum 3 Lineages</item>
+        <item>3 or more Platinum Users in Family\ndistributed in minimum 3 Lineages</item>
+    </string-array>
+
+    <string-array name="bill_tabs">
+        <item>ALL</item>
+        <item>IN</item>
+        <item>OUT</item>
+    </string-array>
+
+    <string-array name="product_list_tables">
+        <item>Profit Records</item>
+        <item>Wealth Records</item>
+    </string-array>
+
+</resources>

@@ -7,20 +7,20 @@
         android:id="@+id/item_message_root"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@drawable/bg_white_round_rect"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+        android:background="@drawable/bg_white_round_rect"
+        android:orientation="vertical"
         android:paddingLeft="17dp"
         android:paddingRight="17dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_marginBottom="11dp"
             android:gravity="center_vertical"
-            android:paddingTop="16dp"
-            android:layout_marginBottom="11dp">
+            android:orientation="horizontal"
+            android:paddingTop="16dp">
 
             <TextView
                 android:id="@+id/item_message_title"
@@ -35,49 +35,66 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#BBBBBB"
-                android:textSize="12sp"/>
+                android:textSize="12sp" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:gravity="center_vertical">
+            android:paddingBottom="16dp"
+            >
 
             <TextView
                 android:id="@+id/item_message_content"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textSize="12sp"
-                android:textColor="#2E3039"/>
+                android:textColor="#2E3039"
+                android:textIsSelectable="true"
+                android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/item_message_money"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="14sp"
                 android:layout_marginLeft="23dp"
-                android:textColor="@android:color/black"/>
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:visibility="gone" />
 
         </LinearLayout>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
+            android:layout_marginTop="11dp"
             android:background="#BBBBBB"
-            android:layout_marginTop="11dp"/>
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/item_message_click"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:clickable="true"
+            android:drawableRight="@mipmap/arrow_msg_right"
             android:paddingTop="9dp"
             android:paddingBottom="9dp"
-            android:clickable="true"
             android:textColor="#BBBBBB"
             android:textSize="12sp"
-            android:drawableRight="@mipmap/arrow_msg_right"/>
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/item_message_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@mipmap/bg_interest_rule_top"
+            android:paddingBottom="16dp"
+            android:visibility="gone"
+            />
     </LinearLayout>
 </LinearLayout>

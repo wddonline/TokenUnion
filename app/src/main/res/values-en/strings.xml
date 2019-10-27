@@ -1,0 +1,26 @@
+<resources>
+
+    <string name="app_name">TokenUnion</string>
+    <string name="back">Back</string>
+    <string name="skip">skip</string>
+    <string name="press_again_to_exit">Press again to EXIT</string>
+    <string name="data_loading">Loading...</string>
+    <string name="no_data_error">Nothing Here</string>
+    <string name="no_connection_error">No Internet Service, Please Check</string>
+    <string name="unknown_error">Unknown Error</string>
+    <!--服务器的响应的一个错误，最有可能的4xx或5xx HTTP状态代码-->
+    <string name="server_error">Server Error</string>
+
+    <string name="config_password_max_len">20</string>
+    <string name="config_phone_max_len">20</string>
+    <string name="config_sms_max_len">10</string>
+    <string name="config_password_text_verify">0123456789qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM</string>
+    <string name="config_phone_text_verify">0123456789+</string>
+    <string name="config_number_text_verify">0123456789.</string>
+
+    <string name="field_required">This field is required</string>
+    <string name="app_old_version_exist_title">Upgrade to V</string>
+    <string name="app_old_version_message">Uninstall the old version?</string>
+    <string name="app_old_version_cancel">Skip</string>
+    <string name="app_old_version_uninstall">Uninstall</string>
+</resources>

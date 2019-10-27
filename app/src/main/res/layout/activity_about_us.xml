@@ -69,6 +69,9 @@
                 android:paddingBottom="15dp"
                 android:paddingLeft="34dp"
                 android:paddingRight="34dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:onClick="onCheckNewVersionClicked"
                 android:background="@drawable/selector_white_rect_btn">
 
                 <TextView

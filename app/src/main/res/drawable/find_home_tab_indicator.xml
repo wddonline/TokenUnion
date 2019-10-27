@@ -4,19 +4,19 @@
     <item android:state_selected="true">
         <shape android:shape="oval">
             <size android:width="7dp" android:height="7dp"/>
-            <solid android:color="#DE524F"/>
+            <solid android:color="#CAAC89"/>
         </shape>
     </item>
     <item android:state_selected="false">
         <shape android:shape="oval">
             <size android:width="7dp" android:height="7dp"/>
-            <solid android:color="#888888"/>
+            <solid android:color="#DDDDDD"/>
         </shape>
     </item>
     <item >
         <shape android:shape="oval">
             <size android:width="7dp" android:height="7dp"/>
-            <solid android:color="#888888"/>
+            <solid android:color="#DDDDDD"/>
         </shape>
     </item>
 

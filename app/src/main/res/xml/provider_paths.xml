@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <external-path path="${applicationId}/" name="files_root" />
+    <!--<external-path path="Android/data/com.anypocket.pro/" name="files_root" />-->
+
+    <!--apk update-->
+    <!-- /storage/emulated/0/Download/xxx.apk -->
+    <external-path name="download_root" path="Download/"/>
+</paths>

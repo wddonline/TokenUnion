@@ -1,0 +1,7 @@
+<resources>
+    <string name="viewfinderview_status_text1">Put the QR code in the viewfinder</string>
+    <string name="viewfinderview_status_text2">Auto Scan</string>
+    <string name="msg_camera_framework_bug">Sorry, the Android camera encountered a problem. You may need to restart the device.</string>
+    <string name="button_ok">OK</string>
+    <string name="capture_title">Scan</string>
+</resources>

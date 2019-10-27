@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="260dp"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="122dp"
+        android:background="@mipmap/bg_app_new_version_top"
+        android:src="@mipmap/bg_app_new_version_top"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:background="@mipmap/bg_app_new_version_bottom_white"
+        android:layout_centerInParent="true"
+        >
+
+
+        <TextView
+            android:id="@+id/app_new_version_dlg_layout_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="14sp"
+            android:text="@string/mine_app_version_tips_title"
+            android:textColor="@color/text_black"
+            android:visibility="visible"
+            android:textAllCaps="false"
+            />
+
+        <TextView
+            android:id="@+id/app_new_version_dlg_layout_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"
+
+            android:text="1.邀请返佣全新升级\n2.行情排序功能优化"
+            android:textColor="@color/text_dark"
+            android:visibility="visible"
+            android:textAllCaps="false"
+            />
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="right"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/app_new_version_dlg_layout_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/mine_app_version_cancel"
+                android:textAllCaps="false"
+                android:textColor="#BBBBBB"
+                android:textSize="12sp"
+                />
+
+
+            <Button
+                android:id="@+id/app_new_version_dlg_layout_upgrade"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/mine_app_version_upgrade_now"
+                android:textAllCaps="false"
+                android:textColor="@color/text_blue_link"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+</RelativeLayout>

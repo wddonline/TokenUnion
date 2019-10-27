@@ -4,14 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
     tools:context=".ui.login.view.LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/bg_login_new"/>
 
     <RadioGroup
         android:id="@+id/user_level_change"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:visibility="gone"
         android:layout_marginTop="15dp">
 
         <RadioButton
@@ -71,6 +77,7 @@
             android:paddingRight="30dp"
             android:paddingTop="20dp"
             android:paddingBottom="20dp"
+            android:layout_marginTop="27dp"
             android:onClick="onLanguageChoiceClicked"
             android:clickable="true"/>
 
@@ -94,18 +101,36 @@
             android:layout_marginLeft="33dp"
             android:layout_marginRight="33dp">
 
-            <EditText
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:textSize="14sp"
-                android:hint="@string/username"
-                android:textColorHint="#BBBBBB"
-                android:textColor="#2E3039"
-                android:lines="1"
-                android:maxLines="1"
-                android:paddingLeft="6dp"
-                android:paddingRight="6dp"
-                android:background="@android:color/transparent"/>
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/username"
+                    android:textColor="#FFBBBBBB"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/et_login_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/white"
+		            android:textColorHint="#BBBBBB"
+                    android:singleLine="true"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:maxLength="20"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:background="@android:color/transparent"/>
+
+            </LinearLayout>
 
             <View
                 android:layout_width="match_parent"
@@ -116,7 +141,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
                 android:layout_marginTop="42dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/password"
+                    android:textColor="#FFBBBBBB"
+                    android:textSize="14sp"/>
 
                 <EditText
                     android:id="@+id/activity_login_pwd"
@@ -124,14 +159,16 @@
                     android:layout_height="30dp"
                     android:layout_weight="1"
                     android:textSize="14sp"
-                    android:hint="@string/password"
                     android:textColorHint="#BBBBBB"
-                    android:textColor="#2E3039"
+                    android:textColor="@android:color/white"
+                    android:singleLine="true"
                     android:lines="1"
                     android:maxLines="1"
+                    android:maxLength="20"
                     android:paddingLeft="6dp"
                     android:paddingRight="6dp"
                     android:inputType="textPassword"
+                    android:nextFocusDown="@id/activity_login_login"
                     android:background="@android:color/transparent"/>
 
                 <ImageView
@@ -166,6 +203,7 @@
                 android:onClick="onForgetPwdClicked"/>
 
             <TextView
+                android:id="@+id/activity_login_error_tips"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
@@ -173,6 +211,7 @@
                 android:textColor="#DE524F"
                 android:drawableLeft="@mipmap/ic_alert"
                 android:drawablePadding="5dp"
+                android:visibility="gone"
                 android:text="@string/username_or_password_error"/>
 
         </RelativeLayout>
@@ -196,6 +235,7 @@
         </LinearLayout>
 
         <TextView
+            android:id="@+id/activity_login_login"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_gravity="bottom"
@@ -205,6 +245,37 @@
             android:textSize="14sp"
             android:textColor="@android:color/white"
             android:onClick="onLoginClicked"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/activity_login_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom|center_horizontal"
+        android:background="#bb333333"
+        android:visibility="gone"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_gravity="bottom">
+
+        <androidx.core.widget.ContentLoadingProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginBottom="200dp"
+            style="?android:attr/progressBarStyleLarge" />
+
+        <TextView
+            android:id="@+id/layout_common_load_loading_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/data_loading"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            android:textSize="12sp"
+            android:textColor="#A4A4A4"
+            android:gravity="center"/>
 
     </LinearLayout>
 

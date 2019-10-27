@@ -2,73 +2,77 @@
 <resources>
 
     <string-array name="support_lans" translatable="false">
-        <item>简体中文</item>
+        <!--<item>简体中文</item>-->
         <item>English</item>
         <item>한국어</item>
-        <item>Tiếng Việt</item>
-        <item>日本语</item>
+        <!--<item>Tiếng Việt</item>-->
+        <!--<item>日本语</item>-->
     </string-array>
 
     <string-array name="country_codes" translatable="false">
-        <item>+01-美国</item>
-        <item>+86-中国</item>
-        <item>+82-韩国</item>
-        <item>+84-越南</item>
-        <item>+81-日本</item>
-        <item>+852-中国香港</item>
-        <item>+853-中国澳门</item>
-        <item>+886-中国台湾</item>
+        <item>+01-USA</item>
+        <item>+86-China</item>
+        <item>+82-Korea</item>
+        <item>+84-Vietnam</item>
+        <item>+81-Japan</item>
+        <item>+852-Hongkong,China</item>
+        <item>+853-Macao,China</item>
+        <item>+886-Taiwan,China</item>
     </string-array>
 
     <string-array name="user_level">
-        <item>轻享卡</item>
-        <item>优享卡</item>
-        <item>精英卡</item>
-        <item>尊享卡</item>
-        <item>世界卡</item>
-        <item>无限卡</item>
+        <item>Preferred</item>
+        <item>Gold</item>
+        <item>Titanium</item>
+        <item>Platinum</item>
+        <item>Diamond</item>
     </string-array>
 
     <string-array name="filter_menu">
-        <item>全部</item>
-        <item>资金记录</item>
-        <item>邀请好友</item>
-        <item>会员等级</item>
-        <item>账户安全</item>
-        <item>站内公告</item>
+        <item>ALL</item>
+        <item>Records</item>
+        <item>Invitation</item>
+        <item>Royalty Program</item>
+        <item>Security</item>
+        <item>Notice</item>
     </string-array>
 
     <string-array name="membership_rights">
-        <item>收益共享</item>
-        <item>团队返息</item>
-        <item>超低费率</item>
-        <item>星级专属</item>
-        <item>升级礼包</item>
-        <item>实体支付卡</item>
+        <item>Share Profit</item>
+        <item>Family Yield Bonus</item>
+        <item>Low Fee</item>
+        <item>Exclusive Bonus</item>
+        <item>Upgrade Bonus</item>
+        <item>Payment Card</item>
     </string-array>
 
     <string-array name="membership_right_descs">
-        <item>%1$s好友收益</item>
-        <item>最高返%1$s层%2$s</item>
-        <item>手续费减免</item>
-        <item>团队%1$s+返息</item>
-        <item>价值最高%1$s</item>
+        <item>%1$sYield Bonus</item>
+        <item>%1$sGenerations%2$s</item>
+        <item>Fee discount</item>
+        <item>%1$sFamily Yield</item>
+        <item>%1$s</item>
         <item>VISA</item>
     </string-array>
 
     <string-array name="membership_conditions">
-        <item>注册用户</item>
-        <item>团队总规模达15万美元\n2位(含)以上好友邀请序列规模达5万美元\n邀请好友10人(含)以上</item>
-        <item>团队内拥有3位(含)以上玉星级用户\n且分布在2位(含)以上好友邀请序列中</item>
-        <item>团队内拥有3位(含)以上金星级用户\n且分布在2位(含)以上好友邀请序列中</item>
-        <item>团队内拥有3位(含)以上钛金级用户\n且分布在3位(含)以上好友邀请序列中</item>
-        <item>团队内拥有3位(含)以上铂金级用户\n且分布在3位(含)以上好友邀请序列中</item>
+        <item>Registration</item>
+        <item>$ 150000 or more family AUM\n$ 50000 or more AUM in minimum 2 Lineages\n5 or more friends</item>
+        <item>3 or more Jade Users in Family\ndistributed in minimum 2 Lineages</item>
+        <item>3 or more Gold Users in Family\ndistributed in minimum 2 Lineages</item>
+        <item>3 or more Titanium Users in Family\ndistributed in minimum 3 Lineages</item>
+        <item>3 or more Platinum Users in Family\ndistributed in minimum 3 Lineages</item>
     </string-array>
 
     <string-array name="bill_tabs">
-        <item>全部</item>
-        <item>收入</item>
-        <item>支出</item>
+        <item>ALL</item>
+        <item>IN</item>
+        <item>OUT</item>
+    </string-array>
+    
+    <string-array name="product_list_tables">
+        <item>Profit Records</item>
+        <item>Wealth Records</item>
     </string-array>
 
 </resources>

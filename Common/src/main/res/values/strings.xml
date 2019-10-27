@@ -1,7 +1,7 @@
 <resources>
 
     <string name="srl_header_pulling">下拉可以刷新</string>
-    <string name="srl_header_refreshing">正在刷新…</string>
+    <string name="srl_header_refreshing">loading…</string>
     <string name="srl_header_loading">等待底部加载完成…</string>
     <string name="srl_header_release">释放立即刷新</string>
     <string name="srl_header_finish">刷新完成</string>

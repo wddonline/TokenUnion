@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="rush_charge">입금</string>
+    <string name="withdraw">출금</string>
+    <string name="free_transfer">전송</string>
+    <string name="flash_exchange">교환</string>
+    <string name="bill_record">거래내역</string>
+    <string name="my_wealth_not_contained">운용자산 제외</string>
+
+    <string name="not_support_in_zone">잠시 해당 지역 사용자에 대해 지원하지 않습니다</string>
+    <string name="back_wallet">지갑으로 돌아가기</string>
+    <string name="copy_uri">주소 복사</string>
+    <string name="submit_apply">신청 제출</string>
+    <string name="less_than_min_balance">최저 한도액보다 작음</string>
+    <string name="withdraw_address">토큰 주소</string>
+    <string name="submit_success">제출 성공</string>
+    <string name="select_currency">화폐 종류 선택</string>
+    <string name="receive_name">토큰 사용자</string>
+    <string name="transfer_success">계좌이체 성공</string>
+    <string name="transfer">계좌이체</string>
+    <string name="available_balance_format_1">%1$s %2$s 사용가능</string>
+    <string name="available_balance_format_2">%1$s %2$s 사용가능，최소 %3$s %4$s</string>
+    <string name="withdraw_hint_format">인출수속비：%1$s，한번에 최소 %2$s，최소 출금 한도보다 낮을 경우 인출불가。</string>
+    <string name="error_amount_empty">수량을 입력하세요</string>
+    <string name="exchange_dst">으로 환전</string>
+    <string name="predicted_convertible_amount">환전 가능</string>
+    <string name="exchange_fee_format">환전 수속비：%1$s。</string>
+    <string name="exchange_success">환전 성공</string>
+    <string name="exchange_btn">환전 확인</string>
+    <string name="bill_detail">명세서 내역</string>
+    <string name="filter_currency">화폐종류 선택</string>
+    <string name="interest">수익</string>
+    <string name="subsidy">이자</string>
+    <string name="wallet_detail">나의 자산</string>
+
+    <string name="asset_total">총 자산(USD)</string>
+    <string name="wallet_empty_symbol_hint">화폐 종류 선택</string>
+
+    <!--EOS charge for memo-->
+    <string name="deposit_address_title">계정 주소</string>
+    <string name="deposit_address_copy">복제 주소</string>
+    <string name="deposit_memo_title">태그(표시)</string>
+    <string name="deposit_memo_copy">복제 태그</string>
+    <string name="deposit_memo_warning">경고：MEMO 형식으로 EOS를 입금할 경우, 저희가 제공해 드리는 MEMO 태그를 입력하야야 되며, 불법적인 MEMO 입금은 실패될 수도 있으므로 이점에 양해해 주시기 바랍니다.주소 태그를 작성하고 신중하게 확인하십시오. 귀하의 계정을 확인 할 수 있는 유일한 방법입니다. 자산을 잃어버린 경우 자산을 되찾을 수 없습니다.
+\n충전후, 전체 네트워크 의 확인이 필요니다. 1번의 네트워크 확인 후 계좌에 도착하고, 1회 네트워크 확인 후 인출 하실 수 있습니다.</string>
+
+    <!--memo提示dlg-->
+    <string name="deposit_memo_dlg_title">주의 ！</string>
+    <string name="deposit_memo_dlg_content">MEMO 형식으로 EOS를 입금할 경우, 저희가 제공해 드리는 MEMO 태그를 입력하야야 되며, 불법적인 MEMO 입금은 실패될 수도 있으므로 이점에 양해해 주시기 바랍니다.</string>
+    <string name="deposit_memo_dlg_btn_text">알겠습니다, 확인</string>
+</resources>

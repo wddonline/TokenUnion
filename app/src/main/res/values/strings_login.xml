@@ -1,63 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="lan_cn">简体中文</string>
-    <string name="login">登 录</string>
-    <string name="username">用户名</string>
-    <string name="password">密码</string>
-    <string name="forget_pwd">忘记密码</string>
+    <string name="lan_cn">English</string>
+    <string name="login">Log In</string>
+    <string name="username">User Name</string>
+    <string name="password">Password</string>
+    <string name="forget_pwd">I Forgot</string>
 
-    <string name="username_or_password_error">用户名或密码错误</string>
-    <string name="user_register">新用户注册</string>
-    <string name="lan_choose">语言选择</string>
-    <string name="register_info">注册-个人信息</string>
-    <string name="register_next">下一步-安全设置</string>
-    <string name="country">国家</string>
-    <string name="phone">手机号</string>
-    <string name="smscode">验证码</string>
-    <string name="pwd_again">确认密码</string>
-    <string name="invite_code">邀请码（选填）</string>
-    <string name="user_licence">阅读并接受《用户协议》及《隐私权保护声明》</string>
-    <string name="err_country_not_supported">暂不支持该国家用户注册</string>
-    <string name="err_username_format">6位以上字母和数字组合</string>
-    <string name="err_phone_format">手机号格式错误</string>
-    <string name="get_smscode">获取验证码</string>
-    <string name="err_smscode">验证码错误</string>
-    <string name="err_pwd_format">密码格式错误</string>
-    <string name="err_pwd_not_consistency">密码不一致</string>
-    <string name="smscode_waitting">(%1$d)重新获取</string>
-    <string name="user_licence_title">用户协议</string>
-    <string name="privacy_licence_title">隐私权保护声明</string>
-    <string name="send_smscode_hint">验证码将会发到您的手机上，请注意查收</string>
+    <string name="username_or_password_error">Incorrect User or Password</string>
+    <string name="user_register">Sign Up Now</string>
+    <string name="lan_choose">Language</string>
+    <string name="register_info">Sign Up</string>
+    <string name="register_next">Sign Up Now</string>
+    <string name="country">Countries And Regions</string>
+    <string name="phone">Phone Number</string>
+    <string name="smscode">Verification Code</string>
+    <string name="email">邮箱</string>
+    <string name="pwd_again">Confirm Password</string>
+    <!--<string name="invite_code">Invite Code(Optional)</string>-->
+    <string name="invite_code">邀请码（必填）</string>
+    <string name="user_licence">Read and Accept: Terms/Privacy/Security Agreements</string>
+    <!--<string name="err_country_not_supported">This country is not allowed to sign in</string>-->
+    <string name="err_country_empty">Choose your Countries And Regions</string>
+    <string name="err_username_format">Must Contain 6-20 numbers and letters</string>
+    <string name="err_phone_format">Incorrect phone number format</string>
+    <string name="get_smscode">Send</string>
+    <string name="err_smscode">Incorrect Code</string>
+    <string name="err_pwd_format">8 more numbers and letters</string>
+    <string name="err_pwd_format_len">8 more numbers and letters</string>
+    <string name="err_pwd_not_consistency">Inconsistent Password</string>
+    <string name="err_accept_agreements">Accept the Agreements</string>
+    <string name="smscode_waitting">(%1$d)Again</string>
+    <string name="user_licence_title">Terms of Service</string>
+    <string name="privacy_licence_title">Privacy Policy and Statement</string>
+    <string name="send_smscode_hint">Verification Code has been sent to your phone, please check</string>
 
-    <string name="country_region">国家和地区</string>
+    <string name="country_region">Countries And Regions</string>
 
-    <string name="safety_settings">注册-安全设置</string>
-    <string name="capital_pwd">设置资金密码</string>
-    <string name="err_capital_pwd">6-12位字母和数字组合</string>
-    <string name="capital_pwd_again">确认资金密码</string>
-    <string name="register_now">立即注册</string>
-    <string name="bind_google_identify">绑定谷歌身份验证器</string>
+    <string name="safety_settings">Security</string>
+    <string name="capital_pwd">Payment Password</string>
+    <string name="err_capital_pwd">Must Contain 6-20 numbers and letters</string>
+    <string name="capital_pwd_again">Confirm Password</string>
+    <string name="register_now">Sign Up Now</string>
+    <string name="entry_now">Confirm</string>
+    <string name="bind_google_identify">GA Code Binding</string>
+    <string name="unbind_google_identify">Untie GA Code</string>
 
-    <string name="google_identify">安全验证</string>
-    <string name="input_google_code">请输入谷歌验证码</string>
-    <string name="login_now">立刻登录</string>
-    <string name="google_code_miss">谷歌验证码丢失？点击这里</string>
+    <string name="google_identify">GA Code Binding</string>
+    <string name="input_google_code_tips_step_first">- First Step -</string>
+    <string name="input_google_code_tips">Please fill in the following secret key in Google Authenticator APP</string>
+    <string name="input_google_code_copy"><b>Copy</b></string>
+    <string name="input_google_code_tips_step_second">- Second Step -</string>
+    <string name="input_google_code_please_input">Enter GA Code</string>
+    <string name="input_google_code_copy_success">Success</string>
 
-    <string name="retrieve_pwd">找回密码</string>
-    <string name="new_pwd">新密码</string>
-    <string name="reset_pwd">重置密码</string>
-    <string name="reset_pwd_success">密码重置成功</string>
+    <string name="input_google_code_cannot_find">If you cannot retrieve the GA Code, \nplease contact us at customer support</string>
+    <string name="google_code_unbind_now">Confirm</string>
+    <string name="google_code_unbind_success">Untie Successfully</string>
 
-    <string name="change_pwd">修改登录密码</string>
-    <string name="do_chang_pwd">确认修改</string>
-    <string name="change_pwd_success">修改密码成功</string>
-    <string name="old_pwd">原登录密码</string>
-    <string name="err_old_pwd">原密码错误</string>
-    <string name="new_login_pwd">新登录密码</string>
+    <string name="login_now">Log In</string>
+    <string name="google_code_bind_now">Bind Now</string>
+    <string name="google_code_miss">Loss the GA Code？Click Here</string>
+    <string name="google_code_lost">Loss the GA Code</string>
+    <string name="google_code_not_bind">Not yet bind GA Code, Bind Now</string>
 
-    <string name="change_capital_pwd">修改资金密码</string>
-    <string name="old_capital_pwd">原资金密码</string>
-    <string name="new_capital_pwd">新资金密码</string>
+    <string name="retrieve_pwd">Forgot Password</string>
+    <string name="new_pwd">New Password</string>
+    <string name="reset_pwd">Reset Password</string>
+    <string name="reset_pwd_success">Success</string>
+
+    <string name="change_pwd">Account Password</string>
+    <string name="do_chang_pwd">Confirm to Change</string>
+    <string name="change_pwd_success">Success</string>
+    <string name="old_pwd">Old Account Password</string>
+    <string name="err_old_pwd">Incorrect Password</string>
+    <string name="new_login_pwd">New Account Password</string>
+
+    <string name="change_capital_pwd">Payment Password</string>
+    <string name="old_capital_pwd">Old Payment Password</string>
+    <string name="new_capital_pwd">New Payment Password</string>
+
 
 </resources>

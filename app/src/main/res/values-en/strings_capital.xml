@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="yesterday_income_any">Welcome to TokenUnion!</string>
+    <string name="capital_total">AUM (USD)</string>
+    <string name="capital_complex">Monthly Yield</string>
+    <string name="total_income">Total Profit (USD)</string>
+    <string name="yesterday_income">Daily Profit (USD)</string>
+    <string name="total_income_any">Total Profit (ANY)</string>
+    <string name="wealth_detail">Wealth Account</string>
+    <string name="search_currency">Search</string>
+    <string name="super_node">超级节点</string>
+    <string name="detail">More</string>
+    <string name="product_detail">More</string>
+    <string name="quota_hold_format">My Holding (%1$s）</string>
+    <string name="view_all_bills">ALL Records ></string>
+    <string name="deposit">Purchase</string>
+    <string name="redeem">Redeem</string>
+    <string name="interest_rule">Yield Detail</string>
+    <string name="interest_detail">Yield Detail</string>
+    <string name="update_time_format">（Update Time：%1$s）</string>
+    <string name="wealth_total">Personal AUM ($)</string>
+    <string name="month_rate">Monthly Yield</string>
+    <string name="leader_reward">Leader Bonus</string>
+    <string name="star_user_less_layer_10">Royalty Members in family\nwithin 10 Generations</string>
+    <string name="month_reward_balance">Monthly Bonus</string>
+    <string name="currency">Token</string>
+    <string name="amount">Quantity</string>
+    <string name="deposit_action">Purchase</string>
+    <string name="input_balance">Enter the Amount</string>
+    <string name="all">ALL</string>
+    <string name="deposit_input_hint">More than %1$s %2$s</string>
+    <string name="deposit_hold_wealth">Holding %1$s %2$s（%3$s）</string>
+    <string name="deposit_can_redeem">Availiable Balance %1$s %2$s（%3$s）</string>
+    <string name="deposit_usable_wealth">Availiable Balance %1$s %2$s（%3$s）</string>
+    <string name="deposit_month_interest">Expect Monthly Interest %1$s ANY</string>
+    <string name="safety_verified">Security Verification</string>
+    <string name="capital_pwd_hint">Payment Password</string>
+    <string name="price_temporary_changed">Please Re-enter due to price fluctuation</string>
+    <string name="deposit_save_success">Success</string>
+    <string name="deposit_forget_pwd">Incorrect Password, I Forgot</string>
+    <string name="err_beyond_quota">Excess available balance</string>
+    <string name="err_empty_quota">Enter the Amount</string>
+    <string name="redeem_action">Redeem</string>
+    <string name="redeem_quota_format">Availiable Balance %1$s %2$s（%3$s）</string>
+    <string name="no_interest_when_redeeming">No profit today for the part of Redemption. \nCommision:</string>
+    <string name="redeem_back_success">Success</string>
+    <string name="interest_added">Total Profit（ANY）</string>
+    <string name="select_term">Time Limit</string>
+    <string name="become_super_node">Become SuperNode</string>
+    <string name="locking_period">Period</string>
+    <string name="enjoy_interest">Expected Profit</string>
+    <string name="any_usable_balance_format">Availiable Balance %1$s ANY（%2$s）</string>
+    <string name="lock_capital">Purchase Now</string>
+    <string name="hold_any_record">Purchase Records(ANY)</string>
+    <string name="hold_any_income">Profit Records(ANY)</string>
+    <string name="view_all_bill_record">ALL Records ></string>
+    <string name="go_lock_capital">Purchase Now</string>
+    <string name="time">Time</string>
+    <string name="period">Period</string>
+    <string name="start">Start</string>
+    <string name="available">Available</string>
+
+
+    <!--xiaohansong added-->
+    <string name="err_beyond_usbamount">Excess available balance</string>
+    <string name="err_lower_min_deposit_amount">Lower than the minimum deposit amount</string>
+    <string name="err_empty_depositin">Enter the amount</string>
+    <string name="err_lower_min_redeem_amount">Lower than the minimum redeem amount</string>
+    <string name="err_empty_redeem">Enter the amount</string>
+    <string name="interest_rule_include_format">"%1$s ~ %2$s (Including)</string>
+    <string name="interest_rule_up_format">More than "%1$s</string>
+
+    <string name="period_day">days</string>
+    <string name="profit_per_month">month</string>
+
+    <!--新用户专享-->
+    <string name="profit_new_user_holdings_title">Welcome Package</string>
+    <string name="profit_new_user_holdings">My Holdings</string>
+    <string name="profit_new_user_tags1">Welcome</string>
+    <string name="profit_new_user_tags2">0 Fee</string>
+
+    <!--More than 0.01 BTC-->
+    <!--<string name="profit_new_user_products_hint">More than %1$s %2$s </string>-->
+
+    <!--Available Balance 0.3654 BTC（$3002.3654）-->
+    <string name="new_user_availiable_balance_format">Availiable Balance %1$s %2$s（$%3$s）</string>
+    <!--Monthly Yield 8% + 5% Bonus-->
+    <string name="new_user_monthly_format">Monthly Yield %1$s + %2$s Bonus</string>
+    <!--Expected Profit 4562.3654 ANY（$10023.3654）-->
+    <string name="new_user_expected_format">Expected Profit %1$s %2$s（$%3$s）</string>
+</resources>

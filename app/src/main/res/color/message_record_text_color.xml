@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--消息中心字体颜色：重点消息 红色；普通消息 黑色。-->
+    <item android:color="#DE524F" android:state_selected="true" />
+    <item android:color="#000000" android:state_selected="false" />
+    <item android:color="#000000" />
+
+</selector>

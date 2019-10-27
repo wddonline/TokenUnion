@@ -3,172 +3,146 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@mipmap/bg_wallet_home_top"
     android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom">
+
+            <com.tokenunion.pro.widget.RoundNetworkImageView
+                android:id="@+id/fragment_capital_home_headimg"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/bg_mine_head"
+                android:padding="1dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/app_logo"
+                app:cornerRadius="17dp" />
+
+            <TextView
+                android:id="@+id/fragment_wallet_home_level"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textColor="#DE524F"
+                android:text="Reverse"
+                android:textStyle="italic"
+                android:textSize="12sp"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical">
+
+            <TextView
+                android:id="@+id/fragment_wallet_home_yesterday_income_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_capital_top_input"
+                android:gravity="center_vertical"
+                android:minWidth="158dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/yesterday_income_any"
+                android:textColor="#888888"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/fragment_wallet_home_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@mipmap/ic_msg_tip" />
+
+            <TextView
+                android:id="@+id/fragment_wallet_home_hint_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="9dp"
+                android:layout_gravity="right|top"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/red_dot"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+    </LinearLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@mipmap/bg_wallet_home_top">
+        android:layout_centerInParent="true"
+        android:clipChildren="false"
+        android:paddingTop="2dp">
 
-        <LinearLayout
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/fragment_wallet_home_gallery"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:gravity="center_vertical"
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="bottom">
-
-                    <com.iconiz.tokenunion.widget.RoundNetworkImageView
-                        android:id="@+id/fragment_wallet_home_headimg"
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        app:cornerRadius="17dp"
-                        android:padding="1dp"
-                        android:src="@mipmap/default_headimg"
-                        android:scaleType="centerCrop"/>
-
-                    <TextView
-                        android:id="@+id/fragment_wallet_home_level"
-                        android:layout_width="wrap_content"
-                        android:layout_height="20dp"
-                        android:textColor="#DE524F"
-                        android:text="Reverse"
-                        android:textStyle="italic"
-                        android:textSize="12sp"
-                        android:layout_marginLeft="5dp"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="right|center_vertical">
-
-                    <TextView
-                        android:id="@+id/fragment_wallet_home_yesterday_income_hint"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:minWidth="158dp"
-                        android:textColor="#888888"
-                        android:paddingLeft="10dp"
-                        android:paddingRight="10dp"
-                        android:gravity="center_vertical"
-                        android:textSize="10sp"
-                        android:text="@string/yesterday_income_any"
-                        android:background="@drawable/bg_capital_top_input"/>
-
-                </LinearLayout>
-
-                <FrameLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent">
-
-                    <ImageView
-                        android:id="@+id/fragment_wallet_home_hint"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:src="@mipmap/ic_msg_tip"
-                        android:paddingLeft="10dp"
-                        android:paddingRight="10dp"/>
-
-                    <TextView
-                        android:id="@+id/fragment_wallet_home_hint_sign"
-                        android:layout_width="wrap_content"
-                        android:layout_height="9dp"
-                        android:background="@drawable/red_dot"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="15dp"
-                        android:layout_gravity="right|top"/>
-
-                </FrameLayout>
-
-            </LinearLayout>
-
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="2dp"
-                android:clipChildren="false"
-                android:layout_centerInParent="true">
-
-                <androidx.viewpager.widget.ViewPager
-                    android:id="@+id/fragment_wallet_home_gallery"
-                    android:layout_width="match_parent"
-                    android:layout_height="152dp"
-                    android:layout_gravity="center"
-                    android:clipChildren="false" />
-
-                <LinearLayout
-                    android:id="@+id/fragment_wallet_home_indicator"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="horizontal"
-                    android:layout_gravity="bottom"
-                    android:layout_marginBottom="7dp">
-
-                    <View
-                        android:layout_width="7dp"
-                        android:layout_height="7dp"
-                        android:layout_marginRight="8dp"
-                        android:background="@drawable/find_home_tab_indicator" />
-
-                    <View
-                        android:layout_width="7dp"
-                        android:layout_height="7dp"
-                        android:layout_marginRight="8dp"
-                        android:background="@drawable/find_home_tab_indicator" />
-
-                    <View
-                        android:layout_width="7dp"
-                        android:layout_height="7dp"
-                        android:layout_marginRight="8dp"
-                        android:background="@drawable/find_home_tab_indicator" />
-
-                    <View
-                        android:layout_width="7dp"
-                        android:layout_height="7dp"
-                        android:layout_marginRight="8dp"
-                        android:background="@drawable/find_home_tab_indicator" />
-
-                    <View
-                        android:layout_width="7dp"
-                        android:layout_height="7dp"
-                        android:layout_marginRight="8dp"
-                        android:background="@drawable/find_home_tab_indicator" />
-
-                    <View
-                        android:layout_width="7dp"
-                        android:layout_height="7dp"
-                        android:layout_marginRight="8dp"
-                        android:background="@drawable/find_home_tab_indicator" />
-
-                    <View
-                        android:layout_width="7dp"
-                        android:layout_height="7dp"
-                        android:background="@drawable/find_home_tab_indicator" />
-
-                </LinearLayout>
-
-            </FrameLayout>
-
-        </LinearLayout>
+            android:layout_gravity="center"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:clipChildren="false" />
 
     </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_wallet_home_market_ll"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="@dimen/activityLeftMargin"
+        android:layout_marginRight="@dimen/activityRightMargin"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/item_market_iv_left"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/ic_market_left_arrow"
+            />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/fragment_wallet_home_market_pager"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:id="@+id/item_market_iv_right"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/ic_market_right_arrow"
+            />
+    </LinearLayout>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/fragment_wallet_home_pager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
 
 </LinearLayout>

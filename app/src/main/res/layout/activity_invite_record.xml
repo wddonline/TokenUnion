@@ -5,87 +5,79 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@android:color/white"
     android:fitsSystemWindows="true"
     tools:context=".ui.invite.view.activity.InviteRecordActivity">
 
     <include layout="@layout/layout_common_actionbar"/>
 
-    <FrameLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:adjustViewBounds="true"
-            android:src="@mipmap/bg_member_desc_top"/>
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@mipmap/bg_member_desc_top">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:gravity="center_vertical">
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
 
-            <LinearLayout
-                android:layout_width="0dp"
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:gravity="center">
+                android:gravity="center"
+                android:textColor="#888888"
+                android:textSize="14sp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/team_size_usd"/>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:textColor="#888888"
-                    android:textSize="14sp"
-                    android:layout_marginBottom="10dp"
-                    android:text="@string/team_size_usd"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#DE524F"
-                    android:gravity="center"
-                    android:textSize="18sp"
-                    android:text="214597.3265"/>
-
-            </LinearLayout>
-
-            <View
-                android:layout_width="1dp"
-                android:layout_height="49dp"
-                android:background="#BBBBBB"/>
-
-            <LinearLayout
-                android:layout_width="0dp"
+            <TextView
+                android:id="@+id/activity_invite_record_team_bal"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:gravity="center">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:textColor="#888888"
-                    android:textSize="14sp"
-                    android:layout_marginBottom="10dp"
-                    android:text="@string/team_num"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#DE524F"
-                    android:gravity="center"
-                    android:textSize="18sp"
-                    android:text="567"/>
-
-            </LinearLayout>
+                android:textColor="#DE524F"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:text=""/>
 
         </LinearLayout>
 
-    </FrameLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="49dp"
+            android:background="#BBBBBB"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#888888"
+                android:textSize="14sp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/team_num"/>
+
+            <TextView
+                android:id="@+id/activity_invite_record_team_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#DE524F"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:text=""/>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -94,7 +86,8 @@
         android:layout_marginTop="25dp"
         android:gravity="center_vertical"
         android:paddingLeft="20dp"
-        android:paddingRight="20dp">
+        android:paddingRight="20dp"
+        android:background="@android:color/white">
 
         <View
             android:layout_width="1dp"
@@ -131,13 +124,17 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#EDEDED"
-        android:layout_marginTop="22dp"/>
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
 
     <LinearLayout
         android:id="@+id/activity_invite_record_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:paddingTop="7dp"
         android:paddingBottom="7dp">
 
@@ -178,7 +175,9 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#EDEDED"/>
+        android:background="#EDEDED"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
 
     <com.scwang.smartrefresh.layout.SmartRefreshLayout
         android:id="@+id/activity_invite_record_refresh"

@@ -6,7 +6,7 @@
     android:textSize="14sp"
     android:gravity="center"
     android:clickable="true"
-    android:text="11111111111"
+    android:text=""
     android:background="@drawable/common_item_bg"
     android:textColor="#DE524F"
     android:paddingTop="6dp"

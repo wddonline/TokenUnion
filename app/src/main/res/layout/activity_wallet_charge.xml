@@ -5,16 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:fitsSystemWindows="true"
+    android:background="@android:color/white"
     tools:context=".ui.wallet.view.activity.WalletChargeActivity">
 
     <include layout="@layout/layout_common_actionbar"/>
 
-    <com.scwang.smartrefresh.layout.SmartRefreshLayout
-        android:id="@+id/activity_wallet_charge_refresh"
+    <com.tokenunion.pro.widget.LoadView
+        android:id="@+id/data_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -53,40 +60,64 @@
                 android:id="@+id/activity_wallet_charge_tabs"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:itemSpacing="5dp"
+                app:lineSpacing="5dp"
                 android:layout_marginLeft="22dp"
                 android:layout_marginRight="22dp"/>
 
-            <com.iconiz.tokenunion.widget.NetworkImageView
+            <com.tokenunion.pro.widget.NetworkImageView
                 android:id="@+id/activity_wallet_charge_qr"
                 android:layout_width="151dp"
                 android:layout_height="151dp"
-                android:layout_marginTop="53dp"/>
+                android:layout_marginTop="40dp"/>
 
-            <TextView
-                android:id="@+id/activity_wallet_charge_qr_str"
+            <!--不带memo的普通币种收款地址展示-->
+            <LinearLayout
+                android:id="@+id/activity_wallet_charge_addr_container"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:textColor="#2E3039"
-                android:textSize="14sp"
-                android:layout_marginTop="23dp"
-                android:text="111111111111111111111111111111111"
-                android:layout_marginLeft="38dp"
-                android:layout_marginRight="38dp"/>
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:id="@+id/activity_wallet_charge_qr_str"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#2E3039"
+                    android:textSize="14sp"
+                    android:layout_marginTop="23dp"
+                    android:text="tucdeposit"
+                    android:layout_marginLeft="38dp"
+                    android:layout_marginRight="38dp"/>
 
-            <TextView
-                android:layout_width="wrap_content"
+                <TextView
+                    android:id="@+id/activity_wallet_charge_qr_copy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#3688F4"
+                    android:textSize="14sp"
+                    android:text="@string/copy_uri"
+                    android:layout_marginTop="5dp"
+                    android:visibility="visible"
+                    android:autoLink="all"
+                    android:onClick="onCopyCodeClicked"/>
+            </LinearLayout>
+            <!--带memo的币种，比如EOS的收款地址展示-->
+            <include layout="@layout/layout_wallet_charge_memo"
+                android:id="@+id/activity_wallet_charge_memo_container"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="@dimen/activityLeftMargin"
+                android:layout_marginRight="@dimen/activityRightMargin"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#3688F4"
-                android:textSize="14sp"
-                android:text="@string/copy_uri"
-                android:layout_marginTop="5dp"
-                android:autoLink="all"
-                android:onClick="onCopyCodeClicked"/>
+                android:visibility="gone"
+                />
 
         </LinearLayout>
 
-    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </ScrollView>
 
     <TextView
         android:layout_width="match_parent"

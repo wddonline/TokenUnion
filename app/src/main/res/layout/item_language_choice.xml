@@ -10,7 +10,7 @@
         android:id="@+id/item_language_choice_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="11111"
+        android:text=""
         android:textColor="#DE524F"
         android:textSize="12sp"
         android:paddingTop="7dp"

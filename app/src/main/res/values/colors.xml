@@ -7,4 +7,30 @@
     <color name="windowBackground">#FAFAFA</color>
     <color name="colorActionBarTitle">#888888</color>
     <color name="main_text_color">#DE524F</color>
+
+    <color name="possible_result_points">#c0ffbd21</color>
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c099cc00</color>
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="text_blue_link">#398AF4</color>
+    <color name="text_white">#ffffffff</color>
+    <color name="text_black">#ff000000</color>
+    <color name="text_dark">#ff333333</color>
+    <color name="dlg_background_black">#000000</color>
+    <color name="message_text_color_important">#DE524F</color>
+    <color name="message_text_color_normal">#2E3039</color>
+
+    <!--灰色的分割线颜色-->
+    <color name="gray_line_color">#E3E3E3</color>
+
+    <!--行情显示的文本颜色：涨 绿，跌 红，不变 灰-->
+    <color name="market_up_text_color">#009688</color>
+    <color name="market_down_text_color">#D14B64</color>
+    <color name="market_nochange_text_color">#888888</color>
+
 </resources>

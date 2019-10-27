@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="lan_cn">한국어</string>
+    <string name="login">로그인</string>
+    <string name="username">아이디</string>
+    <string name="password">비밀번호</string>
+    <string name="forget_pwd">비밀번호 찾기</string>
+
+
+    <string name="username_or_password_error">아이디 혹은 비밀번호가 바르지 않다</string>
+    <string name="user_register">회원가입</string>
+    <string name="lan_choose">Language</string>
+    <string name="register_info">회원가입</string>
+    <string name="register_next">회원가입</string>
+
+    <string name="country">나라</string>
+    <string name="phone">휴대폰번호</string>
+    <string name="smscode">인증 코드</string>
+    <string name="pwd_again">비밀번호 확인</string>
+    <!--<string name="invite_code">요청코드（임의 선택）</string>-->
+    <string name="invite_code">요청코드</string>
+    <string name="user_licence">읽은 후 동의: 사용자협의 및 개인정보 보호 정책</string>
+    <!--<string name="err_country_not_supported">暂不支持该国家用户注册</string>-->
+    <string name="err_country_empty">국가 선택</string>
+    <string name="err_username_format">6-20개 이상의 영문자모와 수자로 조합</string>
+    <string name="err_phone_format">휴대폰 번호 폼 오류</string>
+    <string name="get_smscode">인증 코드 받기</string>
+    <string name="err_smscode">인증 코드 오류</string>
+    <string name="err_pwd_format">8개 이상의 영문자모와 수자로 조합</string>
+    <string name="err_pwd_format_len">8개 이상의 영문자모와 수자로 조합</string>
+    <string name="err_pwd_not_consistency">비밀번호가 일치하지 않습니다</string>
+    <string name="err_accept_agreements">협의를 받아들이다</string>
+    <string name="smscode_waitting">(%1$d)다시 보내기</string>
+    <string name="user_licence_title">사용자협의</string>
+    <string name="privacy_licence_title">개인정보 보호 정책</string>
+    <string name="send_smscode_hint">문자 인증 코드 보내기</string>
+
+    <string name="country_region">국가와 지역</string>
+
+    <string name="safety_settings">안전 설정</string>
+    <string name="capital_pwd">결제 비밀번호 설정</string>
+    <string name="err_capital_pwd">6-20개 이상의 영문자모와 수자로 조합</string>
+    <string name="capital_pwd_again">결제 비밀번호 확인</string>
+    <string name="register_now">회원가입</string>
+    <string name="entry_now">수정 확인</string>
+    <string name="bind_google_identify">구글 신분 인증기 연동</string>
+    <string name="unbind_google_identify">구글 신분 인증기 풀다</string>
+
+    <string name="google_identify">납치하다 GA Code</string>
+    <string name="input_google_code_tips_step_first">- 첫걸음 -</string>
+    <string name="input_google_code_tips">이하 문자를 구글 신분 인증기에 기입해 주십시오</string>
+    <string name="input_google_code_copy"><b>복사</b></string>
+    <string name="input_google_code_tips_step_second">- 다음 단계 -</string>
+    <string name="input_google_code_please_input">구글 인증코드를 입력하세요</string>
+    <string name="input_google_code_copy_success">복사 성공</string>
+
+    <string name="input_google_code_cannot_find">GA Code 를 찾을 수 없습니다，고객 서비스</string>
+    <string name="google_code_unbind_now">풀다 확인</string>
+    <string name="google_code_unbind_success">풀다 성공</string>
+
+    <string name="login_now">로그인</string>
+    <string name="google_code_bind_now">즉시 연동</string>
+    <string name="google_code_miss">GA Code 를 찾을 수 없습니다？여기 클릭</string>
+    <string name="google_code_lost">GA Code 를 찾을 수 없습니다</string>
+    <string name="google_code_not_bind">아직 구글 신분 인증기 연동，즉시 연동</string>
+
+    <string name="retrieve_pwd">비밀 번호 되찾기.</string>
+    <string name="new_pwd">새 암호</string>
+    <string name="reset_pwd">비밀번호 재설정</string>
+    <string name="reset_pwd_success">비빌번호 재설정 완료</string>
+
+    <string name="change_pwd">비밀번호 수정</string>
+    <string name="do_chang_pwd">수정 확인</string>
+    <string name="change_pwd_success">비밀번호 수정 완료</string>
+    <string name="old_pwd">기존의 비밀번호</string>
+    <string name="err_old_pwd">암호 오류</string>
+    <string name="new_login_pwd">새 비밀번호</string>
+
+    <string name="change_capital_pwd">결제 비밀번호 수정</string>
+    <string name="old_capital_pwd">기존의 결제 비밀번호</string>
+    <string name="new_capital_pwd">새 결제 비밀번호</string>
+
+
+</resources>

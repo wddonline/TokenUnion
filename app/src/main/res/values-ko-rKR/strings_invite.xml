@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="invite_friend">초대</string>
+    <string name="view_invite_friend_record">초대 내역보기 ></string>
+    <string name="my_invite_format">나의 추천코드: %1$s </string>
+    <string name="copy_invite_code">추천코드 복사</string>
+    <string name="copy_invite_link">링크 복사</string>
+
+    <string name="copy_success">복사 성공</string>
+    <string name="team_size_usd">산하 규모(USD)</string>
+    <string name="team_num">단체 인원수</string>
+    <string name="invite_detail">요청 내역</string>
+    <string name="time_distribution">시간 분포</string>
+    <string name="size_distribution">규모 분포</string>
+    <string name="header_register_time">가입 시간</string>
+    <string name="header_size">규모</string>
+    <string name="header_ratio">비율</string>
+    <string name="header_star_level">등급</string>
+    <string name="header_people">수량</string>
+    <string name="header_team">레그</string>
+    <string name="invite_qr_code">요청 QR코드</string>
+    <string name="level_star">회원</string>
+    <string name="level_jade">Star1</string>
+    <string name="level_gold">Star2</string>
+    <string name="level_titanium">Star3</string>
+    <string name="level_platinum">Star4</string>
+    <string name="level_diamond">Star5</string>
+
+
+</resources>

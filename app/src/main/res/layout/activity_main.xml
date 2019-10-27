@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.iconiz.tokenunion.widget.XFragmentTabHost  xmlns:android="http://schemas.android.com/apk/res/android"
+<com.tokenunion.pro.widget.XFragmentTabHost xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@android:id/tabhost"
     android:layout_width="match_parent"
@@ -31,4 +31,4 @@
 
     </LinearLayout>
 
-</com.iconiz.tokenunion.widget.XFragmentTabHost>
+</com.tokenunion.pro.widget.XFragmentTabHost>

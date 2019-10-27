@@ -14,9 +14,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:background="@android:color/white"
         android:paddingTop="8dp"
-        android:paddingBottom="8dp">
+        android:paddingBottom="8dp"
+        >
 
         <LinearLayout
             android:id="@+id/fragment_wallet_charge"
@@ -160,23 +160,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:background="@android:color/white"
         android:gravity="center_vertical"
-        android:paddingLeft="22dp"
-        android:paddingRight="22dp"
-        android:paddingTop="11dp"
-        android:paddingBottom="11dp">
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="11dp">
 
         <View
             android:layout_width="1dp"
             android:layout_height="15dp"
-            android:background="#DE524F"/>
+            android:background="#CAAC89"/>
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/wealth_detail"
+            android:text="@string/wallet_detail"
             android:textColor="#2E3039"
             android:layout_marginLeft="8dp"
             android:textSize="14sp" />
@@ -190,23 +189,32 @@
             android:paddingRight="10dp"
             android:gravity="center_vertical"
             android:text="@string/search_currency"
+            android:visibility="gone"
             android:drawableRight="@mipmap/ic_search_gray"
             android:background="@drawable/bg_white_rounded_input"/>
 
     </LinearLayout>
 
+    <ImageView
+        android:id="@+id/fragment_wallet_nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/img_no_data"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerInside"
+        android:visibility="gone"
+        />
     <com.scwang.smartrefresh.layout.SmartRefreshLayout
         android:id="@+id/fragment_wallet_refresh"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@android:color/white">
-
+        >
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/fragment_wallet_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fadingEdge="none"
-            android:overScrollMode="never"/>
+            android:overScrollMode="never" />
 
     </com.scwang.smartrefresh.layout.SmartRefreshLayout>
     

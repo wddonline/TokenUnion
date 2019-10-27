@@ -29,7 +29,7 @@
                 android:id="@+id/item_wallet_top_card_hide_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/capital_total"
+                android:text="@string/asset_total"
                 android:textSize="14sp"
                 android:drawableRight="@drawable/selector_password_hide"
                 android:drawablePadding="6dp"

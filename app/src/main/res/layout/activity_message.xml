@@ -18,6 +18,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/activity_message_list"
             android:layout_width="match_parent"
+            android:scrollbars="vertical"
             android:layout_height="wrap_content"/>
 
     </com.scwang.smartrefresh.layout.SmartRefreshLayout>

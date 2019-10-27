@@ -18,6 +18,7 @@
             style="?android:attr/progressBarStyleLarge" />
 
         <TextView
+            android:id="@+id/layout_common_load_loading_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/data_loading"

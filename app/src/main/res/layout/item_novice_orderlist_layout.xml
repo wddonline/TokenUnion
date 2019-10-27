@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="22dp"
+    android:paddingRight="22dp"
+    >
+
+    <View
+        android:id="@+id/item_novice_orderlist_layout_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EDEDED"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="9dp"
+        android:paddingBottom="9dp">
+
+        <TextView
+            android:id="@+id/item_novice_orderlist_layout_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="aaa"
+            android:textSize="12sp"
+            android:textColor="#888888"/>
+
+        <TextView
+            android:id="@+id/item_novice_orderlist_layout_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="bbb"
+            android:textSize="12sp"
+            android:textColor="#888888"/>
+
+        <TextView
+            android:id="@+id/item_novice_orderlist_layout_period"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="ccc"
+            android:textSize="12sp"
+            android:textColor="#888888"/>
+
+        <TextView
+            android:id="@+id/item_novice_orderlist_layout_income"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="ddd"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:textColor="#CAAC89"/>
+    </LinearLayout>
+
+</LinearLayout>

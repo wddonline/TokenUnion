@@ -8,57 +8,114 @@
     android:fitsSystemWindows="true"
     tools:context=".ui.mine.view.activity.GoogleValidatorActivity">
 
-    <include layout="@layout/layout_common_actionbar"/>
+    <include layout="@layout/layout_common_actionbar" />
 
     <com.scwang.smartrefresh.layout.SmartRefreshLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        app:srlEnablePureScrollMode="true"
-        android:background="@color/colorPrimary">
+        android:background="@color/colorPrimary"
+        app:srlEnablePureScrollMode="true">
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="center_horizontal"
-            android:paddingLeft="@dimen/activityLeftMargin"
-            android:paddingRight="@dimen/activityRightMargin"
-            android:paddingTop="47dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/input_google_code"
-                android:textColor="#888888"
-                android:textSize="14sp"/>
-
-            <com.iconiz.tokenunion.widget.SecurityCodeView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="38dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"/>
+            android:layout_height="match_parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="bottom"
-                android:paddingBottom="139dp">
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/activityLeftMargin"
+                android:paddingTop="47dp"
+                android:paddingRight="@dimen/activityRightMargin">
 
                 <TextView
-                    android:id="@+id/activity_google_validator_hint"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="12sp"
-                    android:textColor="#888888"
-                    android:gravity="center"
-                    android:text="@string/google_code_miss"/>
+                    android:text="@string/input_google_code_tips_step_first"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/input_google_code_tips"
+                    android:textColor="#888888"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/activity_google_ourcode"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:height="40dp"
+                    android:background="@drawable/bg_google_bind_rect"
+                    android:gravity="center_vertical"
+
+                    android:lines="2"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@color/text_white" />
+
+                <TextView
+                    android:id="@+id/activity_google_copy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:onClick="onGoogleCodeCopy"
+                    android:text="@string/input_google_code_copy"
+                    android:textColor="@color/text_blue_link"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="40dp"
+                    android:gravity="bottom|center"
+                    android:orientation="vertical"
+                    android:paddingBottom="120dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/input_google_code_tips_step_second"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp" />
+
+                    <com.tokenunion.pro.widget.SecurityCodeView
+                        android:id="@+id/activity_google_validator"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="38dp"
+                        android:layout_marginRight="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/input_google_code_please_input"
+                        android:textColor="#888888"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/activity_google_validator_hint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:text="@string/google_code_miss"
+                        android:textColor="#BBBBBB"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
 
             </LinearLayout>
-
-        </LinearLayout>
+        </ScrollView>
 
     </com.scwang.smartrefresh.layout.SmartRefreshLayout>
 
@@ -66,11 +123,11 @@
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_gravity="bottom"
-        android:gravity="center"
-        android:text="@string/login_now"
         android:background="@drawable/selector_rect_btn"
-        android:textSize="14sp"
+        android:gravity="center"
+        android:onClick="onLoginClicked"
+        android:text="@string/google_code_bind_now"
         android:textColor="@android:color/white"
-        android:onClick="onLoginClicked"/>
+        android:textSize="14sp" />
 
 </LinearLayout>

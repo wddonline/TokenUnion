@@ -6,92 +6,93 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:fitsSystemWindows="true"
-    tools:context=".ui.capital.view.activity.InterestRuleActivity">
+    android:background="@android:color/white"
+    tools:context=".ui.capital.view.activity.WealthDetailActivity">
 
     <include layout="@layout/layout_common_actionbar"/>
 
-    <FrameLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/bg_member_desc_top"
-            android:adjustViewBounds="true"/>
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@mipmap/bg_member_desc_top">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center_vertical">
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/capital_total"
+                android:textSize="14sp"
+                android:textColor="#888888"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/activity_wealth_detail_capital_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#DE524F"
+                android:textSize="24sp"
+                android:text=""/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/capital_complex"
+                android:textSize="14sp"
+                android:textColor="#888888"
+                android:layout_marginBottom="10dp"/>
 
             <LinearLayout
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center_horizontal"
-                android:orientation="vertical">
+                android:gravity="bottom|center_horizontal">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/capital_total"
-                    android:textSize="14sp"
-                    android:textColor="#888888"
-                    android:layout_marginBottom="10dp"/>
-
-                <TextView
-                    android:id="@+id/activity_wealth_detail_capital_total"
+                    android:id="@+id/activity_wealth_detail_complex_rate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="#DE524F"
-                    android:textSize="24sp"
-                    android:text="111111"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center_horizontal"
-                android:orientation="vertical">
+                    android:text=""
+                    android:textSize="24sp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/capital_complex"
+                    android:textColor="#DE524F"
                     android:textSize="14sp"
-                    android:textColor="#888888"
-                    android:layout_marginBottom="10dp"/>
+                    android:text=" %"
+                    android:layout_marginRight="10dp"/>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:id="@+id/activity_wealth_detail_complex_increase_rate"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="bottom|center_horizontal">
-
-                    <TextView
-                        android:id="@+id/activity_wealth_detail_complex_rate"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#DE524F"
-                        android:text="1111111"
-                        android:textSize="24sp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#DE524F"
-                        android:textSize="14sp"
-                        android:text=" %"/>
-
-                </LinearLayout>
+                    android:textColor="#CAAC89"
+                    android:drawablePadding="6dp"
+                    android:drawableLeft="@mipmap/ic_hot"
+                    android:visibility="gone"
+                    android:textSize="14sp"/>
 
             </LinearLayout>
 
         </LinearLayout>
 
-    </FrameLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -185,6 +186,7 @@
 
     <com.scwang.smartrefresh.layout.SmartRefreshLayout
         android:id="@+id/activity_wealth_detail_refresh"
+        app:srlEnableLoadMore="false"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 

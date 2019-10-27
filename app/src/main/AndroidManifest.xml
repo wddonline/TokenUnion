@@ -1,25 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:dist="http://schemas.android.com/apk/distribution"
-    package="com.iconiz.tokenunion">
+    package="com.tokenunion.pro">
 
     <dist:module dist:instant="true" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
 
     <application
-        android:name=".app.APApplication"
+        android:name=".app.TUApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.capital.view.activity.TUCRecordActivity"></activity>
+        <activity android:name=".ui.capital.view.activity.WealthDetailActivity$WealthRecordActivity"></activity>
+        <activity android:name=".ui.capital.view.fragment.MyWealthActivity" />
+        <activity android:name=".ui.capital.view.activity.SavingsProductsActivity" />
+        <activity android:name=".ui.capital.view.activity.NewUserPurchaseActivity" />
+        <activity android:name=".ui.capital.view.activity.NewUserHoldingActivity" />
+        <activity android:name=".ui.mine.view.activity.UnbindGoogleValidatorActivity" />
+        <activity android:name=".ui.capital.view.activity.TUCRecordActivity" />
         <activity
             android:name=".ui.welcome.SplashActivity"
             android:theme="@style/SplashTheme">
@@ -66,7 +77,9 @@
         <activity
             android:name=".ui.login.view.ForgetPwdActivity"
             android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
-        <activity android:name=".ui.mine.view.activity.GoogleValidatorActivity" />
+        <activity
+            android:name=".ui.mine.view.activity.GoogleValidatorActivity"
+            android:exported="true" />
         <activity android:name=".ui.login.view.SafetySettingsActivity" />
         <activity android:name=".ui.mine.view.activity.CountryChoiceActivity" />
         <activity
@@ -82,6 +95,17 @@
             android:name=".ui.wallet.view.activity.WalletWithdrawActivity"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
         <activity android:name=".ui.wallet.view.activity.WalletChargeActivity" />
+        <activity android:name=".zxing.android.CaptureActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
     </application>
 
 </manifest>
