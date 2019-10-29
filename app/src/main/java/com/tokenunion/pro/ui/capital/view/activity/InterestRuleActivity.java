@@ -13,7 +13,7 @@ import androidx.annotation.NonNull;
 
 import com.tokenunion.pro.ui.capital.model.LeaderParticularsBean;
 import com.tokenunion.pro.ui.capital.model.ProfitParticularsListBean;
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 import com.tokenunion.pro.config.ApiRequestCallback;
 import com.tokenunion.pro.manager.model.User;
 import com.tokenunion.pro.ui.capital.CapitalApi;

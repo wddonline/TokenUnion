@@ -10,7 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 import com.tokenunion.pro.app.TUApplication;
 import com.tokenunion.pro.ui.base.BaseViewHolder;
 import com.tokenunion.pro.utils.language.SpUtil;

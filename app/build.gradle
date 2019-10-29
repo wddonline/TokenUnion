@@ -23,11 +23,11 @@ android {
     productFlavors {
         ApiTest {
             buildConfigField "String", "URL_BASE_DOMAIN", "\"http://54.169.124.133:8010\""
-            applicationId "com.anypocket.pro.debug"
+            applicationId "com.tokenunion.pro.debug"
         }
         ApiOfficial {
             buildConfigField "String", "URL_BASE_DOMAIN", "\"https://www.anypocket.pro\""
-            applicationId "com.anypocket.pro"
+            applicationId "com.tokenunion.pro"
         }
     }
 

@@ -8,7 +8,7 @@ import androidx.appcompat.widget.AppCompatImageView;
 import androidx.core.content.ContextCompat;
 
 import com.bumptech.glide.Glide;
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 
 import java.io.File;
 

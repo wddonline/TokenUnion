@@ -13,7 +13,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.tokenunion.pro.ui.base.BaseActivity;
 import com.tokenunion.pro.ui.wallet.view.fragment.BillRecordFragment;
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 import com.tokenunion.pro.widget.PagerSlidingTabStrip;
 import com.yidaichu.android.common.utils.DensityUtils;
 

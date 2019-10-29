@@ -24,7 +24,7 @@ import com.tokenunion.pro.ui.wallet.WalletApi;
 import com.tokenunion.pro.ui.wallet.model.ExchangeConfigBean;
 import com.tokenunion.pro.ui.wallet.model.PaymentCard;
 import com.tokenunion.pro.ui.wallet.model.TradeBalanceBean;
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 import com.tokenunion.pro.ui.mine.view.activity.ChangeCapitalPwdActivity;
 import com.tokenunion.pro.utils.LogUtil;
 import com.tokenunion.pro.utils.ToastUtils;

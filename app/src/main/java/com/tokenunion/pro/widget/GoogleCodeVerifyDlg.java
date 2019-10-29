@@ -21,10 +21,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.tokenunion.pro.ui.mine.view.activity.GoogleValidatorActivity;
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 import com.tokenunion.pro.config.UserAccount;
 
-import static com.anypocket.pro.R.style.BottomDialog;
+import static com.tokenunion.pro.R.style.BottomDialog;
 
 /**
  * Create by: xiaohansong

@@ -16,7 +16,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 
 import com.tokenunion.pro.ui.capital.model.FinanceListBean;
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 import com.tokenunion.pro.config.ApiRequestCallback;
 import com.tokenunion.pro.ui.capital.CapitalApi;
 import com.tokenunion.pro.ui.capital.model.FixedProductListBean;

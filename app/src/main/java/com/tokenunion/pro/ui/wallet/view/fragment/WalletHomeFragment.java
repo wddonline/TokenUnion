@@ -22,7 +22,7 @@ import com.tokenunion.pro.ui.mine.view.activity.MessageActivity;
 import com.tokenunion.pro.ui.wallet.WalletApi;
 import com.tokenunion.pro.ui.wallet.model.MarketItemBean;
 import com.tokenunion.pro.ui.wallet.model.TopCard;
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 import com.tokenunion.pro.manager.UserManager;
 import com.tokenunion.pro.manager.model.User;
 import com.tokenunion.pro.ui.base.BaseFragment;

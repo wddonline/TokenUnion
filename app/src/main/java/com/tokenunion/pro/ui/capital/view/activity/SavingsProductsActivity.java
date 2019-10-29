@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 import androidx.viewpager.widget.ViewPager;
 
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 import com.tokenunion.pro.ui.base.BaseActivity;
 import com.tokenunion.pro.ui.base.CommonViewPagerAdapter;
 import com.tokenunion.pro.ui.capital.view.fragment.SavingProductFragment;
@@ -32,7 +32,17 @@ public class SavingsProductsActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_savings_products);
         ButterKnife.bind(this);
+        initData();
+        initViews();
+    }
 
+    @Override
+    protected void initData() {
+
+    }
+
+    @Override
+    protected void initViews() {
         ((TextView)findViewById(R.id.layout_common_actionbar_title)).setText(R.string.wealth_product);
 
         mTabView.setTextColor(Color.parseColor("#888888"));
@@ -57,21 +67,12 @@ public class SavingsProductsActivity extends BaseActivity {
         String[] titles = {getString(R.string.is_demand), getString(R.string.is_regular)};
         CommonViewPagerAdapter<SavingProductFragment> adapter = new CommonViewPagerAdapter<>(getSupportFragmentManager(), list, titles);
         mViewPager.setAdapter(adapter);
-        mViewPager.setCurrentItem(isDemand ? 0 : 1);
 
         mTabView.setViewPager(mViewPager);
         mTabView.setShouldExpand(true);
         mTabView.setIndicatorMode(PagerSlidingTabStrip.IndicatorMode.FIT_TEXT);
-    }
 
-    @Override
-    protected void initData() {
-
-    }
-
-    @Override
-    protected void initViews() {
-
+        mViewPager.setCurrentItem(isDemand ? 0 : 1);
     }
 
     public void onBackClicked(View view) {

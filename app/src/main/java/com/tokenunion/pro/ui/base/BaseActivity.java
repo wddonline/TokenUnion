@@ -16,7 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.app.ActivityOptionsCompat;
 
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 import com.tokenunion.pro.app.TUApplication;
 import com.tokenunion.pro.config.ApiRequestCallback;
 import com.tokenunion.pro.config.Configs;

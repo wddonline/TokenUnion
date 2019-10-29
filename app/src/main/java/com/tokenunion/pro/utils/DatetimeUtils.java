@@ -1,6 +1,6 @@
 package com.tokenunion.pro.utils;
 
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 import com.tokenunion.pro.app.TUApplication;
 
 import java.text.SimpleDateFormat;

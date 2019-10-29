@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.capital.view.activity.WealthDetailActivity$WealthRecordActivity">
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.capital.view.activity.WealthRecordActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <include layout="@layout/layout_common_actionbar"/>
+
+    <com.tokenunion.pro.widget.PagerSlidingTabStrip
+        android:id="@+id/activity_wealth_record_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#EDEDED"
+        app:pstsIndicatorColor="#DE524F" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/activity_wealth_record_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

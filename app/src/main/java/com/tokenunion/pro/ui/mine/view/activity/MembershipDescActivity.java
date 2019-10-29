@@ -16,7 +16,7 @@ import com.tokenunion.pro.config.Configs;
 import com.tokenunion.pro.ui.base.BaseActivity;
 import com.tokenunion.pro.ui.mine.model.MembershipLevel;
 import com.tokenunion.pro.ui.mine.view.fragment.MembershipDescFragment;
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 import com.tokenunion.pro.manager.model.User;
 import com.tokenunion.pro.ui.base.CommonViewPagerAdapter;
 import com.tokenunion.pro.utils.AppUtils;

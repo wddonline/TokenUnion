@@ -3,7 +3,7 @@ package com.tokenunion.pro.ui.wallet.view.fragment;
 import android.os.Bundle;
 import android.view.View;
 
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 import com.tokenunion.pro.ui.base.BaseFragment;
 import com.tokenunion.pro.widget.LoadView;
 

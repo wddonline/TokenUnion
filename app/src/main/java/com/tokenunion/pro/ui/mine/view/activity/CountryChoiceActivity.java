@@ -8,7 +8,7 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 import com.tokenunion.pro.config.ApiRequestCallback;
 import com.tokenunion.pro.config.Configs;
 import com.tokenunion.pro.ui.base.BaseActivity;

@@ -12,11 +12,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.tokenunion.pro.ui.mine.model.VersionCheckBean;
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 import com.tokenunion.pro.app.AppUpDateManage;
 import com.tokenunion.pro.utils.StringUtils;
 
-import static com.anypocket.pro.R.style.BottomDialog;
+import static com.tokenunion.pro.R.style.BottomDialog;
 
 /**
  * Create by: xiaohansong

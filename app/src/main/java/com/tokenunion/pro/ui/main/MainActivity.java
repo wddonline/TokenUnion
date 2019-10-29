@@ -10,10 +10,10 @@ import android.widget.TextView;
 
 import com.tokenunion.pro.ui.base.BaseActivity;
 import com.tokenunion.pro.ui.invite.view.fragment.InviteHomeFragment;
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 import com.tokenunion.pro.ui.base.BaseFragment;
 import com.tokenunion.pro.ui.capital.view.fragment.CapitalHomeFragment;
-import com.tokenunion.pro.ui.find.FindHomeFragment;
+import com.tokenunion.pro.ui.find.view.fragment.FindHomeFragment;
 import com.tokenunion.pro.ui.mine.view.fragment.MineHomeFragment;
 import com.tokenunion.pro.ui.wallet.view.fragment.WalletHomeFragment;
 import com.tokenunion.pro.utils.LogUtil;

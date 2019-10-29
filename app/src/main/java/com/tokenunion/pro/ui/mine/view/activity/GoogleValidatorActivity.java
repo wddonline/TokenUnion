@@ -18,7 +18,7 @@ import androidx.annotation.NonNull;
 
 import com.tokenunion.pro.ui.base.BaseActivity;
 import com.tokenunion.pro.ui.login.UserApi;
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 import com.tokenunion.pro.config.ApiRequestCallback;
 import com.tokenunion.pro.config.UserAccount;
 import com.tokenunion.pro.utils.ToastUtils;

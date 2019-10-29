@@ -16,7 +16,7 @@ import com.tokenunion.pro.ui.mine.view.activity.MembershipCenterActivity;
 import com.tokenunion.pro.ui.mine.view.activity.MessageActivity;
 import com.tokenunion.pro.ui.mine.view.activity.SecurityCenterActivity;
 import com.tokenunion.pro.ui.mine.view.activity.SystemSettingsActivity;
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 import com.tokenunion.pro.config.ApiRequestCallback;
 import com.tokenunion.pro.config.UserAccount;
 import com.tokenunion.pro.manager.model.User;

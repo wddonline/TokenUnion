@@ -13,7 +13,7 @@ import androidx.annotation.Nullable;
 import com.tokenunion.pro.ui.base.BaseActivity;
 import com.tokenunion.pro.ui.login.UserApi;
 import com.tokenunion.pro.ui.mine.view.activity.CountryChoiceActivity;
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 import com.tokenunion.pro.config.ApiRequestCallback;
 import com.tokenunion.pro.utils.FormatUtils;
 import com.tokenunion.pro.utils.ToastUtils;

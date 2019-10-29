@@ -3,9 +3,5 @@
 
     <string name="find">부가기능</string>
     <string name="apply_bank_card">VISA 카드 신청</string>
-    <string name="hot_dapp">Dapp선택</string>
-    <string name="label_dice">Dice</string>
-    <string name="label_jacks">Jacks or Better</string>
-    <string name="label_magic_circle">Magic Circle</string>
 
 </resources>

@@ -26,7 +26,7 @@ import android.os.Vibrator;
 import android.preference.PreferenceManager;
 import android.util.Log;
 
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 
 import java.io.Closeable;
 import java.io.IOException;

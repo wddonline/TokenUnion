@@ -16,7 +16,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 
 import com.tokenunion.pro.ui.capital.CapitalApi;
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 import com.tokenunion.pro.app.TUApplication;
 import com.tokenunion.pro.common.SimpleTextWatcher;
 import com.tokenunion.pro.config.ApiRequestCallback;

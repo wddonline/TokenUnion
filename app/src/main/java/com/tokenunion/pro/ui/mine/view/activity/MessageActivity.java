@@ -15,7 +15,7 @@ import com.tokenunion.pro.ui.mine.MineApi;
 import com.tokenunion.pro.ui.mine.adapter.MessageAdapter;
 import com.tokenunion.pro.ui.mine.model.MessageBean;
 import com.tokenunion.pro.ui.mine.widget.MessageFilterWindow;
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 import com.tokenunion.pro.utils.EventBusUtils;
 import com.tokenunion.pro.utils.LogUtil;
 import com.tokenunion.pro.utils.SharedPreferenceUtils;

@@ -48,9 +48,9 @@
     </RelativeLayout>
 
     <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/fragment_find_home_refresh"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:srlEnablePureScrollMode="true">
+        android:layout_height="match_parent">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -66,7 +66,7 @@
                 <androidx.viewpager.widget.ViewPager
                     android:id="@+id/fragment_find_home_pager"
                     android:layout_width="match_parent"
-                    android:layout_height="156dp"
+                    android:layout_height="140dp"
                     android:layout_marginBottom="4dp"/>
 
                 <TextView
@@ -84,52 +84,16 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="13dp"
                     android:layout_marginBottom="28dp"
-		    android:gravity="center"
-		    android:orientation="horizontal">
-
-                    <View
-                        android:layout_width="7dp"
-                        android:layout_height="7dp"
-                        android:layout_marginRight="8dp"
-                        android:background="@drawable/find_home_tab_indicator"/>
-
-                    <View
-                        android:layout_width="7dp"
-                        android:layout_height="7dp"
-                        android:layout_marginRight="8dp"
-                        android:background="@drawable/find_home_tab_indicator"/>
-
-                    <!--<View-->
-                        <!--android:layout_width="7dp"-->
-                        <!--android:layout_height="7dp"-->
-                        <!--android:layout_marginRight="8dp"-->
-                        <!--android:background="@drawable/find_home_tab_indicator"/>-->
-
-                    <!--<View-->
-                        <!--android:layout_width="7dp"-->
-                        <!--android:layout_height="7dp"-->
-                        <!--android:layout_marginRight="8dp"-->
-                        <!--android:background="@drawable/find_home_tab_indicator"/>-->
-
-                    <!--<View-->
-                        <!--android:layout_width="7dp"-->
-                        <!--android:layout_height="7dp"-->
-                        <!--android:layout_marginRight="8dp"-->
-                        <!--android:background="@drawable/find_home_tab_indicator"/>-->
-
-                    <!--<View-->
-                        <!--android:layout_width="7dp"-->
-                        <!--android:layout_height="7dp"-->
-                        <!--android:background="@drawable/find_home_tab_indicator"/>-->
-
-                </LinearLayout>
+                    android:gravity="center"
+                    android:orientation="horizontal"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
-                    android:paddingLeft="23dp"
-                    android:paddingRight="23dp">
+                    android:paddingLeft="22dp"
+                    android:paddingRight="22dp"
+                    android:layout_marginBottom="13dp">
 
                     <View
                         android:layout_width="2dp"
@@ -140,100 +104,21 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="8dp"
-                        android:text="@string/hot_dapp"
+                        android:text="@string/chosen_activities"
                         android:textColor="#888888"
                         android:textSize="14sp" />
                         android:layout_marginLeft="8dp"/>
+
                 </LinearLayout>
 
-                <TableLayout
+                <ImageView
+                    android:id="@+id/fragment_find_home_sign_game"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:background="@android:color/white"
-                    android:stretchColumns="0,2,4">
-
-                    <TableRow>
-
-                        <LinearLayout
-                            android:gravity="center_horizontal"
-                            android:orientation="vertical"
-                            android:paddingTop="15dp"
-                            android:paddingBottom="15dp">
-
-                            <ImageView
-                                android:layout_width="80dp"
-                                android:layout_height="80dp"
-                                android:src="@mipmap/app_dice" />
-
-                            <TextView
-                                android:id="@+id/fragment_find_home_dice"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:gravity="center_horizontal"
-                                android:text="@string/label_dice"
-                                android:textColor="#2E3039"
-                                android:textSize="12sp" />
-
-                        </LinearLayout>
-
-                        <View
-                            android:layout_width="1dp"
-                            android:layout_height="match_parent"
-                            android:background="#E8E8E8"/>
-
-                        <LinearLayout
-                            android:gravity="center_horizontal"
-                            android:orientation="vertical"
-                            android:paddingTop="15dp"
-                            android:paddingBottom="15dp">
-
-                            <ImageView
-                                android:layout_width="80dp"
-                                android:layout_height="80dp"
-                                android:src="@mipmap/app_jacks" />
-
-                            <TextView
-                                android:id="@+id/fragment_find_home_jacks"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:gravity="center_horizontal"
-                                android:text="@string/label_jacks"
-                                android:textColor="#2E3039"
-                                android:textSize="12sp" />
-
-                        </LinearLayout>
-
-                        <View
-                            android:layout_width="1dp"
-                            android:layout_height="match_parent"
-                            android:background="#E8E8E8"/>
-
-                        <LinearLayout
-                            android:gravity="center_horizontal"
-                            android:orientation="vertical"
-                            android:paddingTop="15dp"
-                            android:paddingBottom="15dp">
-
-                            <ImageView
-                                android:layout_width="80dp"
-                                android:layout_height="80dp"
-                                android:src="@mipmap/app_mafic_circle" />
-
-                            <TextView
-                                android:id="@+id/fragment_find_home_magic_circle"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:gravity="center_horizontal"
-                                android:text="@string/label_magic_circle"
-                                android:textColor="#2E3039"
-                                android:textSize="12sp" />
-
-                        </LinearLayout>
-
-                    </TableRow>
-
-                </TableLayout>
+                    android:src="@mipmap/cover_sign_game"
+                    android:adjustViewBounds="true"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="22dp"/>
             </LinearLayout>
 
         </ScrollView>

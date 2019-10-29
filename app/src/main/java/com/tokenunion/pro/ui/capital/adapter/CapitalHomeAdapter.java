@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.tokenunion.pro.ui.base.BaseViewHolder;
 import com.tokenunion.pro.ui.capital.model.FinanceListBean;
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 
 import java.util.List;
 

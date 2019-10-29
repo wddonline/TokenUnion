@@ -31,7 +31,7 @@ import com.google.zxing.PlanarYUVLuminanceSource;
 import com.google.zxing.ReaderException;
 import com.google.zxing.Result;
 import com.google.zxing.common.HybridBinarizer;
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 
 import java.io.ByteArrayOutputStream;
 import java.util.Map;

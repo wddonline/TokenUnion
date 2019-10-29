@@ -11,7 +11,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.tokenunion.pro.ui.base.BaseActivity;
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 
 public class WebActivity extends BaseActivity {
 

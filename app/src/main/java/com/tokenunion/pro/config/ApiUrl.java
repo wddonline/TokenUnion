@@ -1,6 +1,6 @@
 package com.tokenunion.pro.config;
 
-import com.anypocket.pro.BuildConfig;
+import com.tokenunion.pro.BuildConfig;
 
 public class ApiUrl {
 

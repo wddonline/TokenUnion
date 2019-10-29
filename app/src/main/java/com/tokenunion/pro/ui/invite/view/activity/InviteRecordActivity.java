@@ -17,7 +17,7 @@ import com.tokenunion.pro.ui.invite.adapter.InviteRecordAdapter;
 import com.tokenunion.pro.ui.invite.model.InviteRecord;
 import com.tokenunion.pro.ui.mine.MineApi;
 import com.tokenunion.pro.ui.mine.model.DistirbutionVosBean;
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 import com.tokenunion.pro.config.ApiRequestCallback;
 import com.tokenunion.pro.utils.BusinessUtils;
 import com.tokenunion.pro.utils.ToastUtils;

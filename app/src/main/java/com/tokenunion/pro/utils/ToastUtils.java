@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 import com.yidaichu.android.common.utils.DensityUtils;
 
 public class ToastUtils {

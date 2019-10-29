@@ -14,7 +14,7 @@ import com.tokenunion.pro.permission.SettingDialog;
 import com.tokenunion.pro.ui.base.BaseActivity;
 import com.tokenunion.pro.ui.login.view.LoginActivity;
 import com.tokenunion.pro.ui.main.MainActivity;
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 
 import java.util.List;
 

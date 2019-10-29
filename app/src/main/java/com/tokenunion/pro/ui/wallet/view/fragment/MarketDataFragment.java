@@ -12,7 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.lifecycle.ViewModelProviders;
 
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 import com.tokenunion.pro.app.TUApplication;
 import com.tokenunion.pro.ui.base.BaseFragment;
 import com.tokenunion.pro.ui.wallet.model.MarketItemBean;

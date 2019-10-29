@@ -10,10 +10,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 import com.tokenunion.pro.utils.StringUtils;
 
-import static com.anypocket.pro.R.style.BottomDialog;
+import static com.tokenunion.pro.R.style.BottomDialog;
 
 /**
  * Create by: xiaohansong

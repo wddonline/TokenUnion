@@ -15,33 +15,34 @@ import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+import com.scwang.smartrefresh.layout.SmartRefreshLayout;
+import com.scwang.smartrefresh.layout.api.RefreshLayout;
+import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
+import com.tokenunion.pro.R;
+import com.tokenunion.pro.config.ApiRequestCallback;
+import com.tokenunion.pro.manager.UserManager;
+import com.tokenunion.pro.manager.model.User;
+import com.tokenunion.pro.ui.base.BaseFragment;
 import com.tokenunion.pro.ui.capital.CapitalApi;
+import com.tokenunion.pro.ui.capital.adapter.CapitalHomeAdapter;
 import com.tokenunion.pro.ui.capital.model.BannerCommonBean;
+import com.tokenunion.pro.ui.capital.model.FinanceInfoBean;
 import com.tokenunion.pro.ui.capital.model.FinanceListBean;
 import com.tokenunion.pro.ui.capital.view.activity.InterestRuleActivity;
 import com.tokenunion.pro.ui.capital.view.activity.ProductDetailActivity;
 import com.tokenunion.pro.ui.capital.view.activity.SavingsProductsActivity;
 import com.tokenunion.pro.ui.capital.view.activity.TUCRecordActivity;
 import com.tokenunion.pro.ui.capital.view.activity.WealthDetailActivity;
+import com.tokenunion.pro.ui.capital.view.activity.WealthRecordActivity;
 import com.tokenunion.pro.ui.mine.view.activity.MembershipCenterActivity;
-import com.anypocket.pro.R;
-import com.tokenunion.pro.config.ApiRequestCallback;
-import com.tokenunion.pro.manager.UserManager;
-import com.tokenunion.pro.manager.model.User;
-import com.tokenunion.pro.ui.base.BaseFragment;
-import com.tokenunion.pro.ui.capital.adapter.CapitalHomeAdapter;
-import com.tokenunion.pro.ui.capital.model.FinanceInfoBean;
 import com.tokenunion.pro.ui.mine.view.activity.MessageActivity;
+import com.tokenunion.pro.utils.AppUtils;
 import com.tokenunion.pro.utils.BusinessUtils;
 import com.tokenunion.pro.utils.EventBusUtils;
 import com.tokenunion.pro.utils.ToastUtils;
 import com.tokenunion.pro.widget.BannerDelegate;
 import com.tokenunion.pro.widget.LineDividerDecoration;
-import com.bumptech.glide.Glide;
-import com.scwang.smartrefresh.layout.SmartRefreshLayout;
-import com.scwang.smartrefresh.layout.api.RefreshLayout;
-import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
-import com.tokenunion.pro.utils.AppUtils;
 import com.yidaichu.android.common.utils.DensityUtils;
 
 import org.greenrobot.eventbus.Subscribe;
@@ -249,7 +250,7 @@ public class CapitalHomeFragment extends BaseFragment implements View.OnClickLis
                 jumpToActivity(MyWealthActivity.class);
                 break;
             case R.id.fragment_capital_home_wealth_record:
-                jumpToActivity(WealthDetailActivity.WealthRecordActivity.class);
+                jumpToActivity(WealthRecordActivity.class);
                 break;
             default:
                 break;

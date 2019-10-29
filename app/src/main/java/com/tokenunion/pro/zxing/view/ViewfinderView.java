@@ -31,7 +31,7 @@ import android.view.View;
 
 import com.tokenunion.pro.zxing.camera.CameraManager;
 import com.google.zxing.ResultPoint;
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 
 import java.util.ArrayList;
 import java.util.List;

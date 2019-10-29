@@ -8,7 +8,7 @@ import com.tokenunion.pro.config.ApiRequestCallback;
 import com.tokenunion.pro.config.Configs;
 import com.tokenunion.pro.config.UserAccount;
 import com.tokenunion.pro.ui.main.MainActivity;
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 import com.tokenunion.pro.app.TUApplication;
 import com.yidaichu.android.common.http.ActivityFragmentActive;
 import com.yidaichu.android.common.http.HttpConnectCallback;

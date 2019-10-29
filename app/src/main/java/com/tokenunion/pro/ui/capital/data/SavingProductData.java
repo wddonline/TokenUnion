@@ -33,7 +33,7 @@ public class SavingProductData extends BaseData {
         "limit": 0,
       "pageNo": 0,
       "symbol": "string",
-      "type": 0
+      "type": 0 活期 1 死期 3 明星推荐产品
      */
     public void requestProducts(String symbol, String type, boolean isAppend) {
         if (!isAppend) {

@@ -14,7 +14,7 @@ import com.tokenunion.pro.ui.capital.model.FinanceListBean;
 import com.tokenunion.pro.ui.capital.model.TimeOrderListBean;
 import com.tokenunion.pro.ui.capital.view.fragment.CapitalHomeFragment;
 import com.tokenunion.pro.ui.wallet.view.activity.BillRecordActivity;
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 import com.tokenunion.pro.config.ApiRequestCallback;
 import com.tokenunion.pro.ui.capital.model.ProfitListBean;
 import com.tokenunion.pro.utils.ToastUtils;

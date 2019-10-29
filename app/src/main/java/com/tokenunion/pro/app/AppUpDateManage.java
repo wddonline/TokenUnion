@@ -11,8 +11,8 @@ import androidx.core.content.FileProvider;
 
 import com.tokenunion.pro.utils.LogUtil;
 import com.tokenunion.pro.utils.ToastUtils;
-import com.anypocket.pro.BuildConfig;
-import com.anypocket.pro.R;
+import com.tokenunion.pro.BuildConfig;
+import com.tokenunion.pro.R;
 
 import java.io.BufferedInputStream;
 import java.io.File;

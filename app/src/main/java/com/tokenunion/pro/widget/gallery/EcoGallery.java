@@ -20,7 +20,7 @@ import android.view.ViewGroup;
 import android.view.animation.Transformation;
 import android.widget.Scroller;
 
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 
 public class EcoGallery extends EcoGalleryAbsSpinner implements GestureDetector.OnGestureListener {
 

@@ -19,7 +19,7 @@ import com.tokenunion.pro.ui.base.BaseActivity;
 import com.tokenunion.pro.ui.wallet.model.PaymentCard;
 import com.tokenunion.pro.ui.wallet.model.RechargeListBean;
 import com.tokenunion.pro.ui.wallet.widget.PaymentCardChoiceWindow;
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 import com.tokenunion.pro.config.ApiRequestCallback;
 import com.tokenunion.pro.config.Configs;
 import com.tokenunion.pro.ui.wallet.WalletApi;

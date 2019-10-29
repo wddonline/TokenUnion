@@ -1,4 +1,4 @@
-package com.anypocket.pro;
+package com.tokenunion.pro;
 
 import android.content.Context;
 import androidx.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.anypocket.pro", appContext.getPackageName());
+        assertEquals("com.tokenunion.pro", appContext.getPackageName());
     }
 }

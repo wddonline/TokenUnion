@@ -33,7 +33,7 @@ import android.util.Log;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.DecodeHintType;
 import com.google.zxing.Result;
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 import com.tokenunion.pro.zxing.camera.CameraManager;
 import com.tokenunion.pro.zxing.decode.DecodeThread;
 import com.tokenunion.pro.zxing.view.ViewfinderResultPointCallback;

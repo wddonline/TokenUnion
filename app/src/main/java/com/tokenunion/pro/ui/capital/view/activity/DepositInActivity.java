@@ -19,7 +19,7 @@ import androidx.annotation.NonNull;
 import com.tokenunion.pro.app.TUApplication;
 import com.tokenunion.pro.ui.capital.model.AssetInfo;
 import com.tokenunion.pro.ui.capital.model.AssetOverviewBean;
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 import com.tokenunion.pro.common.SimpleTextWatcher;
 import com.tokenunion.pro.config.ApiRequestCallback;
 import com.tokenunion.pro.ui.capital.CapitalApi;

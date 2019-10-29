@@ -26,7 +26,7 @@ import com.tokenunion.pro.ui.wallet.WalletApi;
 import com.tokenunion.pro.ui.wallet.model.PaymentCard;
 import com.tokenunion.pro.ui.wallet.model.WithdrawListBean;
 import com.tokenunion.pro.ui.wallet.widget.PaymentCardChoiceWindow;
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 import com.tokenunion.pro.config.ApiRequestCallback;
 import com.tokenunion.pro.utils.LogUtil;
 import com.tokenunion.pro.utils.ToastUtils;

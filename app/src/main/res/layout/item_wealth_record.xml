@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_wealth_record_click"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="23dp"
+    android:paddingRight="23dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:background="@android:color/white"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/item_wealth_record_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#DE524F"/>
+
+    <TextView
+        android:id="@+id/item_wealth_record_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#A4A4A4"
+        android:textSize="12sp"
+        android:layout_marginTop="7dp"
+        android:layout_below="@id/item_wealth_record_name"/>
+
+    <TextView
+        android:id="@+id/item_wealth_record_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/wealth_record_text_color"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/item_wealth_record_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#A4A4A4"
+        android:textSize="12sp"
+        android:layout_marginTop="7dp"
+        android:layout_below="@id/item_wealth_record_value"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

@@ -24,7 +24,8 @@
         android:networkSecurityConfig="@xml/network_security_config"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.capital.view.activity.WealthDetailActivity$WealthRecordActivity"></activity>
+        <activity android:name=".ui.find.view.activity.SignGameActivity"></activity>
+        <activity android:name=".ui.capital.view.activity.WealthRecordActivity" />
         <activity android:name=".ui.capital.view.fragment.MyWealthActivity" />
         <activity android:name=".ui.capital.view.activity.SavingsProductsActivity" />
         <activity android:name=".ui.capital.view.activity.NewUserPurchaseActivity" />

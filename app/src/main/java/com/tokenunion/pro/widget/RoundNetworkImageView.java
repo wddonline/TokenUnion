@@ -7,7 +7,7 @@ import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 
 /**
  * Created by richard on 9/20/16.

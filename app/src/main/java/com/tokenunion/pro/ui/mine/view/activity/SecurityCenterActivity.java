@@ -9,7 +9,7 @@ import androidx.annotation.Nullable;
 
 import com.tokenunion.pro.ui.base.BaseActivity;
 import com.tokenunion.pro.ui.login.view.SafetySettingsActivity;
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 import com.tokenunion.pro.config.UserAccount;
 
 public class SecurityCenterActivity extends BaseActivity {

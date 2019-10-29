@@ -75,4 +75,10 @@
         <item>Wealth Records</item>
     </string-array>
 
+    <string-array name="wealth_record_titles">
+        <item>全部</item>
+        <item>申购</item>
+        <item>赎回</item>
+    </string-array>
+
 </resources>

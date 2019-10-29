@@ -5,7 +5,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.tokenunion.pro.ui.base.BaseActivity;
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 import com.tokenunion.pro.utils.ToastUtils;
 import com.tokenunion.pro.utils.AppUtils;
 

@@ -2,7 +2,7 @@ package com.tokenunion.pro.ui.capital.view.fragment;
 
 import android.os.Bundle;
 
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 import com.tokenunion.pro.ui.base.BaseActivity;
 
 public class MyWealthActivity extends BaseActivity {

@@ -12,7 +12,7 @@ import android.view.View;
 import android.view.animation.Transformation;
 import android.widget.SpinnerAdapter;
 
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 
 /**
  * 可以实现滑动时平缓缩放已经透明度渐变效果的 Gallery。

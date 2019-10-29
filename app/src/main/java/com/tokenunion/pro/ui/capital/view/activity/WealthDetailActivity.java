@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.tokenunion.pro.ui.base.BaseActivity;
 import com.tokenunion.pro.ui.capital.CapitalApi;
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 import com.tokenunion.pro.config.ApiRequestCallback;
 import com.tokenunion.pro.ui.capital.model.ListRatioBean;
 import com.tokenunion.pro.ui.capital.adapter.WealthDetailAdapter;
@@ -117,22 +117,4 @@ public class WealthDetailActivity extends CapitalBaseActivity {
         });
     }
 
-    public static class WealthRecordActivity extends BaseActivity {
-
-        @Override
-        protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_wealth_record);
-        }
-
-        @Override
-        protected void initData() {
-
-        }
-
-        @Override
-        protected void initViews() {
-
-        }
-    }
 }

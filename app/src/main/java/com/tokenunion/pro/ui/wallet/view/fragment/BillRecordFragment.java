@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.tokenunion.pro.ui.wallet.adapter.BillRecordAdapter;
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 import com.tokenunion.pro.config.ApiRequestCallback;
 import com.tokenunion.pro.ui.base.BaseFragment;
 import com.tokenunion.pro.ui.wallet.WalletApi;

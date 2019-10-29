@@ -13,7 +13,7 @@ import com.tokenunion.pro.ui.wallet.adapter.WalletHomeAdapter;
 import com.tokenunion.pro.ui.wallet.model.TradeBalanceBean;
 import com.tokenunion.pro.ui.wallet.view.activity.BillRecordActivity;
 import com.tokenunion.pro.ui.wallet.view.activity.WalletChargeActivity;
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 import com.tokenunion.pro.config.ApiRequestCallback;
 import com.tokenunion.pro.ui.base.BaseFragment;
 import com.tokenunion.pro.ui.wallet.view.activity.WalletExchangeActivity;

@@ -14,7 +14,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.SpinnerAdapter;
 
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 
 
 public abstract class EcoGalleryAbsSpinner extends EcoGalleryAdapterView<SpinnerAdapter> {

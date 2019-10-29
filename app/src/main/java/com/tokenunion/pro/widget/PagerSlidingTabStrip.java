@@ -28,7 +28,7 @@ import androidx.viewpager.widget.ViewPager;
 import androidx.viewpager.widget.ViewPager.OnPageChangeListener;
 
 
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 
 import java.util.Locale;
 

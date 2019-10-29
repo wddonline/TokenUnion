@@ -2,26 +2,22 @@ package com.tokenunion.pro.ui.capital.view.fragment;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.anypocket.pro.R;
+import com.scwang.smartrefresh.layout.SmartRefreshLayout;
+import com.scwang.smartrefresh.layout.api.RefreshLayout;
+import com.scwang.smartrefresh.layout.listener.OnLoadMoreListener;
+import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
+import com.tokenunion.pro.R;
 import com.tokenunion.pro.ui.base.BaseFragment;
 import com.tokenunion.pro.ui.capital.adapter.SavingProductAdapter;
 import com.tokenunion.pro.ui.capital.contact.SavingProductPresenter;
 import com.tokenunion.pro.ui.capital.model.SavingProduct;
 import com.tokenunion.pro.utils.ToastUtils;
 import com.tokenunion.pro.widget.LineDividerDecoration;
-import com.scwang.smartrefresh.layout.SmartRefreshLayout;
-import com.scwang.smartrefresh.layout.api.RefreshLayout;
-import com.scwang.smartrefresh.layout.listener.OnLoadMoreListener;
-import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
 import com.yidaichu.android.common.http.error.HttpError;
 import com.yidaichu.android.common.utils.DensityUtils;
 
@@ -44,13 +40,6 @@ public class SavingProductFragment extends BaseFragment implements SavingProduct
 
     private boolean isDemand;
 
-    @Nullable
-    @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = super.onCreateView(inflater, container, savedInstanceState);
-        return view;
-    }
-
     @Override
     protected int getRootLayoutId() {
         return R.layout.fragment_saving_product;
@@ -68,13 +57,13 @@ public class SavingProductFragment extends BaseFragment implements SavingProduct
         mRefreshView.setOnRefreshListener(new OnRefreshListener() {
             @Override
             public void onRefresh(@NonNull RefreshLayout refreshLayout) {
-                mPresenter.getProducts("", isDemand ? "1" : "2", false);
+                mPresenter.getProducts("", isDemand ? "0" : "1", false);
             }
         });
         mRefreshView.setOnLoadMoreListener(new OnLoadMoreListener() {
             @Override
             public void onLoadMore(@NonNull RefreshLayout refreshLayout) {
-                mPresenter.getProducts("", isDemand ? "1" : "2", true);
+                mPresenter.getProducts("", isDemand ? "0" : "1", true);
             }
         });
 

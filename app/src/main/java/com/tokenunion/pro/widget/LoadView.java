@@ -8,7 +8,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 
 /**
  * Created by richard on 12/5/16.

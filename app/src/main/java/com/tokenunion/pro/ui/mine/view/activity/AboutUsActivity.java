@@ -6,7 +6,7 @@ import android.widget.TextView;
 
 import com.tokenunion.pro.config.Configs;
 import com.tokenunion.pro.ui.base.BaseActivity;
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 import com.tokenunion.pro.ui.web.activity.WebActivity;
 import com.tokenunion.pro.utils.EventBusUtils;
 import com.tokenunion.pro.utils.ToastUtils;

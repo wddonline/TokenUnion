@@ -13,7 +13,7 @@ import com.tokenunion.pro.app.TUApplication;
 import com.tokenunion.pro.config.Configs;
 import com.tokenunion.pro.ui.base.BaseActivity;
 import com.tokenunion.pro.ui.login.adapter.LanguageChoiceAdapter;
-import com.anypocket.pro.R;
+import com.tokenunion.pro.R;
 import com.tokenunion.pro.config.UserAccount;
 import com.tokenunion.pro.ui.main.MainActivity;
 import com.tokenunion.pro.utils.language.LanguageType;
