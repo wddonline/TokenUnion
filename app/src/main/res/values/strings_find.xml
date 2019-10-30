@@ -5,5 +5,8 @@
     <string name="apply_bank_card">Click here to Apply for VISA Card</string>
     <string name="chosen_activities">活动精选</string>
     <string name="sign_challenge">签到挑战</string>
+    <string name="sign_stage_bets">投入保证金</string>
+    <string name="sign_stage_sign">签到</string>
+    <string name="sign_stage_bonus">分红</string>
 
 </resources>
