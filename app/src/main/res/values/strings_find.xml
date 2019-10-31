@@ -8,5 +8,8 @@
     <string name="sign_stage_bets">投入保证金</string>
     <string name="sign_stage_sign">签到</string>
     <string name="sign_stage_bonus">分红</string>
+    <string name="my_bond">我的保证金</string>
+    <string name="continuous_sign">连续签到</string>
+    <string name="day_7_rate">近七日年化</string>
 
 </resources>

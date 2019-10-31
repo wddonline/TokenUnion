@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:fitsSystemWindows="true"
     tools:context="com.tokenunion.pro.ui.find.view.activity.SignGameActivity">
 
     <include layout="@layout/layout_common_actionbar"/>
@@ -17,62 +18,119 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <FrameLayout
+                android:id="@+id/activity_sign_game_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/selector_sign_game_time"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18:00"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/selector_sign_game_time"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="21:30"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/selector_sign_game_time"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="23:30"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/selector_sign_game_time"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="23:59"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/selector_sign_game_time"/>
+
+            </FrameLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center_vertical"
-                android:layout_marginLeft="33dp"
-                android:layout_marginRight="33dp"
-                android:layout_marginTop="45dp">
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginTop="10dp">
 
                 <View
+                    android:id="@+id/activity_sign_game_dot0"
                     android:layout_width="10dp"
                     android:layout_height="10dp"
                     android:background="@drawable/selector_sign_name_dot"/>
 
                 <View
+                    android:id="@+id/activity_sign_game_line0"
                     android:layout_width="0dp"
                     android:layout_height="3dp"
                     android:layout_weight="83"
                     android:background="@drawable/selector_sign_game_time_line"/>
 
                 <View
+                    android:id="@+id/activity_sign_game_dot1"
                     android:layout_width="10dp"
                     android:layout_height="10dp"
                     android:background="@drawable/selector_sign_name_dot"/>
 
                 <View
+                    android:id="@+id/activity_sign_game_line1"
                     android:layout_width="0dp"
                     android:layout_height="3dp"
                     android:layout_weight="74"
                     android:background="@drawable/selector_sign_game_time_line"/>
 
                 <View
+                    android:id="@+id/activity_sign_game_dot2"
                     android:layout_width="10dp"
                     android:layout_height="10dp"
                     android:background="@drawable/selector_sign_name_dot"/>
 
                 <View
+                    android:id="@+id/activity_sign_game_line2"
                     android:layout_width="0dp"
                     android:layout_height="3dp"
                     android:layout_weight="61"
                     android:background="@drawable/selector_sign_game_time_line"/>
 
                 <View
+                    android:id="@+id/activity_sign_game_dot3"
                     android:layout_width="10dp"
                     android:layout_height="10dp"
                     android:background="@drawable/selector_sign_name_dot"/>
 
                 <View
+                    android:id="@+id/activity_sign_game_line3"
                     android:layout_width="0dp"
                     android:layout_height="3dp"
                     android:layout_weight="42"
                     android:background="@drawable/selector_sign_game_time_line"/>
 
                 <View
+                    android:id="@+id/activity_sign_game_dot4"
                     android:layout_width="10dp"
                     android:layout_height="10dp"
                     android:background="@drawable/selector_sign_name_dot"/>
@@ -82,9 +140,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="33dp"
-                android:layout_marginRight="33dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
                 android:layout_marginTop="6dp">
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:visibility="invisible"/>
 
                 <TextView
                     android:layout_width="0dp"
@@ -96,9 +159,19 @@
                     android:text="@string/sign_stage_bets"/>
 
                 <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:visibility="invisible"/>
+
+                <View
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:layout_weight="74"/>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:visibility="invisible"/>
 
                 <TextView
                     android:layout_width="0dp"
@@ -109,6 +182,11 @@
                     android:gravity="center_horizontal"
                     android:text="@string/sign_stage_sign"/>
 
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:visibility="invisible"/>
+
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -117,6 +195,11 @@
                     android:textSize="12sp"
                     android:gravity="center_horizontal"
                     android:text="@string/sign_stage_bonus"/>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:visibility="invisible"/>
 
             </LinearLayout>
 
@@ -129,9 +212,93 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:orientation="horizontal"
                 android:background="@android:color/white">
 
-                
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#888888"
+                        android:textSize="12sp"
+                        android:layout_marginBottom="9dp"
+                        android:text="@string/my_bond"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="#B59962"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#EDEDED"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#888888"
+                        android:textSize="12sp"
+                        android:layout_marginBottom="9dp"
+                        android:text="@string/continuous_sign"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="#B59962"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#EDEDED"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#888888"
+                        android:textSize="12sp"
+                        android:layout_marginBottom="9dp"
+                        android:text="@string/day_7_rate"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="#B59962"/>
+
+                </LinearLayout>
 
             </LinearLayout>
 
